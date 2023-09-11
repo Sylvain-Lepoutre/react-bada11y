@@ -2,7 +2,7 @@
 export const GoodTable = () => {
   return (
     <table className="mx-auto my-4 w-3/4 rounded-lg border border-solid border-black">
-      <caption>Événements à </caption>
+      <caption>Événements à venir</caption>
       <thead>
         <tr className="flex rounded-t-lg bg-gray-700 p-4 text-white">
           <th className="w-1/3 text-center" scope="col">
