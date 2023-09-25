@@ -10,9 +10,9 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        Custom: "25px 25px 18px 5px rgba(174,223,247,0.49)",
+        Custom: "15px 15px 15px 5px rgba(174,223,247,0.49)",
         CustomCard: "0px 0px 5px 20px rgba(174,223,247,0.5)",
-        CustomCardHover: "inset 0px 0px 5px 20px rgba(174,223,247,0.5)",
+        CustomCardHover: "inset 0px 0px 5px 8px rgba(174,223,247,0.5)",
       },
       colors: {
         BluePastel: "#AEDFF7",
