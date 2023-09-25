@@ -1,4 +1,5 @@
 import { Header } from "../components/Header";
+import { IntroSection } from "../components/pages/root/IntroSection";
 import { ObjectiveSection } from "../components/pages/root/ObjectiveSection";
 import { PersonaSection } from "../components/pages/root/PersonaSection";
 
@@ -13,14 +14,7 @@ export const Root = () => {
     <>
       <Header />
       <main className="mx-auto my-12 w-11/12 ">
-        <header className="my-10 rounded-2xl bg-white p-4 shadow-Custom">
-          Bienvenue sur Inotest, le site où nous vous invitons à explorer le web
-          sous un nouvel angle, en partageant l’expérience de ceux qui font face
-          à des défis d’accessibilité en ligne. Notre mission est de
-          sensibiliser à l’importance de l’inclusion numérique en offrant une
-          expérience unique à travers quatre personas, chacun représentant un
-          type de handicap pour lequel le web n’est pas toujours adapté.
-        </header>
+        <IntroSection />
 
         <PersonaSection />
 
