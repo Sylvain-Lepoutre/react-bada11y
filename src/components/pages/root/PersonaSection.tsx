@@ -1,14 +1,11 @@
-import { h2Styles, pStyles, sectionStyles } from "../../../routes/root";
+import { h2Styles, sectionStyles } from "../../../routes/root";
 import { PersonaCard } from "./PersonaCard";
 
 export const PersonaSection = () => {
   return (
     <section className={sectionStyles}>
       <h2 className={h2Styles}>Choisissez Votre Persona de sensibilisation</h2>
-      <p className={pStyles}>
-        Sur Inotest, nous vous proposons de vivre quatre expériences de
-        navigation en ligne différentes :
-      </p>
+
       <ul className="my-8 grid gap-12 text-center sm:grid-cols-2 xl:grid-cols-4">
         <PersonaCard
           cardTitle={"Djebrine, 33 ans, entrepreneur, trouble visuel"}
