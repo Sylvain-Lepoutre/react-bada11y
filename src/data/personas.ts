@@ -26,13 +26,13 @@ export const personas: Persona[] = [
     name: "Amine",
     cardTitle: "Amine, 23 ans, étudiant, trouble auditif",
     imgSrc: "https://placehold.co/128x128/png",
-    linkURL: "/persona1",
+    linkURL: "/persona3",
   },
   {
     id: 4,
     name: "Claire",
     cardTitle: "Claire, 30 ans, professeur, trouble cognitif",
     imgSrc: "https://placehold.co/128x128/png",
-    linkURL: "/persona1",
+    linkURL: "/persona4",
   },
 ];
