@@ -10,21 +10,25 @@ export const PersonaSection = () => {
         <PersonaCard
           cardTitle={"Djebrine, 33 ans, entrepreneur, trouble visuel"}
           imgSrc="https://placehold.co/128x128/png"
+          linkURL="/persona1"
         />
 
         <PersonaCard
           cardTitle={"Sophie, 42 ans, comptable, trouble moteur"}
           imgSrc="https://placehold.co/128x128/png"
+          linkURL="/persona2"
         />
 
         <PersonaCard
           cardTitle={"Amine, 23 ans, étudiant, trouble auditif"}
           imgSrc="https://placehold.co/128x128/png"
+          linkURL="/persona3"
         />
 
         <PersonaCard
           cardTitle={"Claire, 30 ans, professeur, trouble cognitif"}
           imgSrc="https://placehold.co/128x128/png"
+          linkURL="/persona4"
         />
       </ul>
     </section>
