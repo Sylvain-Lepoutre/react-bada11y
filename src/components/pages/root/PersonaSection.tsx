@@ -1,35 +1,22 @@
 import { h2Styles, sectionStyles } from "../../../routes/root";
 import { PersonaCard } from "./PersonaCard";
 
+import { personas } from "../../../data/personas";
+
 export const PersonaSection = () => {
   return (
     <section className={sectionStyles}>
       <h2 className={h2Styles}>Choisissez Votre Persona de sensibilisation</h2>
 
       <ul className="my-8 grid gap-12 text-center sm:grid-cols-2 xl:grid-cols-4">
-        <PersonaCard
-          cardTitle={"Djebrine, 33 ans, entrepreneur, trouble visuel"}
-          imgSrc="https://placehold.co/128x128/png"
-          linkURL="/persona1"
-        />
-
-        <PersonaCard
-          cardTitle={"Sophie, 42 ans, comptable, trouble moteur"}
-          imgSrc="https://placehold.co/128x128/png"
-          linkURL="/persona2"
-        />
-
-        <PersonaCard
-          cardTitle={"Amine, 23 ans, étudiant, trouble auditif"}
-          imgSrc="https://placehold.co/128x128/png"
-          linkURL="/persona3"
-        />
-
-        <PersonaCard
-          cardTitle={"Claire, 30 ans, professeur, trouble cognitif"}
-          imgSrc="https://placehold.co/128x128/png"
-          linkURL="/persona4"
-        />
+        {personas.map((persona) => (
+          <PersonaCard
+            key={persona.id}
+            cardTitle={persona.cardTitle}
+            imgSrc={persona.imgSrc}
+            linkURL={persona.linkURL}
+          />
+        ))}
       </ul>
     </section>
   );
