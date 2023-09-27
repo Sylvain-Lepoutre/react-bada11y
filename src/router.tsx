@@ -27,8 +27,6 @@ export const router = createBrowserRouter([
     path: "/persona2",
     element: (
       <PersonaHome
-        personaDesc="
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt eget lacus ac malesuada. In egestas ex non tincidunt vestibulum. Mauris nec orci at est lacinia scelerisque. Integer condimentum nulla in lorem auctor faucibus. Vestibulum dui tellus, imperdiet a odio sit amet, commodo scelerisque tellus. Praesent ut justo imperdiet, porta elit vitae, posuere ex. Nulla et tincidunt nunc."
         personaIntro={personas[1].intro}
         personaName={personas[1].name}
       />
@@ -38,8 +36,6 @@ export const router = createBrowserRouter([
     path: "/persona3",
     element: (
       <PersonaHome
-        personaDesc="
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt eget lacus ac malesuada. In egestas ex non tincidunt vestibulum. Mauris nec orci at est lacinia scelerisque. Integer condimentum nulla in lorem auctor faucibus. Vestibulum dui tellus, imperdiet a odio sit amet, commodo scelerisque tellus. Praesent ut justo imperdiet, porta elit vitae, posuere ex. Nulla et tincidunt nunc."
         personaIntro={personas[2].intro}
         personaName={personas[2].name}
       />
@@ -49,8 +45,6 @@ export const router = createBrowserRouter([
     path: "/persona4",
     element: (
       <PersonaHome
-        personaDesc="
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt eget lacus ac malesuada. In egestas ex non tincidunt vestibulum. Mauris nec orci at est lacinia scelerisque. Integer condimentum nulla in lorem auctor faucibus. Vestibulum dui tellus, imperdiet a odio sit amet, commodo scelerisque tellus. Praesent ut justo imperdiet, porta elit vitae, posuere ex. Nulla et tincidunt nunc."
         personaIntro={personas[3].intro}
         personaName={personas[3].name}
       />
