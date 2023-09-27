@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
-
 import { sectionStyles } from "./root";
+import { ButtonLink } from "../components/links/ButtonLink";
 
 type Props = { personaName: string; personaIntro: string };
 
@@ -27,19 +26,19 @@ export const PersonaHome = ({ personaName, personaIntro }: Props) => {
             voluptate reprehenderit ipsa. Qui.
           </p>
         </section>
+
         <div className="mx-auto my-16 flex w-8/12 justify-between sm:w-6/12 lg:w-4/12">
-          <Link
-            className="rounded-2xl bg-white p-4 shadow-CustomCard outline outline-2 outline-BluePastel hover:cursor-pointer hover:shadow-CustomCardHover hover:-outline-offset-8  focus:scale-105 focus:font-bold"
-            to={"/"}
-          >
-            Retour
-          </Link>
-          <Link
-            className="rounded-2xl bg-white p-4 shadow-CustomCard outline outline-2 outline-BluePastel hover:cursor-pointer hover:shadow-CustomCardHover hover:-outline-offset-8  focus:scale-105 focus:font-bold"
-            to={"/"}
-          >
-            Commencer
-          </Link>
+          <ButtonLink
+            label="Retour"
+            url="/"
+            srLabel="Revenir à la page d'accueil de Inotest"
+          />
+
+          <ButtonLink
+            label="Commencer"
+            url=""
+            srLabel={`Commencer le parcours de ${personaName}`}
+          />
         </div>
       </main>
     </>
