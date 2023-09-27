@@ -1,7 +1,6 @@
+import { personas } from "../../../data/personas";
 import { h2Styles, sectionStyles } from "../../../routes/root";
 import { PersonaCard } from "./PersonaCard";
-
-import { personas } from "../../../data/personas";
 
 export const PersonaSection = () => {
   return (
@@ -11,9 +10,9 @@ export const PersonaSection = () => {
       <ul className="my-8 grid gap-12 text-center sm:grid-cols-2 xl:grid-cols-4">
         {personas.map((persona) => (
           <PersonaCard
-            key={persona.id}
             cardTitle={persona.cardTitle}
             imgSrc={persona.imgSrc}
+            key={persona.id}
             linkURL={persona.linkURL}
           />
         ))}
