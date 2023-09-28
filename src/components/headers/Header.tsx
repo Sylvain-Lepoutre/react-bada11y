@@ -1,9 +1,9 @@
 import { Heading1 } from "../headings/Heading1";
 
 type Props = {
-  heading: string;
-  textContent: string;
-  imgPath: string;
+  heading?: string;
+  textContent?: string;
+  imgPath?: string;
 };
 
 export const Header = ({ heading, textContent, imgPath }: Props) => {
