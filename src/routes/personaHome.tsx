@@ -1,5 +1,5 @@
-import { sectionStyles } from "./root";
 import { ButtonLink } from "../components/links/ButtonLink";
+import { sectionStyles } from "./root";
 
 type Props = { personaName: string; personaIntro: string };
 
@@ -30,14 +30,14 @@ export const PersonaHome = ({ personaName, personaIntro }: Props) => {
         <div className="mx-auto my-16 flex w-8/12 justify-between sm:w-6/12 lg:w-4/12">
           <ButtonLink
             label="Retour"
-            url="/"
             srLabel="Revenir à la page d'accueil de Inotest"
+            url="/"
           />
 
           <ButtonLink
             label="Commencer"
-            url=""
             srLabel={`Commencer le parcours de ${personaName}`}
+            url=""
           />
         </div>
       </main>
