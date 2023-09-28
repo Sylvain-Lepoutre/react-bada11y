@@ -1,10 +1,11 @@
-import { h2Styles, sectionStyles } from "../../../routes/root";
+import { Heading2 } from "../../headings/Heading2";
+import { Section } from "../../sections/Section";
 import { ObjectiveCard } from "./ObjectiveCard";
 
 export const ObjectiveSection = () => {
   return (
-    <section className={sectionStyles}>
-      <h2 className={h2Styles}>Nos objectifs</h2>
+    <Section>
+      <Heading2>Nos Objectifs</Heading2>
 
       <div className="my-8 grid gap-12 text-center lg:grid-cols-2">
         <ObjectiveCard
@@ -39,6 +40,6 @@ export const ObjectiveSection = () => {
           cardTitle="Rejoignez Notre communauté d’inclusion"
         />
       </div>
-    </section>
+    </Section>
   );
 };

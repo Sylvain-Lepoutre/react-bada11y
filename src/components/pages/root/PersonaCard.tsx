@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import { Heading3 } from "../../headings/Heading3";
+
 type Props = { cardTitle: string; imgSrc: string; linkURL: string };
 
 export const PersonaCard = ({ cardTitle, imgSrc, linkURL }: Props) => {
@@ -10,7 +12,7 @@ export const PersonaCard = ({ cardTitle, imgSrc, linkURL }: Props) => {
         className="flex h-full flex-col justify-between rounded-2xl hover:cursor-pointer focus:scale-105 focus:font-bold focus:outline-none"
         to={linkURL}
       >
-        <h3>{cardTitle}</h3>
+        <Heading3>{cardTitle}</Heading3>
         <img alt="" className="mx-auto" src={imgSrc} />
       </Link>
     </li>

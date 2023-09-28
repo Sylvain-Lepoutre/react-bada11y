@@ -1,11 +1,12 @@
 import { personas } from "../../../data/personas";
-import { h2Styles, sectionStyles } from "../../../routes/root";
+import { Heading2 } from "../../headings/Heading2";
+import { Section } from "../../sections/Section";
 import { PersonaCard } from "./PersonaCard";
 
 export const PersonaSection = () => {
   return (
-    <section className={sectionStyles}>
-      <h2 className={h2Styles}>Choisissez Votre Persona de sensibilisation</h2>
+    <Section>
+      <Heading2> Choisissez Votre Persona de sensibilisation</Heading2>
 
       <ul className="my-8 grid gap-12 text-center sm:grid-cols-2 xl:grid-cols-4">
         {personas.map((persona) => (
@@ -17,6 +18,6 @@ export const PersonaSection = () => {
           />
         ))}
       </ul>
-    </section>
+    </Section>
   );
 };

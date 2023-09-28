@@ -1,4 +1,4 @@
-import { Header } from "../components/Header";
+import { HeaderRoot } from "../components/pages/root/HeaderRoot";
 import { IntroSection } from "../components/pages/root/IntroSection";
 import { ObjectiveSection } from "../components/pages/root/ObjectiveSection";
 import { PersonaSection } from "../components/pages/root/PersonaSection";
@@ -12,7 +12,7 @@ export const sectionStyles = "my-10 rounded-2xl bg-white p-4 shadow-Custom";
 export const Root = () => {
   return (
     <>
-      <Header />
+      <HeaderRoot />
       <main className="mx-auto my-12 w-11/12 ">
         <IntroSection />
 
