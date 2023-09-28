@@ -1,20 +1,16 @@
-import { ButtonLink } from "../components/links/ButtonLink";
-import { sectionStyles } from "./root";
+import { Header } from "../components/headers/Header";
+import { DivLink } from "../components/pages/personaHome/DivLink";
+import { Section } from "../components/sections/Section";
 
 type Props = { personaName: string; personaIntro: string };
 
 export const PersonaHome = ({ personaName, personaIntro }: Props) => {
   return (
     <>
-      <header
-        className="mx-auto my-4 w-9/12 rounded-2xl bg-white p-4 shadow-Custom"
-        role="banner"
-      >
-        <h1 className="text-center text-4xl">{personaName}</h1>
-      </header>
+      <Header heading={personaName} />
 
       <main className="mx-auto my-12 w-11/12 ">
-        <section className={sectionStyles}>
+        <Section>
           <p>{personaIntro}</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
@@ -25,21 +21,16 @@ export const PersonaHome = ({ personaName, personaIntro }: Props) => {
             repudiandae optio voluptatum cum deleniti impedit ipsam. Saepe porro
             voluptate reprehenderit ipsa. Qui.
           </p>
-        </section>
+        </Section>
 
-        <div className="mx-auto my-16 flex w-8/12 justify-between sm:w-6/12 lg:w-4/12">
-          <ButtonLink
-            label="Retour"
-            srLabel="Revenir à la page d'accueil de Inotest"
-            url="/"
-          />
-
-          <ButtonLink
-            label="Commencer"
-            srLabel={`Commencer le parcours de ${personaName}`}
-            url=""
-          />
-        </div>
+        <DivLink
+          labelLink1="Retour"
+          srLabelLink1="Revenir à la page d'accueil de Inotest"
+          urlLink1="/"
+          labelLink2="Commencer"
+          srLabelLink2={`Commencer le pacrous de ${personaName}`}
+          urlLink2=""
+        />
       </main>
     </>
   );
