@@ -4,9 +4,13 @@ import { IntroSection } from "../components/pages/personaHome/IntroSection";
 import { Section } from "../components/sections/Section";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
-type Props = { personaName: string; personaIntro: string };
+type Props = { personaName: string; personaIntro: string; personaId: number };
 
-export const PersonaHome = ({ personaName, personaIntro }: Props) => {
+export const PersonaHome = ({
+  personaName,
+  personaIntro,
+  personaId,
+}: Props) => {
   useDocumentTitle(`Accueil parcours ${personaName} - Inotest`);
   return (
     <>
@@ -27,7 +31,7 @@ export const PersonaHome = ({ personaName, personaIntro }: Props) => {
           srLabelLink1="Revenir à la page d'accueil de Inotest"
           srLabelLink2={`Commencer le parcours de ${personaName}`}
           urlLink1="/"
-          urlLink2="/persona1/step1"
+          urlLink2={`/persona${personaId}/step1`}
         />
       </main>
     </>

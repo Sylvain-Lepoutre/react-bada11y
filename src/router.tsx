@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import { personas } from "./data/personas";
-import { Persona1Step1 } from "./routes/persona1Step1";
+import { PersonaStep1 } from "./routes/personaStep1";
 import { PersonaHome } from "./routes/personaHome";
 import { Root } from "./routes/root";
 import { Test } from "./routes/test";
@@ -21,12 +21,13 @@ export const router = createBrowserRouter([
       <PersonaHome
         personaIntro={personas[0].intro}
         personaName={personas[0].name}
+        personaId={personas[0].id}
       />
     ),
   },
   {
     path: "/persona1/step1",
-    element: <Persona1Step1 personaName={personas[0].name} />,
+    element: <PersonaStep1 personaName={personas[0].name} />,
   },
   {
     path: "/persona2",
@@ -34,8 +35,13 @@ export const router = createBrowserRouter([
       <PersonaHome
         personaIntro={personas[1].intro}
         personaName={personas[1].name}
+        personaId={personas[1].id}
       />
     ),
+  },
+  {
+    path: "/persona2/step1",
+    element: <PersonaStep1 personaName={personas[1].name} />,
   },
   {
     path: "/persona3",
@@ -43,6 +49,7 @@ export const router = createBrowserRouter([
       <PersonaHome
         personaIntro={personas[2].intro}
         personaName={personas[2].name}
+        personaId={personas[2].id}
       />
     ),
   },
@@ -52,6 +59,7 @@ export const router = createBrowserRouter([
       <PersonaHome
         personaIntro={personas[3].intro}
         personaName={personas[3].name}
+        personaId={personas[3].id}
       />
     ),
   },
