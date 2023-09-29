@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import { personas } from "./data/personas";
+import { Persona1Step1 } from "./routes/persona1Step1";
 import { PersonaHome } from "./routes/personaHome";
 import { Root } from "./routes/root";
 import { Test } from "./routes/test";
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
         personaName={personas[0].name}
       />
     ),
+  },
+  {
+    path: "/persona1/step1",
+    element: <Persona1Step1 personaName={personas[0].name} />,
   },
   {
     path: "/persona2",

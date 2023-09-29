@@ -5,26 +5,31 @@ export const BadFormNoSemantic = () => {
 
       <div className="m-4 flex flex-col">
         <span>Nom</span>
-        <input className="nofocus rounded-lg px-2" type="text" />
+        <input className="rounded-lg px-2" type="text" />
       </div>
 
       <div className="m-4 flex flex-col">
         <span>Prénom</span>
-        <input className="nofocus rounded-lg px-2" type="text" />
+        <input className="rounded-lg px-2" type="text" />
       </div>
 
       <div className="m-4 flex flex-col">
         <span>E-mail</span>
-        <input className="nofocus rounded-lg px-2" type="email" />
+        <input className="rounded-lg px-2" type="email" />
       </div>
 
       <div className="m-4 flex flex-col">
         <span>Mot de passe</span>
-        <input className="nofocus rounded-lg px-2" type="password" />
+        <input className="rounded-lg px-2" type="password" />
+      </div>
+
+      <div className="m-4 flex flex-col">
+        <span>Vérification du Mot de passe</span>
+        <input className="rounded-lg px-2" type="password" />
       </div>
 
       <input
-        className="nofocus mx-auto block rounded-lg bg-gray-700 p-2 text-white"
+        className="mx-auto block rounded-lg bg-gray-700 p-2 text-white"
         type="submit"
         value="Soumettre l'inscription"
       />
