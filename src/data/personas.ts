@@ -27,6 +27,7 @@ export const personas: Persona[] = [
     linkURL: "/persona2",
     intro:
       "Sophie est une comptable de 42 ans. Elle lutte contre de sévères troubles musculo-squelettiques. Ses douleurs l'empeche d'utiliser une souris, elle navigue à l'aide du clavier.",
+    step1Title: "Etape 1 : Test",
   },
   {
     id: 3,

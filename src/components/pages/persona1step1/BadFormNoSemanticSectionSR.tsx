@@ -1,8 +1,7 @@
-import { DivLink } from "../personaHome/DivLink";
-import { Section } from "../../sections/Section";
-import { Heading2 } from "../../headings/Heading2";
-
 import { pStyles } from "../../../routes/root";
+import { Heading2 } from "../../headings/Heading2";
+import { Section } from "../../sections/Section";
+import { DivLink } from "../personaHome/DivLink";
 
 type Props = {
   personaName: string;
