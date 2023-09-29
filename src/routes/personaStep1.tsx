@@ -3,13 +3,13 @@ import { BadFormNoSemanticSection } from "../components/pages/persona1step1/BadF
 import { BadFormNoSemanticSectionSR } from "../components/pages/persona1step1/BadFormNoSemanticSectionSR";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
-type Props = { personaName: string };
+type Props = { personaName: string; personaStep1Title: string };
 
-export const PersonaStep1 = ({ personaName }: Props) => {
+export const PersonaStep1 = ({ personaName, personaStep1Title }: Props) => {
   useDocumentTitle(`Etape 1 - Formulaire - Inotest`);
   return (
     <>
-      <Header heading={personaName} textContent="Etape 1 : Formulaire" />
+      <Header heading={personaName} textContent={personaStep1Title} />
       <main className="mx-auto my-12 w-11/12">
         <BadFormNoSemanticSection />
 

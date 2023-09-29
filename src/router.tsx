@@ -27,7 +27,12 @@ export const router = createBrowserRouter([
   },
   {
     path: "/persona1/step1",
-    element: <PersonaStep1 personaName={personas[0].name} />,
+    element: (
+      <PersonaStep1
+        personaName={personas[0].name}
+        personaStep1Title={personas[0].step1Title}
+      />
+    ),
   },
   {
     path: "/persona2",
