@@ -27,7 +27,7 @@ export const personas: Persona[] = [
     linkURL: "/persona2",
     intro:
       "Sophie est une comptable de 42 ans. Elle lutte contre de sévères troubles musculo-squelettiques. Ses douleurs l'empeche d'utiliser une souris, elle navigue à l'aide du clavier.",
-    step1Title: "Etape 1 : Test",
+    step1Title: "Etape 1 : Formulaire",
   },
   {
     id: 3,
@@ -37,6 +37,7 @@ export const personas: Persona[] = [
     linkURL: "/persona3",
     intro:
       "Amine est un jeune homme de 23 ans, étudiant en Master dans ce domaine. Il est sourd depuis l'âge d'un an à la suite d'une méningite. Il aime regarder des films en ligne, cependant les sous-titres ne sont pas toujours présents ou sont mal syncrhonisés, voire incomplets, cela rend son expérience frustrante et désagréable.",
+    step1Title: "Etape 1 : Work In Progress",
   },
   {
     id: 4,
@@ -46,5 +47,6 @@ export const personas: Persona[] = [
     linkURL: "/persona4",
     intro:
       "Claire est une professeure de yoga de 33 ans. Elle est dyslexique et a un trouble du déficit de l'attention avec hyperactivité. Elle sépanouit par le yoga, mais le monde numérique reste un défi pour elle. Sa dyslexie la rend réticente face aux textes long, et elle a du mal à maintenir sa concentraion.",
+    step1Title: "Etape 1 : Work In Progress",
   },
 ];

@@ -15,7 +15,9 @@ export const PersonaStep1 = ({ personaName, personaStep1Title }: Props) => {
         {personaName === "Djebrine" ? <BadFormNoSemanticSection /> : null}
         {personaName === "Sophie" ? <BadFormNoFocusSection /> : null}
 
-        {personaName === "Djebrine" ? <BadFormNoSemanticSectionSR /> : null}
+        {personaName === "Djebrine" ? (
+          <BadFormNoSemanticSectionSR personaName={personaName} />
+        ) : null}
         {personaName === "Sophie" ? <h1>Test</h1> : null}
       </main>
     </>
