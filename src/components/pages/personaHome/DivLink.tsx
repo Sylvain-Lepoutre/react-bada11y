@@ -18,7 +18,7 @@ export const DivLink = ({
   urlLink2,
 }: Props) => {
   return (
-    <div className="mx-auto my-16 flex w-8/12 justify-between sm:w-6/12 lg:w-4/12">
+    <div className="mx-auto my-16 flex w-10/12 justify-between sm:w-6/12 lg:w-4/12">
       <ButtonLink
         label={labelLink1}
         srLabel={srLabelLink1}
