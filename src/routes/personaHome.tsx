@@ -2,10 +2,12 @@ import { Header } from "../components/headers/Header";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { IntroSection } from "../components/pages/personaHome/IntroSection";
 import { Section } from "../components/sections/Section";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = { personaName: string; personaIntro: string };
 
 export const PersonaHome = ({ personaName, personaIntro }: Props) => {
+  useDocumentTitle(`Accueil parcours ${personaName} - Inotest`);
   return (
     <>
       <Header heading={personaName} />

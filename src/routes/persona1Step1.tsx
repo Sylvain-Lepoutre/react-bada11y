@@ -3,11 +3,13 @@ import { Header } from "../components/headers/Header";
 import { Heading2 } from "../components/headings/Heading2";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Section } from "../components/sections/Section";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { pStyles } from "./root";
 
 type Props = { personaName: string };
 
 export const Persona1Step1 = ({ personaName }: Props) => {
+  useDocumentTitle(`Etape 1 - Formulaire - Inotest`);
   return (
     <>
       <Header heading={personaName} textContent="Etape 1 : Formulaire" />
