@@ -1,6 +1,6 @@
-import { BadShoppingItem } from "./BadShoppingItem";
 import { Heading2 } from "../../headings/Heading2";
 import { Section } from "../../sections/Section";
+import { BadShoppingItem } from "./BadShoppingItem";
 
 export const BadShoppingNoFocusSection = () => {
   return (

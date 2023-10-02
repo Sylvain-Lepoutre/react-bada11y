@@ -17,7 +17,7 @@ export const BadShoppingItem = ({ itemName }: Props) => {
     setIsModalOpen(false);
   };
   return (
-    <li className="flex border-spacing-4 flex-col justify-center rounded-2xl border border-black">
+    <li className="relative flex border-spacing-4 flex-col items-center justify-center rounded-2xl border border-black">
       <Heading3>{itemName}</Heading3>
       <img alt="" className="mx-auto" src="https://placehold.co/256x256/png" />
       <button
@@ -27,7 +27,7 @@ export const BadShoppingItem = ({ itemName }: Props) => {
         Ajouter au panier
       </button>
       {isModalOpen && (
-        <div className="mx-auto flex w-8/12 items-center p-4 text-center">
+        <div className="absolute mx-auto flex w-8/12 items-center rounded-2xl bg-gradient-to-br from-BluePastel to-BlueAqua p-4 text-center opacity-75">
           <p>{`Vous avez ajouté ${itemName} au panier.`}</p>
           <span
             className="text-5xl outline-none"
