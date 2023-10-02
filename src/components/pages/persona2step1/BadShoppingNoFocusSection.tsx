@@ -1,7 +1,6 @@
-import { Heading2 } from "../../headings/Heading2";
-import { Heading3 } from "../../headings/Heading3";
-import { Section } from "../../sections/Section";
 import { BadShoppingItem } from "./BadShoppingItem";
+import { Heading2 } from "../../headings/Heading2";
+import { Section } from "../../sections/Section";
 
 export const BadShoppingNoFocusSection = () => {
   return (
