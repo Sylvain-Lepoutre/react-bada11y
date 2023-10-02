@@ -17,7 +17,7 @@ export const personas: Persona[] = [
     linkURL: "/persona1",
     intro:
       "Djebrine est un entrepreneur dynamique de 33 ans. Il est non-voyant. Chaque matin, il s’installe devant son ordinateur, équipé d’un lecteur d’écran et d’un afficheur braille. Le lecteur d’écran est un logiciel doté d’un synthétiseur vocal qui récupere l’information textuelle et la retranscrit vocalement et en braille pour Djebrine.",
-    step1Title: "Etape 1 : Formulaire",
+    step1Title: "Etape 1 : Formulaire d'inscription",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const personas: Persona[] = [
     linkURL: "/persona2",
     intro:
       "Sophie est une comptable de 42 ans. Elle lutte contre de sévères troubles musculo-squelettiques. Ses douleurs l'empeche d'utiliser une souris, elle navigue à l'aide du clavier.",
-    step1Title: "Etape 1 : Formulaire",
+    step1Title: "Etape 1 : Shopping en Ligne",
   },
   {
     id: 3,
