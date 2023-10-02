@@ -1,14 +1,14 @@
-import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/headers/Header";
 import { BadFormNoSemanticSection } from "../components/pages/persona1step1/BadFormNoSemanticSection";
 import { BadFormNoSemanticSectionSR } from "../components/pages/persona1step1/BadFormNoSemanticSectionSR";
 import { BadFormNoFocusSection } from "../components/pages/persona2step1/BadFormNoFocusSection";
+import { DivLink } from "../components/pages/personaHome/DivLink";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = { personaName: string; personaStep1Title: string };
 
 export const PersonaStep1 = ({ personaName, personaStep1Title }: Props) => {
-  useDocumentTitle(`Etape 1 - Formulaire - Inotest`);
+  useDocumentTitle(`${personaStep1Title} - Inotest`);
   return (
     <>
       <Header heading={personaName} textContent={personaStep1Title} />
@@ -19,7 +19,7 @@ export const PersonaStep1 = ({ personaName, personaStep1Title }: Props) => {
         {personaName === "Djebrine" ? (
           <BadFormNoSemanticSectionSR personaName={personaName} />
         ) : null}
-        {personaName === "Sophie" ? <h1>Test</h1> : null}
+        {personaName === "Sophie" ? <h1>Work in Progress</h1> : null}
 
         <DivLink
           labelLink1="Accueil"
