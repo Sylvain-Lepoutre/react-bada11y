@@ -1,13 +1,8 @@
 import { pStyles } from "../../../routes/root";
 import { Heading2 } from "../../headings/Heading2";
 import { Section } from "../../sections/Section";
-import { DivLink } from "../personaHome/DivLink";
 
-type Props = {
-  personaName: string;
-};
-
-export const BadFormNoSemanticSectionSR = ({ personaName }: Props) => {
+export const BadFormNoSemanticSectionSR = () => {
   return (
     <Section>
       <Heading2>Lecteur d’écran</Heading2>
@@ -40,15 +35,6 @@ export const BadFormNoSemanticSectionSR = ({ personaName }: Props) => {
           indiquer quelle information doit indiquer l’utilisateur.
         </p>
       </div>
-
-      <DivLink
-        labelLink1="Accueil"
-        labelLink2="Continuer"
-        srLabelLink1="Revenir à la page d'accueil de Inotest"
-        srLabelLink2={`Continuer le parcours de ${personaName}`}
-        urlLink1="/"
-        urlLink2="/test"
-      />
     </Section>
   );
 };
