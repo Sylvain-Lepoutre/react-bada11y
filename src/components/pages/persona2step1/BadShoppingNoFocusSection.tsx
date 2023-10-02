@@ -7,7 +7,7 @@ export const BadShoppingNoFocusSection = () => {
     <Section>
       <div className="my-12">
         <Heading2>Fruits</Heading2>
-        <ul className="grid grid-cols-4 gap-8">
+        <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <BadShoppingItem itemName="Pommes" />
           <BadShoppingItem itemName="Poires" />
           <BadShoppingItem itemName="Bananes" />
@@ -16,7 +16,7 @@ export const BadShoppingNoFocusSection = () => {
       </div>
       <div>
         <Heading2>Légumes</Heading2>
-        <ul className="grid grid-cols-4 gap-8">
+        <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <BadShoppingItem itemName="Haricots Verts" />
           <BadShoppingItem itemName="Choux" />
           <BadShoppingItem itemName="Courgettes" />
