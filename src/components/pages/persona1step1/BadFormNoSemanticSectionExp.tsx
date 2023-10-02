@@ -2,22 +2,67 @@ import { pStyles } from "../../../routes/root";
 import { Heading2 } from "../../headings/Heading2";
 import { Section } from "../../sections/Section";
 
+//TODO revoir pour l'affichage des commandes effectuées
+
 export const BadFormNoSemanticSectionExp = () => {
   return (
     <Section>
-      <Heading2>Lecteur d’écran</Heading2>
+      <Heading2>Explications</Heading2>
       <p className={pStyles}>
-        Un utilisateur de lecteur d’écran utilise la touche Tab pour passer d’un
-        champ interactif à un autre, voici ce que lui dit le lecteur d’écran
-        lorsqu’il parcourt ce formulaire
+        Un utilisateur de lecteur d’écran utilise la touche
+        <span className="mx-4 rounded-md border border-black p-2 text-red-600">
+          Tab
+        </span>
+        pour passer d’un champ interactif à un autre, voici ce que lui dit le
+        lecteur d’écran lorsqu’il parcourt ce formulaire
       </p>
       <div className="">
         <ol className="border border-black p-4">
-          <li>édition vide</li>
-          <li>édition vide</li>
-          <li>édition vide</li>
-          <li>édition protégé vide</li>
-          <li>édition protégé vide</li>
+          <li className="my-4">
+            <span
+              aria-label="Appuie sur Tab"
+              className="mx-4 rounded-md border border-black p-2 text-red-600"
+            >
+              Tab
+            </span>
+            <span>édition vide</span>
+          </li>
+          <li className="my-4">
+            <span
+              aria-label="Appuie sur Tab"
+              className="mx-4 rounded-md border border-black p-2 text-red-600"
+            >
+              Tab
+            </span>
+            <span>édition vide</span>
+          </li>
+          <li className="my-4">
+            <span
+              aria-label="Appuie sur Tab"
+              className="mx-4 rounded-md border border-black p-2 text-red-600"
+            >
+              Tab
+            </span>
+            <span>édition vide</span>
+          </li>
+          <li className="my-4">
+            <span
+              aria-label="Appuie sur Tab"
+              className="mx-4 rounded-md border border-black p-2 text-red-600"
+            >
+              Tab
+            </span>
+            <span>édition vide</span>
+          </li>
+          <li className="my-4">
+            <span
+              aria-label="Appuie sur Tab"
+              className="mx-4 rounded-md border border-black p-2 text-red-600"
+            >
+              Tab
+            </span>
+            <span>édition vide</span>
+          </li>
         </ol>
         <p className={pStyles}>
           On se rend compte que la personne non-voyante na aucune indication de
