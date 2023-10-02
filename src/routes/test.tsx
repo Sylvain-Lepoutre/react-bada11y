@@ -1,15 +1,5 @@
-import { BadFormNoSemantic, BadFormSemantic } from "../components/BadForm";
-import { BadTableNoSemantic, BadTableSemantic } from "../components/BadTable";
-import { GoodForm } from "../components/GoodForm";
-import { GoodTable } from "../components/GoodTable";
-
 export const Test = () => (
-  <>
-    <BadFormNoSemantic />
-    <BadFormSemantic />
-    <GoodForm />
-    <BadTableNoSemantic />
-    <BadTableSemantic />
-    <GoodTable />
-  </>
+  <main className="mx-auto my-12 w-11/12">
+    <p>Test</p>
+  </main>
 );

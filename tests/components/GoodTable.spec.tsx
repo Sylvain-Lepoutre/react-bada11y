@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
+
 import { GoodTable } from "../../src/components/GoodTable";
 
 describe("WAI-ARIA Roles, States and Properties", () => {
