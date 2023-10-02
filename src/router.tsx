@@ -4,7 +4,7 @@ import { personas } from "./data/personas";
 import { PersonaHome } from "./routes/personaHome";
 import { PersonaStep1 } from "./routes/personaStep1";
 import { Root } from "./routes/root";
-import { Test } from "./routes/test";
+import { Wip } from "./routes/wip";
 
 export const router = createBrowserRouter([
   {
@@ -12,8 +12,8 @@ export const router = createBrowserRouter([
     element: <Root />,
   },
   {
-    path: "/test",
-    element: <Test />,
+    path: "/wip",
+    element: <Wip />,
   },
   {
     path: "/persona1",

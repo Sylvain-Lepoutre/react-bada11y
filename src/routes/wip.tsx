@@ -1,5 +1,5 @@
-export const Test = () => (
+export const Wip = () => (
   <main className="mx-auto my-12 w-11/12">
-    <p>Test</p>
+    <p>Work In Progress</p>
   </main>
 );
