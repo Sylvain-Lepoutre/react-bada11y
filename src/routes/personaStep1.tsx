@@ -2,6 +2,7 @@ import { Header } from "../components/headers/Header";
 import { BadFormNoSemanticSection } from "../components/pages/persona1step1/BadFormNoSemanticSection";
 import { BadFormNoSemanticSectionExp } from "../components/pages/persona1step1/BadFormNoSemanticSectionExp";
 import { BadShoppingNoFocusSection } from "../components/pages/persona2step1/BadShoppingNoFocusSection";
+import { BadShoppingNoFocusSectionExp } from "../components/pages/persona2step1/BadShoppingNoFocusSectionExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
@@ -17,7 +18,7 @@ export const PersonaStep1 = ({ personaName, personaStep1Title }: Props) => {
         {personaName === "Sophie" ? <BadShoppingNoFocusSection /> : null}
 
         {personaName === "Djebrine" ? <BadFormNoSemanticSectionExp /> : null}
-        {personaName === "Sophie" ? <h1>Work in Progress</h1> : null}
+        {personaName === "Sophie" ? <BadShoppingNoFocusSectionExp /> : null}
 
         <DivLink
           labelLink1="Accueil"
@@ -25,7 +26,7 @@ export const PersonaStep1 = ({ personaName, personaStep1Title }: Props) => {
           srLabelLink1="Revenir à la page d'accueil de Inotest"
           srLabelLink2={`Continuer le parcours de ${personaName}`}
           urlLink1="/"
-          urlLink2="/test"
+          urlLink2="/wip"
         />
       </main>
     </>
