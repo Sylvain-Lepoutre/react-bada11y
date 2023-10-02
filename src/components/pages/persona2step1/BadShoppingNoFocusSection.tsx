@@ -5,16 +5,14 @@ import { Heading3 } from "../../headings/Heading3";
 import { Section } from "../../sections/Section";
 
 export const BadShoppingNoFocusSection = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleAddToCart = () => {
-    console.log(isModalOpen);
-    setModalOpen(true);
-    console.log(isModalOpen);
+    setIsModalOpen(true);
   };
 
   const closeModal = () => {
-    setModalOpen(false);
+    setIsModalOpen(false);
   };
 
   return (
@@ -23,7 +21,7 @@ export const BadShoppingNoFocusSection = () => {
         <Heading2>Fruits</Heading2>
         <ul className="grid grid-cols-4 gap-8">
           <li className="flex border-spacing-4 flex-col justify-center rounded-2xl border border-black">
-            <Heading3 className="my-4 text-center text-xl">Fruit 1</Heading3>
+            <Heading3>Fruit 1</Heading3>
             <img
               alt=""
               className="mx-auto"
@@ -51,7 +49,7 @@ export const BadShoppingNoFocusSection = () => {
             )}
           </li>
           <li className="flex border-spacing-4 flex-col justify-center rounded-2xl border border-black">
-            <Heading3 className="my-4 text-center text-xl">Fruit 2</Heading3>
+            <Heading3>Fruit 2</Heading3>
             <img
               alt=""
               className="mx-auto"
@@ -62,7 +60,7 @@ export const BadShoppingNoFocusSection = () => {
             </button>
           </li>
           <li className="flex border-spacing-4 flex-col justify-center rounded-2xl border border-black">
-            <Heading3 className="my-4 text-center text-xl">Fruit 3</Heading3>
+            <Heading3>Fruit 3</Heading3>
             <img
               alt=""
               className="mx-auto"
@@ -73,7 +71,7 @@ export const BadShoppingNoFocusSection = () => {
             </button>
           </li>
           <li className="flex border-spacing-4 flex-col justify-center rounded-2xl border border-black">
-            <Heading3 className="my-4 text-center text-xl">Fruit 4</Heading3>
+            <Heading3>Fruit 4</Heading3>
             <img
               alt=""
               className="mx-auto"
