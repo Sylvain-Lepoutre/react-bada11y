@@ -17,7 +17,7 @@ export const BadFormNoSemanticSectionExp = () => {
         lecteur d’écran lorsqu’il parcourt ce formulaire
       </p>
       <div className="">
-        <ol className="border border-black p-4">
+        <ol className="rounded-xl border border-black p-4">
           <li className="my-4">
             <span
               aria-hidden
@@ -73,6 +73,10 @@ export const BadFormNoSemanticSectionExp = () => {
           n’apporte aucune sémantique et donc aucune indication sur le contenu
           de ces balises, le lecteur d’écran arrive sur les input de type text
           ou password, sans savoir à quoi ils sont rattachés
+        </p>
+        <p className={pStyles}>
+          De plus nous n’avons pas utilisé de balises form pour que
+          l’utilisateur puisse se rendre plus rapidement au fomulaire.
         </p>
         <p className="{pStyles">
           Nous devons utiliser des balises label afin que les technologies
