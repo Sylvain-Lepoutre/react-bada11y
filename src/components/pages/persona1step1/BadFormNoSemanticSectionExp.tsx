@@ -20,7 +20,7 @@ export const BadFormNoSemanticSectionExp = () => {
         <ol className="border border-black p-4">
           <li className="my-4">
             <span
-              aria-label="Appuie sur Tab"
+              aria-hidden
               className="mx-4 rounded-md border border-black p-2 text-red-600"
             >
               Tab
@@ -29,7 +29,7 @@ export const BadFormNoSemanticSectionExp = () => {
           </li>
           <li className="my-4">
             <span
-              aria-label="Appuie sur Tab"
+              aria-hidden
               className="mx-4 rounded-md border border-black p-2 text-red-600"
             >
               Tab
@@ -38,7 +38,7 @@ export const BadFormNoSemanticSectionExp = () => {
           </li>
           <li className="my-4">
             <span
-              aria-label="Appuie sur Tab"
+              aria-hidden
               className="mx-4 rounded-md border border-black p-2 text-red-600"
             >
               Tab
@@ -47,7 +47,7 @@ export const BadFormNoSemanticSectionExp = () => {
           </li>
           <li className="my-4">
             <span
-              aria-label="Appuie sur Tab"
+              aria-hidden
               className="mx-4 rounded-md border border-black p-2 text-red-600"
             >
               Tab
@@ -56,7 +56,7 @@ export const BadFormNoSemanticSectionExp = () => {
           </li>
           <li className="my-4">
             <span
-              aria-label="Appuie sur Tab"
+              aria-hidden
               className="mx-4 rounded-md border border-black p-2 text-red-600"
             >
               Tab
