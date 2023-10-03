@@ -1,4 +1,6 @@
 import { Header } from "../components/headers/Header";
+import { BadFormIntro } from "../components/pages/persona1step1/BadFormIntro";
+import { BadFormNoSemanticCode } from "../components/pages/persona1step1/BadFormNoSemanticCode";
 import { BadFormNoSemanticSection } from "../components/pages/persona1step1/BadFormNoSemanticSection";
 import { BadFormNoSemanticSectionExp } from "../components/pages/persona1step1/BadFormNoSemanticSectionExp";
 import { BadShoppingNoFocusSection } from "../components/pages/persona2step1/BadShoppingNoFocusSection";
@@ -14,11 +16,15 @@ export const PersonaStep1 = ({ personaName, personaStep1Title }: Props) => {
     <>
       <Header heading={personaName} textContent={personaStep1Title} />
       <main className="mx-auto my-12 w-11/12">
+        {personaName === "Djebrine" ? <BadFormIntro /> : null}
+
         {personaName === "Djebrine" ? <BadFormNoSemanticSection /> : null}
         {personaName === "Sophie" ? <BadShoppingNoFocusSection /> : null}
 
         {personaName === "Djebrine" ? <BadFormNoSemanticSectionExp /> : null}
         {personaName === "Sophie" ? <BadShoppingNoFocusSectionExp /> : null}
+
+        {personaName === "Djebrine" ? <BadFormNoSemanticCode /> : null}
 
         <DivLink
           labelLink1="Accueil"
