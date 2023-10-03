@@ -1,4 +1,5 @@
 import { Header } from "../components/headers/Header";
+import { BadFormConclusion } from "../components/pages/persona1step1/BadFormConclusion";
 import { BadFormIntro } from "../components/pages/persona1step1/BadFormIntro";
 import { BadFormNoSemanticCode } from "../components/pages/persona1step1/BadFormNoSemanticCode";
 import { BadFormNoSemanticSection } from "../components/pages/persona1step1/BadFormNoSemanticSection";
@@ -25,6 +26,8 @@ export const PersonaStep1 = ({ personaName, personaStep1Title }: Props) => {
         {personaName === "Sophie" ? <BadShoppingNoFocusSectionExp /> : null}
 
         {personaName === "Djebrine" ? <BadFormNoSemanticCode /> : null}
+
+        {personaName === "Djebrine" ? <BadFormConclusion /> : null}
 
         <DivLink
           labelLink1="Accueil"
