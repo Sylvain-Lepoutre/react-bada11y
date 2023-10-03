@@ -1,9 +1,11 @@
+import { Heading2 } from "../../headings/Heading2";
 import { Section } from "../../sections/Section";
 
 export const BadFormNoSemanticSection = () => {
   return (
     <Section>
-      <div className="mx-auto my-4 w-3/4 rounded-lg bg-gray-200 p-4">
+      <Heading2>Affichage dans le navigateur</Heading2>
+      <div className="mx-auto my-4 w-3/4 rounded-xl bg-gray-200 p-4">
         <div className="text-center">Inscription</div>
 
         <div className="m-4 flex flex-col">
