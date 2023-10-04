@@ -1,8 +1,10 @@
+import { Heading2 } from "../../headings/Heading2";
 import { Section } from "../../sections/Section";
 
 export const BadFormNoAttribute = () => {
   return (
     <Section>
+      <Heading2>Affichage dans le navigateur</Heading2>
       <form className="mx-auto my-4 w-3/4 rounded-lg bg-gray-200 p-4">
         <h2 className="text-center">Inscription</h2>
 
