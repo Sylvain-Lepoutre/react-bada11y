@@ -1,10 +1,11 @@
-import { Header } from "../components/UI/headers/Header";
-import { Main } from "../components/UI/main/Main";
 import { BadFormNoAttribute } from "../components/pages/persona1step2/BadFormNoAttribute";
 import { BadFormNoAttributeCode } from "../components/pages/persona1step2/BadFormNoAttributeCode";
 import { BadFormNoAttributeConclusion } from "../components/pages/persona1step2/BadFormNoAttributeConclusion";
 import { BadFormNoAttributeExp } from "../components/pages/persona1step2/BadFormNoAttributeExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
+import { Header } from "../components/UI/headers/Header";
+import { Main } from "../components/UI/main/Main";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   personaName: string;
@@ -13,6 +14,7 @@ type Props = {
 };
 
 export const PersonaStep2 = ({ personaName, personaStep2Title }: Props) => {
+  useDocumentTitle(`${personaStep2Title} - Inotest`);
   return (
     <>
       <Header heading={personaName} textContent={personaStep2Title} />
