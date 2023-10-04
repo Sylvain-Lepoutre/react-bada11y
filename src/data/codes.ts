@@ -27,10 +27,7 @@ export const codes = {
         <input type="password" />
     </div>
 
-    <input>
-      type="submit"
-      value="Soumettre l'inscription"
-    />
+    <input type="submit" value="Soumettre l'inscription" />
 </div>`,
   BadFormNoAttribute: `<form>
     <h2>Inscription</h2>
@@ -55,9 +52,6 @@ export const codes = {
         <input type="password" />
     </div>
 
-    <input
-      type="submit"
-      value="Soumettre l'inscription"
-    />
+    <input type="submit" value="Soumettre l'inscription" />
 </form>`,
 };
