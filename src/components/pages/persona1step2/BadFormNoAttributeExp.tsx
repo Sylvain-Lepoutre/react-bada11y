@@ -1,7 +1,7 @@
-import { Heading2 } from "../../headings/Heading2";
-import { Section } from "../../sections/Section";
-import { KeyBoardInput } from "../../keyboard-inputs/KeyboardInput";
 import { pStyles } from "../../../routes/root";
+import { Heading2 } from "../../headings/Heading2";
+import { KeyBoardInput } from "../../keyboard-inputs/KeyboardInput";
+import { Section } from "../../sections/Section";
 import { HtmlTag } from "../../tags/HtmlTag";
 
 export const BadFormNoAttributeExp = () => {
