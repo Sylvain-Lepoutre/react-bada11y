@@ -1,5 +1,6 @@
 import { Header } from "../components/headers/Header";
 import { BadFormNoAttribute } from "../components/pages/persona1step2/BadFormNoAttribute";
+import { BadFormNoAttributeCode } from "../components/pages/persona1step2/BadFormNoAttributeCode";
 
 type Props = {
   personaName: string;
@@ -14,6 +15,8 @@ export const PersonaStep2 = ({ personaName, personaStep2Title }: Props) => {
 
       <main className="mx-auto my-12 w-11/12">
         <BadFormNoAttribute />
+
+        <BadFormNoAttributeCode />
       </main>
     </>
   );

@@ -32,4 +32,32 @@ export const codes = {
       value="Soumettre l'inscription"
     />
 </div>`,
+  BadFormNoAttribute: `<form>
+    <h2>Inscription</h2>
+
+    <div>
+        <label>Nom</label>
+        <input type="text" />
+    </div>
+
+    <div>
+        <label>Prénom</label>
+        <input type="text" />
+    </div>
+
+    <div>
+        <label>E-mail</label>
+        <input type="email" />
+    </div>
+
+    <div>
+        <label>Mot de passe</label>
+        <input type="password" />
+    </div>
+
+    <input
+      type="submit"
+      value="Soumettre l'inscription"
+    />
+</form>`,
 };
