@@ -16,7 +16,7 @@ export const BadFormNoSemanticSectionExp = () => {
         autre, voici ce que lui dit le lecteur d’écran lorsqu’il parcourt ce
         formulaire
       </p>
-      <div className="">
+      <div>
         <ol className="rounded-xl border border-black p-4">
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
