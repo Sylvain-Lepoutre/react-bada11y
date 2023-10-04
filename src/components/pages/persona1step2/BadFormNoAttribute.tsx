@@ -1,6 +1,6 @@
 import { Section } from "../../sections/Section";
 
-export const BadFormNoIdSection = () => {
+export const BadFormNoAttribute = () => {
   return (
     <Section>
       <form className="mx-auto my-4 w-3/4 rounded-lg bg-gray-200 p-4">
@@ -27,12 +27,6 @@ export const BadFormNoIdSection = () => {
         <div className="m-4 flex flex-col">
           {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
           <label>Mot de passe</label>
-          <input className="rounded-lg px-2" type="password" />
-        </div>
-
-        <div className="m-4 flex flex-col">
-          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-          <label>Vérification du Mot de passe</label>
           <input className="rounded-lg px-2" type="password" />
         </div>
 
