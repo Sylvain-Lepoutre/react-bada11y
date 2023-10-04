@@ -1,6 +1,8 @@
 import { Header } from "../components/headers/Header";
 import { BadFormNoAttribute } from "../components/pages/persona1step2/BadFormNoAttribute";
 import { BadFormNoAttributeCode } from "../components/pages/persona1step2/BadFormNoAttributeCode";
+import { BadFormNoAttributeConclusion } from "../components/pages/persona1step2/BadFormNoAttributeConclusion";
+import { BadFormNoAttributeExp } from "../components/pages/persona1step2/BadFormNoAttributeExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 
 type Props = {
@@ -15,9 +17,14 @@ export const PersonaStep2 = ({ personaName, personaStep2Title }: Props) => {
       <Header heading={personaName} textContent={personaStep2Title} />
 
       <main className="mx-auto my-12 w-11/12">
-        <BadFormNoAttribute />
-
-        <BadFormNoAttributeCode />
+        {personaName === "Djebrine" && (
+          <>
+            <BadFormNoAttribute />
+            <BadFormNoAttributeExp />
+            <BadFormNoAttributeCode />
+            <BadFormNoAttributeConclusion />
+          </>
+        )}
 
         <DivLink
           labelLink1="Accueil"
