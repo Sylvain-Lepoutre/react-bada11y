@@ -16,7 +16,7 @@ export const BadFormNoSemanticSectionExp = () => {
         autre, voici ce que lui dit le lecteur d’écran lorsqu’il parcourt ce
         formulaire
       </p>
-      <div className="">
+      <div>
         <ol className="rounded-xl border border-black p-4">
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
@@ -55,7 +55,7 @@ export const BadFormNoSemanticSectionExp = () => {
           De plus nous n’avons pas utilisé de balise <HtmlTag tagName="form" />{" "}
           pour que l’utilisateur puisse se rendre plus rapidement au fomulaire.
         </p>
-        <p className="{pStyles">
+        <p className={pStyles}>
           Nous devons utiliser des balises <HtmlTag tagName="label" /> afin que
           les technologies d’assistance comprennent que le champ de saisi est
           lié au label pour indiquer quelle information doit indiquer

@@ -16,7 +16,7 @@ export const BadFormIntro = () => {
         sur l’information séquentielle transmise par le lecteur d’écran.
       </p>
 
-      <p>
+      <p className={pStyles}>
         Djebrine veut connaître les dates des prochaines conférences sur
         l’inclusion numérique et le développement web. Pour cela, il doit
         s’inscrire sur une plateforme afin d’accéder aux informations qu’il
