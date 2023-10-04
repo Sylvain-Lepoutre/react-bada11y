@@ -9,9 +9,17 @@ import { BadShoppingNoFocusSectionExp } from "../components/pages/persona2step1/
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
-type Props = { personaName: string; personaStep1Title: string };
+type Props = {
+  personaName: string;
+  personaStep1Title: string;
+  personaId: number;
+};
 
-export const PersonaStep1 = ({ personaName, personaStep1Title }: Props) => {
+export const PersonaStep1 = ({
+  personaName,
+  personaStep1Title,
+  personaId,
+}: Props) => {
   useDocumentTitle(`${personaStep1Title} - Inotest`);
   return (
     <>
@@ -35,7 +43,7 @@ export const PersonaStep1 = ({ personaName, personaStep1Title }: Props) => {
           srLabelLink1="Revenir à la page d'accueil de Inotest"
           srLabelLink2={`Continuer le parcours de ${personaName}`}
           urlLink1="/"
-          urlLink2="/wip"
+          urlLink2={`/persona${personaId}/step2`}
         />
       </main>
     </>
