@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { Heading3 } from "../../headings/Heading3";
+import { Heading3 } from "../../UI/headings/Heading3";
 
 type Props = { cardTitle: string; imgSrc: string; linkURL: string };
 

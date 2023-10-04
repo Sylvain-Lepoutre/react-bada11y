@@ -1,5 +1,5 @@
-import { Header } from "../components/headers/Header";
-import { Main } from "../components/main/Main";
+import { Header } from "../components/UI/headers/Header";
+import { Main } from "../components/UI/main/Main";
 import { BadFormConclusion } from "../components/pages/persona1step1/BadFormConclusion";
 import { BadFormIntro } from "../components/pages/persona1step1/BadFormIntro";
 import { BadFormNoSemanticCode } from "../components/pages/persona1step1/BadFormNoSemanticCode";

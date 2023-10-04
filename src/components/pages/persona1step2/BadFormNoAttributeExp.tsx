@@ -1,8 +1,8 @@
-import { Heading2 } from "../../headings/Heading2";
-import { KeyBoardInput } from "../../keyboard-inputs/KeyboardInput";
-import { Paragraph } from "../../paragraph/Paragraph";
-import { Section } from "../../sections/Section";
-import { HtmlTag } from "../../tags/HtmlTag";
+import { Heading2 } from "../../UI/headings/Heading2";
+import { KeyBoardInput } from "../../UI/keyboard-inputs/KeyboardInput";
+import { Paragraph } from "../../UI/paragraph/Paragraph";
+import { Section } from "../../UI/sections/Section";
+import { HtmlTag } from "../../UI/tags/HtmlTag";
 
 export const BadFormNoAttributeExp = () => {
   return (

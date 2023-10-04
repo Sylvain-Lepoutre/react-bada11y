@@ -1,5 +1,5 @@
-import { Heading3 } from "../../headings/Heading3";
-import { Paragraph } from "../../paragraph/Paragraph";
+import { Heading3 } from "../../UI/headings/Heading3";
+import { Paragraph } from "../../UI/paragraph/Paragraph";
 
 type Props = { cardTitle: string; cardContent: string };
 

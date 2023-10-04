@@ -1,5 +1,5 @@
-import { Paragraph } from "../../paragraph/Paragraph";
-import { Section } from "../../sections/Section";
+import { Paragraph } from "../../UI/paragraph/Paragraph";
+import { Section } from "../../UI/sections/Section";
 
 type Props = {
   introContent: string;

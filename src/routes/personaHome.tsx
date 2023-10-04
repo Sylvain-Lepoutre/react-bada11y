@@ -1,5 +1,5 @@
-import { Header } from "../components/headers/Header";
-import { Main } from "../components/main/Main";
+import { Header } from "../components/UI/headers/Header";
+import { Main } from "../components/UI/main/Main";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { IntroSection } from "../components/pages/personaHome/IntroSection";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";

@@ -1,7 +1,7 @@
-import { Heading1 } from "../components/headings/Heading1";
-import { ButtonLink } from "../components/links/ButtonLink";
-import { Main } from "../components/main/Main";
-import { Section } from "../components/sections/Section";
+import { Heading1 } from "../components/UI/headings/Heading1";
+import { ButtonLink } from "../components/UI/links/ButtonLink";
+import { Main } from "../components/UI/main/Main";
+import { Section } from "../components/UI/sections/Section";
 
 export const Wip = () => (
   <Main>

@@ -1,4 +1,4 @@
-import { Header } from "../../headers/Header";
+import { Header } from "../../UI/headers/Header";
 
 export const HeaderRoot = () => {
   return (

@@ -1,4 +1,4 @@
-import { Main } from "../components/main/Main";
+import { Main } from "../components/UI/main/Main";
 import { HeaderRoot } from "../components/pages/root/HeaderRoot";
 import { IntroSection } from "../components/pages/root/IntroSection";
 import { ObjectiveSection } from "../components/pages/root/ObjectiveSection";
