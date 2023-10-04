@@ -55,7 +55,7 @@ export const BadFormNoSemanticSectionExp = () => {
           De plus nous n’avons pas utilisé de balise <HtmlTag tagName="form" />{" "}
           pour que l’utilisateur puisse se rendre plus rapidement au fomulaire.
         </p>
-        <p className="{pStyles">
+        <p className={pStyles}>
           Nous devons utiliser des balises <HtmlTag tagName="label" /> afin que
           les technologies d’assistance comprennent que le champ de saisi est
           lié au label pour indiquer quelle information doit indiquer
