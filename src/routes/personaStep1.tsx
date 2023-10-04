@@ -25,17 +25,22 @@ export const PersonaStep1 = ({
     <>
       <Header heading={personaName} textContent={personaStep1Title} />
       <main className="mx-auto my-12 w-11/12">
-        {personaName === "Djebrine" ? <BadFormIntro /> : null}
+        {personaName === "Djebrine" && (
+          <>
+            <BadFormIntro />
+            <BadFormNoSemanticSection />
+            <BadFormNoSemanticSectionExp />
+            <BadFormNoSemanticCode />
+            <BadFormConclusion />
+          </>
+        )}
 
-        {personaName === "Djebrine" ? <BadFormNoSemanticSection /> : null}
-        {personaName === "Sophie" ? <BadShoppingNoFocusSection /> : null}
-
-        {personaName === "Djebrine" ? <BadFormNoSemanticSectionExp /> : null}
-        {personaName === "Sophie" ? <BadShoppingNoFocusSectionExp /> : null}
-
-        {personaName === "Djebrine" ? <BadFormNoSemanticCode /> : null}
-
-        {personaName === "Djebrine" ? <BadFormConclusion /> : null}
+        {personaName === "Sophie" && (
+          <>
+            <BadShoppingNoFocusSection />
+            <BadShoppingNoFocusSectionExp />
+          </>
+        )}
 
         <DivLink
           labelLink1="Accueil"
