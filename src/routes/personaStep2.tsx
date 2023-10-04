@@ -1,4 +1,5 @@
 import { Header } from "../components/headers/Header";
+import { Main } from "../components/main/Main";
 import { BadFormNoAttribute } from "../components/pages/persona1step2/BadFormNoAttribute";
 import { BadFormNoAttributeCode } from "../components/pages/persona1step2/BadFormNoAttributeCode";
 import { BadFormNoAttributeConclusion } from "../components/pages/persona1step2/BadFormNoAttributeConclusion";
@@ -16,7 +17,7 @@ export const PersonaStep2 = ({ personaName, personaStep2Title }: Props) => {
     <>
       <Header heading={personaName} textContent={personaStep2Title} />
 
-      <main className="mx-auto my-12 w-11/12">
+      <Main>
         {personaName === "Djebrine" && (
           <>
             <BadFormNoAttribute />
@@ -34,7 +35,7 @@ export const PersonaStep2 = ({ personaName, personaStep2Title }: Props) => {
           urlLink1="/"
           urlLink2="/wip"
         />
-      </main>
+      </Main>
     </>
   );
 };

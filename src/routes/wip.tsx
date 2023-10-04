@@ -1,9 +1,10 @@
 import { Heading1 } from "../components/headings/Heading1";
 import { ButtonLink } from "../components/links/ButtonLink";
+import { Main } from "../components/main/Main";
 import { Section } from "../components/sections/Section";
 
 export const Wip = () => (
-  <main className="mx-auto my-12 w-11/12">
+  <Main>
     <Section>
       <Heading1>Work in Progress</Heading1>
     </Section>
@@ -15,5 +16,5 @@ export const Wip = () => (
         url="/"
       />
     </div>
-  </main>
+  </Main>
 );

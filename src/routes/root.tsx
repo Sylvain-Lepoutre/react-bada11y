@@ -1,3 +1,4 @@
+import { Main } from "../components/main/Main";
 import { HeaderRoot } from "../components/pages/root/HeaderRoot";
 import { IntroSection } from "../components/pages/root/IntroSection";
 import { ObjectiveSection } from "../components/pages/root/ObjectiveSection";
@@ -15,13 +16,13 @@ export const Root = () => {
   return (
     <>
       <HeaderRoot />
-      <main className="mx-auto my-12 w-11/12 ">
+      <Main>
         <IntroSection />
 
         <PersonaSection />
 
         <ObjectiveSection />
-      </main>
+      </Main>
     </>
   );
 };

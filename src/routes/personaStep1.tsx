@@ -1,4 +1,5 @@
 import { Header } from "../components/headers/Header";
+import { Main } from "../components/main/Main";
 import { BadFormConclusion } from "../components/pages/persona1step1/BadFormConclusion";
 import { BadFormIntro } from "../components/pages/persona1step1/BadFormIntro";
 import { BadFormNoSemanticCode } from "../components/pages/persona1step1/BadFormNoSemanticCode";
@@ -24,7 +25,7 @@ export const PersonaStep1 = ({
   return (
     <>
       <Header heading={personaName} textContent={personaStep1Title} />
-      <main className="mx-auto my-12 w-11/12">
+      <Main>
         {personaName === "Djebrine" && (
           <>
             <BadFormIntro />
@@ -50,7 +51,7 @@ export const PersonaStep1 = ({
           urlLink1="/"
           urlLink2={`/persona${personaId}/step2`}
         />
-      </main>
+      </Main>
     </>
   );
 };
