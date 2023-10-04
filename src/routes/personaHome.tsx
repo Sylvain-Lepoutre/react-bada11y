@@ -1,7 +1,7 @@
-import { Header } from "../components/UI/headers/Header";
-import { Main } from "../components/UI/main/Main";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { IntroSection } from "../components/pages/personaHome/IntroSection";
+import { Header } from "../components/UI/headers/Header";
+import { Main } from "../components/UI/main/Main";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = { personaName: string; personaIntro: string; personaId: number };
