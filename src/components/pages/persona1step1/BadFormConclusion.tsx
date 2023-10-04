@@ -1,7 +1,6 @@
+import { pStyles } from "../../../routes/root";
 import { Heading2 } from "../../headings/Heading2";
 import { Section } from "../../sections/Section";
-
-import { pStyles } from "../../../routes/root";
 
 export const BadFormConclusion = () => {
   return (
