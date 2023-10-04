@@ -1,7 +1,11 @@
 import { Header } from "../components/headers/Header";
 import { BadFormNoAttribute } from "../components/pages/persona1step2/BadFormNoAttribute";
 
-type Props = { personaName: string; personaStep2Title: string };
+type Props = {
+  personaName: string;
+  personaStep2Title: string;
+  personaId: number;
+};
 
 export const PersonaStep2 = ({ personaName, personaStep2Title }: Props) => {
   return (
