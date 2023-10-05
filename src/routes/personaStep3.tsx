@@ -1,6 +1,7 @@
+import { A11yForm } from "../components/pages/persona1step3/A11yForm";
+import { A11FormCode } from "../components/pages/persona1step3/A11yFormCode";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
-import { A11yForm } from "../components/pages/persona1step3/A11yForm";
 
 type Props = {
   personaName: string;
@@ -17,6 +18,7 @@ export const PersonaStep3 = ({ personaName, personaStep3Title }: Props) => {
         {personaName === "Djebrine" && (
           <>
             <A11yForm />
+            <A11FormCode />
           </>
         )}
       </Main>

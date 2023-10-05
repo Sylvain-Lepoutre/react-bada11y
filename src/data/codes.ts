@@ -54,4 +54,34 @@ export const codes = {
 
     <input type="submit" value="Soumettre l'inscription" />
 </form>`,
+  A11yForm: `<form>
+    <h3>Inscription</h3>
+
+    <div>
+        <label for="name">Nom</label>
+        <input id="name" type="text">
+    </div>
+
+    <div>
+        <label for="firstname">Prénom</label>
+        <input id="firstname" type="text">
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <input id="email" type="email">
+    </div>
+
+    <div>
+        <label for="password">Mot de passe</label>
+        <input id="password" type="password">
+    </div>
+
+    <div>
+        <label for="confirm">Vérification du Mot de passe</label>
+        <input id="confirm" type="password">
+    </div>
+
+    <button type="submit">Soumettre l’inscription</button>
+</form>`,
 };

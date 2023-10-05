@@ -1,7 +1,7 @@
 import type { MouseEventHandler } from "react";
 
-import { Section } from "../../UI/sections/Section";
 import { Heading2 } from "../../UI/headings/Heading2";
+import { Section } from "../../UI/sections/Section";
 
 export const A11yForm = () => {
   const handleSubmit: MouseEventHandler<HTMLButtonElement> = (event) => {
