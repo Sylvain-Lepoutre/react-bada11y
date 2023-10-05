@@ -3,6 +3,7 @@ import { A11FormCode } from "../components/pages/persona1step3/A11yFormCode";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   personaName: string;
@@ -11,6 +12,8 @@ type Props = {
 };
 
 export const PersonaStep3 = ({ personaName, personaStep3Title }: Props) => {
+  useDocumentTitle(`${personaStep3Title} - Inotest`);
+
   return (
     <>
       <Header heading={personaName} textContent={personaStep3Title} />
