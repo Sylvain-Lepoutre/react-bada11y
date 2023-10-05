@@ -8,8 +8,8 @@ export const A11yFormExp = () => {
   return (
     <Section>
       <Heading2>Explications</Heading2>
-      <div>
-        <ol className="rounded-xl border border-black p-4">
+      <div className="rounded-xl border bg-gray-400 p-4">
+        <ol>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
             <span>Nom édition vide</span>

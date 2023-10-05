@@ -12,7 +12,7 @@ export const A11yForm = () => {
   return (
     <Section>
       <Heading2>Affichage dans le navigateur</Heading2>
-      <form className="mx-auto my-4 w-3/4 rounded-lg bg-gray-200 p-4">
+      <form className="mx-auto my-4 rounded-lg bg-gray-200 p-4">
         <h3 className="text-center">Inscription</h3>
 
         <div className="m-4 flex flex-col">

@@ -1,4 +1,4 @@
-import { atomOneDark, CodeBlock } from "react-code-blocks";
+import { a11yDark, CodeBlock } from "react-code-blocks";
 
 import { codes } from "../../../data/codes";
 import { Heading2 } from "../../UI/headings/Heading2";
@@ -8,7 +8,7 @@ export const A11FormCode = () => {
   return (
     <Section>
       <Heading2>Code</Heading2>
-      <CodeBlock language="html" text={codes.A11yForm} theme={atomOneDark} />
+      <CodeBlock language="html" text={codes.A11yForm} theme={a11yDark} />
     </Section>
   );
 };
