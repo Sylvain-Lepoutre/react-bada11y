@@ -6,7 +6,7 @@ type Props = {
 
 export const Section = ({ children }: Props) => {
   return (
-    <section className="my-10 rounded-2xl bg-white p-4 shadow-Custom">
+    <section className="my-10 rounded-2xl bg-white p-4 shadow-Custom lg:px-8">
       {children}
     </section>
   );

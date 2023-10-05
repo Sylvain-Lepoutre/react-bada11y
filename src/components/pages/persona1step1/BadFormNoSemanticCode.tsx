@@ -1,8 +1,8 @@
 import { atomOneDark, CodeBlock } from "react-code-blocks";
 
 import { codes } from "../../../data/codes";
-import { Heading2 } from "../../headings/Heading2";
-import { Section } from "../../sections/Section";
+import { Heading2 } from "../../UI/headings/Heading2";
+import { Section } from "../../UI/sections/Section";
 
 export const BadFormNoSemanticCode = () => {
   return (

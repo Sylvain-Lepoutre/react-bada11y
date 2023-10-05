@@ -1,5 +1,5 @@
-import { Heading2 } from "../../headings/Heading2";
-import { Section } from "../../sections/Section";
+import { Heading2 } from "../../UI/headings/Heading2";
+import { Section } from "../../UI/sections/Section";
 import { ObjectiveCard } from "./ObjectiveCard";
 
 export const ObjectiveSection = () => {

@@ -1,6 +1,7 @@
-import { Header } from "../components/headers/Header";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { IntroSection } from "../components/pages/personaHome/IntroSection";
+import { Header } from "../components/UI/headers/Header";
+import { Main } from "../components/UI/main/Main";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = { personaName: string; personaIntro: string; personaId: number };
@@ -15,7 +16,7 @@ export const PersonaHome = ({
     <>
       <Header heading={personaName} />
 
-      <main className="mx-auto my-12 w-11/12">
+      <Main>
         <IntroSection introContent={personaIntro} />
 
         <DivLink
@@ -26,7 +27,7 @@ export const PersonaHome = ({
           urlLink1="/"
           urlLink2={`/persona${personaId}/step1`}
         />
-      </main>
+      </Main>
     </>
   );
 };

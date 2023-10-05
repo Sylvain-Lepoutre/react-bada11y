@@ -1,8 +1,8 @@
-import { pStyles } from "../../../routes/root";
-import { Heading2 } from "../../headings/Heading2";
-import { KeyBoardInput } from "../../keyboard-inputs/KeyboardInput";
-import { Section } from "../../sections/Section";
-import { HtmlTag } from "../../tags/HtmlTag";
+import { Heading2 } from "../../UI/headings/Heading2";
+import { KeyBoardInput } from "../../UI/keyboard-inputs/KeyboardInput";
+import { Paragraph } from "../../UI/paragraph/Paragraph";
+import { Section } from "../../UI/sections/Section";
+import { HtmlTag } from "../../UI/tags/HtmlTag";
 
 export const BadFormNoAttributeExp = () => {
   return (
@@ -33,12 +33,12 @@ export const BadFormNoAttributeExp = () => {
         </ol>
       </div>
 
-      <p className={pStyles}>
+      <Paragraph>
         Nous obtenons le même résultat pour le lecteur d’écran concernant les
         champs <HtmlTag tagName="input" />. Nous avons bien utilisé des balises{" "}
         <HtmlTag tagName="label" />, mais nous n’avons aucune indication pour
         les relier aux balises <HtmlTag tagName="input" /> leurs correspondant.
-      </p>
+      </Paragraph>
     </Section>
   );
 };

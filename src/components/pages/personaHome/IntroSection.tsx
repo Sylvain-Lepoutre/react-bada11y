@@ -1,5 +1,5 @@
-import { pStyles } from "../../../routes/root";
-import { Section } from "../../sections/Section";
+import { Paragraph } from "../../UI/paragraph/Paragraph";
+import { Section } from "../../UI/sections/Section";
 
 type Props = {
   introContent: string;
@@ -8,7 +8,7 @@ type Props = {
 export const IntroSection = ({ introContent }: Props) => {
   return (
     <Section>
-      <p className={pStyles}>{introContent}</p>
+      <Paragraph>{introContent}</Paragraph>
     </Section>
   );
 };

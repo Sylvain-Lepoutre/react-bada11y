@@ -1,6 +1,6 @@
 import { personas } from "../../../data/personas";
-import { Heading2 } from "../../headings/Heading2";
-import { Section } from "../../sections/Section";
+import { Heading2 } from "../../UI/headings/Heading2";
+import { Section } from "../../UI/sections/Section";
 import { PersonaCard } from "./PersonaCard";
 
 export const PersonaSection = () => {
@@ -8,7 +8,7 @@ export const PersonaSection = () => {
     <Section>
       <Heading2> Choisissez Votre Persona de sensibilisation</Heading2>
 
-      <ul className="my-8 grid gap-12 text-center sm:grid-cols-2 xl:grid-cols-4">
+      <ul className="my-8 grid gap-12 text-center md:grid-cols-2 lg:my-12  ">
         {personas.map((persona) => (
           <PersonaCard
             cardTitle={persona.cardTitle}

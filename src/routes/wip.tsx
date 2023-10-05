@@ -1,19 +1,24 @@
-import { Heading1 } from "../components/headings/Heading1";
-import { ButtonLink } from "../components/links/ButtonLink";
-import { Section } from "../components/sections/Section";
+import { Heading1 } from "../components/UI/headings/Heading1";
+import { ButtonLink } from "../components/UI/links/ButtonLink";
+import { Main } from "../components/UI/main/Main";
+import { Section } from "../components/UI/sections/Section";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
-export const Wip = () => (
-  <main className="mx-auto my-12 w-11/12">
-    <Section>
-      <Heading1>Work in Progress</Heading1>
-    </Section>
+export const Wip = () => {
+  useDocumentTitle("Work In Progess - Inotest");
+  return (
+    <Main>
+      <Section>
+        <Heading1>Work in Progress</Heading1>
+      </Section>
 
-    <div className="text-center">
-      <ButtonLink
-        label="Accueil"
-        srLabel="Revenir à la page d'accueil de Inotest"
-        url="/"
-      />
-    </div>
-  </main>
-);
+      <div className="text-center">
+        <ButtonLink
+          label="Accueil"
+          srLabel="Revenir à la page d'accueil de Inotest"
+          url="/"
+        />
+      </div>
+    </Main>
+  );
+};

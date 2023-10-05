@@ -5,5 +5,5 @@ type Props = {
 };
 
 export const Heading2 = ({ children }: Props) => {
-  return <h2 className="my-4 text-center text-2xl">{children}</h2>;
+  return <h2 className="my-4 text-center text-2xl lg:text-3xl">{children}</h2>;
 };
