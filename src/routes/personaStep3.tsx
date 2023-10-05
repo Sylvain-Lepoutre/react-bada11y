@@ -1,5 +1,6 @@
 import { A11yForm } from "../components/pages/persona1step3/A11yForm";
 import { A11FormCode } from "../components/pages/persona1step3/A11yFormCode";
+import { A11yFormExp } from "../components/pages/persona1step3/A11yFormExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
@@ -22,6 +23,7 @@ export const PersonaStep3 = ({ personaName, personaStep3Title }: Props) => {
         {personaName === "Djebrine" && (
           <>
             <A11yForm />
+            <A11yFormExp />
             <A11FormCode />
           </>
         )}
