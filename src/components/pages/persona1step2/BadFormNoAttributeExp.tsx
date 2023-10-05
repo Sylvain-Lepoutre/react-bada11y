@@ -2,14 +2,15 @@ import { Heading2 } from "../../UI/headings/Heading2";
 import { KeyBoardInput } from "../../UI/keyboard-inputs/KeyboardInput";
 import { Paragraph } from "../../UI/paragraph/Paragraph";
 import { Section } from "../../UI/sections/Section";
+import { SrDisplay } from "../../UI/sr-display/SrDisplay";
 import { HtmlTag } from "../../UI/tags/HtmlTag";
 
 export const BadFormNoAttributeExp = () => {
   return (
     <Section>
       <Heading2>Explications</Heading2>
-      <div>
-        <ol className="rounded-xl border border-black p-4">
+      <SrDisplay>
+        <ol>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
             <span>édition vide</span>
@@ -31,7 +32,7 @@ export const BadFormNoAttributeExp = () => {
             <span>édition vide</span>
           </li>
         </ol>
-      </div>
+      </SrDisplay>
 
       <Paragraph>
         Nous obtenons le même résultat pour le lecteur d’écran concernant les
