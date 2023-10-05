@@ -68,7 +68,7 @@ export const codes = {
     </div>
 
     <div>
-        <label for="email">Email</label>
+        <label for="email">E-mail</label>
         <input id="email" type="email">
     </div>
 

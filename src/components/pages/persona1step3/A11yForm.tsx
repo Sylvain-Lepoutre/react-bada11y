@@ -26,7 +26,7 @@ export const A11yForm = () => {
         </div>
 
         <div className="m-4 flex flex-col">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">E-mail</label>
           <input className="rounded-lg px-2" id="email" type="email" />
         </div>
 
