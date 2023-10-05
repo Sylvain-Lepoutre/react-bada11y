@@ -32,6 +32,12 @@ export const BadFormNoAttribute = () => {
           <input className="rounded-lg px-2" type="password" />
         </div>
 
+        <div className="m-4 flex flex-col">
+          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+          <label>Vérification du Mot de passe</label>
+          <input className="rounded-lg px-2" type="password" />
+        </div>
+
         <input
           className="mx-auto block rounded-lg bg-gray-700 p-2 text-white"
           type="submit"
