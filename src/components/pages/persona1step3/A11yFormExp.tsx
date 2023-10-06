@@ -13,23 +13,25 @@ export const A11yFormExp = () => {
         <ol>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>Nom édition vide</span>
+            <span>Nom édition obligatoire vide</span>
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>Prénom édition vide</span>
+            <span>Prénom édition obligatoire vide</span>
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>Email édition vide</span>
+            <span>Email édition obligatoire vide</span>
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>Mot de Passe édition protégé vide</span>
+            <span>Mot de Passe édition protégé obligatoire vide</span>
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>Vérification du mot de Passe édition protégé vide</span>
+            <span>
+              Vérification du mot de Passe édition protégé obligatoire vide
+            </span>
           </li>
         </ol>
       </SrDisplay>
@@ -39,6 +41,10 @@ export const A11yFormExp = () => {
         sémantiques et les bons attributs, les champs{" "}
         <HtmlTag tagName="input" /> deviennent accessible, l’utilisateur a
         l’information sur ce qui lui est demandé sur le champ où il se situe.
+      </Paragraph>
+      <Paragraph>
+        De plus, avec l’attribut aria-required, l’utlisateur sait lorsqu’il est
+        sur le champ de saisie, que le champ est obligatoire.
       </Paragraph>
     </Section>
   );

@@ -13,31 +13,59 @@ export const A11yForm = () => {
     <Section>
       <Heading2>Affichage dans le navigateur</Heading2>
       <form className="mx-auto my-4 rounded-lg bg-gray-200 p-4">
-        <h3 className="text-center">Inscription</h3>
+        <h3 className="flex flex-col text-center">
+          Inscription
+          <span className="text-sm">(tout les champs sont obligatoires)</span>
+        </h3>
 
         <div className="m-4 flex flex-col">
           <label htmlFor="name">Nom</label>
-          <input className="rounded-lg px-2" id="name" type="text" />
+          <input
+            aria-required
+            className="rounded-lg px-2"
+            id="name"
+            type="text"
+          />
         </div>
 
         <div className="m-4 flex flex-col">
           <label htmlFor="firstname">Prénom</label>
-          <input className="rounded-lg px-2" id="firstname" type="text" />
+          <input
+            aria-required
+            className="rounded-lg px-2"
+            id="firstname"
+            type="text"
+          />
         </div>
 
         <div className="m-4 flex flex-col">
           <label htmlFor="email">E-mail</label>
-          <input className="rounded-lg px-2" id="email" type="email" />
+          <input
+            aria-required
+            className="rounded-lg px-2"
+            id="email"
+            type="email"
+          />
         </div>
 
         <div className="m-4 flex flex-col">
           <label htmlFor="password">Mot de passe</label>
-          <input className="rounded-lg px-2" id="password" type="password" />
+          <input
+            aria-required
+            className="rounded-lg px-2"
+            id="password"
+            type="password"
+          />
         </div>
 
         <div className="m-4 flex flex-col">
           <label htmlFor="confirm">Vérification du Mot de passe</label>
-          <input className="rounded-lg px-2" id="confirm" type="password" />
+          <input
+            aria-required
+            className="rounded-lg px-2"
+            id="confirm"
+            type="password"
+          />
         </div>
 
         <button
