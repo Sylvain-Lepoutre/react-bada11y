@@ -79,6 +79,16 @@ export const router = createBrowserRouter([
     ),
   },
   {
+    path: "/persona2/step2",
+    element: (
+      <PersonaStep2
+        personaId={personas[1].id}
+        personaName={personas[1].name}
+        personaStep2Title={personas[1].step2Title}
+      />
+    ),
+  },
+  {
     path: "/persona3",
     element: (
       <PersonaHome

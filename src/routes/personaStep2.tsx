@@ -33,6 +33,12 @@ export const PersonaStep2 = ({
           </>
         )}
 
+        {personaName === "Sophie" && (
+          <>
+            <h1>Work In Progress</h1>
+          </>
+        )}
+
         <DivLink
           labelLink1="Accueil"
           labelLink2="Continuer"
