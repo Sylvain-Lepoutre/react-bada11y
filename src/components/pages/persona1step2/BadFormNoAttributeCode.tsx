@@ -1,4 +1,4 @@
-import { atomOneDark, CodeBlock } from "react-code-blocks";
+import { a11yDark, CodeBlock } from "react-code-blocks";
 
 import { codes } from "../../../data/codes";
 import { Heading2 } from "../../UI/headings/Heading2";
@@ -11,7 +11,7 @@ export const BadFormNoAttributeCode = () => {
       <CodeBlock
         language="html"
         text={codes.BadFormNoAttribute}
-        theme={atomOneDark}
+        theme={a11yDark}
       />
     </Section>
   );
