@@ -7,7 +7,7 @@ import { HtmlTag } from "../../UI/tags/HtmlTag";
 
 //TODO revoir pour l'affichage des commandes effectuées
 
-export const BadFormNoSemanticSectionExp = () => {
+export const BadFormNoSemanticExp = () => {
   return (
     <Section>
       <Heading2>Explications</Heading2>

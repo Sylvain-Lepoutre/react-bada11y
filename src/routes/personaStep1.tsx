@@ -1,10 +1,10 @@
-import { BadFormConclusion } from "../components/pages/persona1step1/BadFormConclusion";
-import { BadFormIntro } from "../components/pages/persona1step1/BadFormIntro";
+import { BadFormNoSemanticConclusion } from "../components/pages/persona1step1/BadFormNoSemanticConclusion";
+import { BadFormNoSemanticIntro } from "../components/pages/persona1step1/BadFormNoSemanticIntro";
 import { BadFormNoSemanticCode } from "../components/pages/persona1step1/BadFormNoSemanticCode";
-import { BadFormNoSemanticSection } from "../components/pages/persona1step1/BadFormNoSemanticSection";
-import { BadFormNoSemanticSectionExp } from "../components/pages/persona1step1/BadFormNoSemanticSectionExp";
-import { BadShoppingNoFocusSection } from "../components/pages/persona2step1/BadShoppingNoFocusSection";
-import { BadShoppingNoFocusSectionExp } from "../components/pages/persona2step1/BadShoppingNoFocusSectionExp";
+import { BadFormNoSemantic } from "../components/pages/persona1step1/BadFormNoSemantic";
+import { BadFormNoSemanticExp } from "../components/pages/persona1step1/BadFormNoSemanticExp";
+import { BadShoppingNoFocus } from "../components/pages/persona2step1/BadShoppingNoFocus";
+import { BadShoppingNoFocusExp } from "../components/pages/persona2step1/BadShoppingNoFocusExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
@@ -28,18 +28,18 @@ export const PersonaStep1 = ({
       <Main>
         {personaName === "Djebrine" && (
           <>
-            <BadFormIntro />
-            <BadFormNoSemanticSection />
-            <BadFormNoSemanticSectionExp />
+            <BadFormNoSemanticIntro />
+            <BadFormNoSemantic />
+            <BadFormNoSemanticExp />
             <BadFormNoSemanticCode />
-            <BadFormConclusion />
+            <BadFormNoSemanticConclusion />
           </>
         )}
 
         {personaName === "Sophie" && (
           <>
-            <BadShoppingNoFocusSection />
-            <BadShoppingNoFocusSectionExp />
+            <BadShoppingNoFocus />
+            <BadShoppingNoFocusExp />
           </>
         )}
 
