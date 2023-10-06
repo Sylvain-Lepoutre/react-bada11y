@@ -6,7 +6,7 @@ export const BadFormNoAttribute = () => {
     <Section>
       <Heading2>Affichage dans le navigateur</Heading2>
       <form className="mx-auto my-4 w-3/4 rounded-lg bg-gray-200 p-4">
-        <h2 className="text-center">Inscription</h2>
+        <h3 className="text-center">Inscription</h3>
 
         <div className="m-4 flex flex-col">
           {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
@@ -29,6 +29,12 @@ export const BadFormNoAttribute = () => {
         <div className="m-4 flex flex-col">
           {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
           <label>Mot de passe</label>
+          <input className="rounded-lg px-2" type="password" />
+        </div>
+
+        <div className="m-4 flex flex-col">
+          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+          <label>Vérification du Mot de passe</label>
           <input className="rounded-lg px-2" type="password" />
         </div>
 
