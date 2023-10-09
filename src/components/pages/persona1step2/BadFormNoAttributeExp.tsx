@@ -25,11 +25,11 @@ export const BadFormNoAttributeExp = () => {
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>édition vide</span>
+            <span>édition protégé vide</span>
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>édition vide</span>
+            <span>édition protégé vide</span>
           </li>
         </ol>
       </SrDisplay>

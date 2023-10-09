@@ -17,6 +17,15 @@ export const BadFormNoSemanticExp = () => {
         autre, voici ce que lui dit le lecteur d’écran lorsqu’il parcourt ce
         formulaire
       </Paragraph>
+      <video controls width="800">
+        <source src="/videos/test-done.mp4" type="video/mp4" />
+        <track
+          default
+          kind="subtitles"
+          src="/videos/test-subtitle.vtt"
+          srcLang="fr"
+        />
+      </video>
       <SrDisplay>
         <ol>
           <li className="my-4">
@@ -33,11 +42,11 @@ export const BadFormNoSemanticExp = () => {
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>édition vide</span>
+            <span>édition protégé vide</span>
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>édition vide</span>
+            <span>édition protégé vide</span>
           </li>
         </ol>
       </SrDisplay>
