@@ -32,7 +32,7 @@ export const personas: Persona[] = [
     intro:
       "Sophie est une comptable de 42 ans. Elle lutte contre de sévères troubles musculo-squelettiques. Ses douleurs l'empeche d'utiliser une souris, elle navigue à l'aide du clavier.",
     step1Title: "Etape 1 : Shopping en Ligne",
-    step2Title: "Work In Progress",
+    step2Title: "Etape 2 : Shopping en Ligne accessible",
     step3Title: "Work In Progress",
   },
   {

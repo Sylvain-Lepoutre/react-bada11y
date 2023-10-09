@@ -2,6 +2,8 @@ import { BadFormNoAttribute } from "../components/pages/persona1step2/BadFormNoA
 import { BadFormNoAttributeCode } from "../components/pages/persona1step2/BadFormNoAttributeCode";
 import { BadFormNoAttributeConclusion } from "../components/pages/persona1step2/BadFormNoAttributeConclusion";
 import { BadFormNoAttributeExp } from "../components/pages/persona1step2/BadFormNoAttributeExp";
+import { A11yShopping } from "../components/pages/persona2step2/A11yShopping";
+import { A11yShoppingExp } from "../components/pages/persona2step2/A11yShoppingExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
@@ -30,6 +32,13 @@ export const PersonaStep2 = ({
             <BadFormNoAttributeExp />
             <BadFormNoAttributeCode />
             <BadFormNoAttributeConclusion />
+          </>
+        )}
+
+        {personaName === "Sophie" && (
+          <>
+            <A11yShopping />
+            <A11yShoppingExp />
           </>
         )}
 
