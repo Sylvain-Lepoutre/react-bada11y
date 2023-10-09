@@ -19,8 +19,8 @@ export const BadFormNoSemanticExp = () => {
         formulaire
       </Paragraph>
       <VideoDisplay
-        trackSrc="/videos/test-subtitle.vtt"
-        videoSrc="/videos/test-done.mp4"
+        trackSrc="/videos/BadFormNoSemantic.vtt"
+        videoSrc="/videos/BadFormNoSemantic.mp4"
       />
       <SrDisplay>
         <ol>
