@@ -5,7 +5,7 @@ type Props = {
 
 export const VideoDisplay = ({ videoSrc, trackSrc }: Props) => {
   return (
-    <video className="my-4" controls width="800">
+    <video className="mx-auto my-4" controls width="800">
       <source src={videoSrc} type="video/mp4" />
       <track default kind="captions" src={trackSrc} srcLang="fr" />
     </video>
