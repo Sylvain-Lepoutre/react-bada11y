@@ -4,6 +4,7 @@ import { Paragraph } from "../../UI/paragraph/Paragraph";
 import { Section } from "../../UI/sections/Section";
 import { SrDisplay } from "../../UI/sr-display/SrDisplay";
 import { HtmlTag } from "../../UI/tags/HtmlTag";
+import { VideoDisplay } from "../../UI/videos/VideoDisplay";
 
 //TODO revoir pour l'affichage des commandes effectuées
 
@@ -17,15 +18,10 @@ export const BadFormNoSemanticExp = () => {
         autre, voici ce que lui dit le lecteur d’écran lorsqu’il parcourt ce
         formulaire
       </Paragraph>
-      <video controls width="800">
-        <source src="/videos/test-done.mp4" type="video/mp4" />
-        <track
-          default
-          kind="subtitles"
-          src="/videos/test-subtitle.vtt"
-          srcLang="fr"
-        />
-      </video>
+      <VideoDisplay
+        videoSrc="/videos/test-done.mp4"
+        trackSrc="/videos/test-subtitle.vtt"
+      />
       <SrDisplay>
         <ol>
           <li className="my-4">
