@@ -8,6 +8,7 @@ type Persona = {
   step1Title: string;
   step2Title: string;
   step3Title: string;
+  step4Title: string;
 };
 
 export const personas: Persona[] = [
@@ -22,6 +23,7 @@ export const personas: Persona[] = [
     step1Title: "Etape 1 : Formulaire d'inscription non sémantique",
     step2Title: "Etape 2 : Formulaire d'inscription sans attribut",
     step3Title: "Etape 3 : Formulaire d'inscription accessible",
+    step4Title: "Etape 4 : Tableau d'évènement non sémantique",
   },
   {
     id: 2,
