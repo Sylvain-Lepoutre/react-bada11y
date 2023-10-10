@@ -7,6 +7,7 @@ import { Main } from "../components/UI/main/Main";
 type Props = {
   personaName: string;
   personaStep4Title: string;
+  personaId: number;
 };
 
 export const PersonaStep4 = ({ personaName, personaStep4Title }: Props) => {
