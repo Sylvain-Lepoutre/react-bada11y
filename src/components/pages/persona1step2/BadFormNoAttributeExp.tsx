@@ -4,11 +4,16 @@ import { Paragraph } from "../../UI/paragraph/Paragraph";
 import { Section } from "../../UI/sections/Section";
 import { SrDisplay } from "../../UI/sr-display/SrDisplay";
 import { HtmlTag } from "../../UI/tags/HtmlTag";
+import { VideoDisplay } from "../../UI/videos/VideoDisplay";
 
 export const BadFormNoAttributeExp = () => {
   return (
     <Section>
       <Heading2>Explications</Heading2>
+      <VideoDisplay
+        trackFile="BadFormNoAttribute.vtt"
+        videoFile="BadFormNoAttribute.mp4"
+      />
       <SrDisplay>
         <ol>
           <li className="my-4">
@@ -25,11 +30,11 @@ export const BadFormNoAttributeExp = () => {
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>édition vide</span>
+            <span>édition protégé vide</span>
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>édition vide</span>
+            <span>édition protégé vide</span>
           </li>
         </ol>
       </SrDisplay>

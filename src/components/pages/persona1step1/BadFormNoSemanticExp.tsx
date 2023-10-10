@@ -4,6 +4,7 @@ import { Paragraph } from "../../UI/paragraph/Paragraph";
 import { Section } from "../../UI/sections/Section";
 import { SrDisplay } from "../../UI/sr-display/SrDisplay";
 import { HtmlTag } from "../../UI/tags/HtmlTag";
+import { VideoDisplay } from "../../UI/videos/VideoDisplay";
 
 //TODO revoir pour l'affichage des commandes effectuées
 
@@ -17,6 +18,10 @@ export const BadFormNoSemanticExp = () => {
         autre, voici ce que lui dit le lecteur d’écran lorsqu’il parcourt ce
         formulaire
       </Paragraph>
+      <VideoDisplay
+        trackFile="BadFormNoSemantic.vtt"
+        videoFile="BadFormNoSemantic.mp4"
+      />
       <SrDisplay>
         <ol>
           <li className="my-4">
@@ -33,11 +38,11 @@ export const BadFormNoSemanticExp = () => {
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>édition vide</span>
+            <span>édition protégé vide</span>
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>édition vide</span>
+            <span>édition protégé vide</span>
           </li>
         </ol>
       </SrDisplay>
