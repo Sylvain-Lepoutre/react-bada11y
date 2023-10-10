@@ -4,11 +4,13 @@ import { Paragraph } from "../../UI/paragraph/Paragraph";
 import { Section } from "../../UI/sections/Section";
 import { SrDisplay } from "../../UI/sr-display/SrDisplay";
 import { HtmlTag } from "../../UI/tags/HtmlTag";
+import { VideoDisplay } from "../../UI/videos/VideoDisplay";
 
 export const A11yFormExp = () => {
   return (
     <Section>
       <Heading2>Explications</Heading2>
+      <VideoDisplay videoFile="A11yForm.mp4" trackFile="A11yForm.vtt" />
       <SrDisplay>
         <ol>
           <li className="my-4">
