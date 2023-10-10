@@ -11,8 +11,8 @@ export const BadFormNoAttributeExp = () => {
     <Section>
       <Heading2>Explications</Heading2>
       <VideoDisplay
-        videoFile="BadFormNoAttribute.mp4"
         trackFile="BadFormNoAttribute.vtt"
+        videoFile="BadFormNoAttribute.mp4"
       />
       <SrDisplay>
         <ol>

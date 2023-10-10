@@ -10,7 +10,7 @@ export const A11yFormExp = () => {
   return (
     <Section>
       <Heading2>Explications</Heading2>
-      <VideoDisplay videoFile="A11yForm.mp4" trackFile="A11yForm.vtt" />
+      <VideoDisplay trackFile="A11yForm.vtt" videoFile="A11yForm.mp4" />
       <SrDisplay>
         <ol>
           <li className="my-4">
