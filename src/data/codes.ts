@@ -84,4 +84,35 @@ export const codes = {
 
     <button type="submit">Soumettre l’inscription</button>
 </form>`,
+  BadTableNoSemantic: `<div>
+    <div>
+        <div>Évènement</div>
+        <div>Lieu</div>
+        <div>Date</div>
+    </div>
+
+    <div>
+        <div>Atelier sur l’accessibilité web</div>
+        <div>Centre de conférences local</div>
+        <div>15 mars 2024</div>
+    </div>
+
+    <div>
+        <div>Conférence sur les tendances du développement web</div>
+        <div>Bibliothèque communautaire</div>
+        <div>5 avril 2024</div>
+    </div>
+
+    <div>
+        <div>Formation sur les bonnes pratiques en matière d’accessibilité</div>
+        <div>Espace de coworking</div>
+        <div>20 mai 2024</div>
+    </div>
+
+    <div>
+        <div>Table ronde sur l’avenir du développement web</div>
+        <div>Campus universitaire</div>
+        <div>10 juin 2024</div>
+    </div>
+</div>`,
 };

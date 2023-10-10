@@ -1,4 +1,5 @@
 import { BadTableNoSemantic } from "../components/pages/persona1step4/BadTableNoSemantic";
+import { BadTableNoSemanticCode } from "../components/pages/persona1step4/BadTableNoSemanticCode";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
@@ -17,6 +18,7 @@ export const PersonaStep4 = ({ personaName, personaStep4Title }: Props) => {
         {personaName === "Djebrine" && (
           <>
             <BadTableNoSemantic />
+            <BadTableNoSemanticCode />
           </>
         )}
 
