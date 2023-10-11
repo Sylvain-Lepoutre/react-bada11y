@@ -30,8 +30,8 @@ export const PersonaStep1 = ({
           <>
             <BadFormNoSemanticIntro />
             <BadFormNoSemantic />
-            <BadFormNoSemanticExp />
             <BadFormNoSemanticCode />
+            <BadFormNoSemanticExp />
             <BadFormNoSemanticConclusion />
           </>
         )}

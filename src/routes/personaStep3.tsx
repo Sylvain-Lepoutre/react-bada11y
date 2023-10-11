@@ -27,8 +27,8 @@ export const PersonaStep3 = ({
         {personaName === "Djebrine" && (
           <>
             <A11yForm />
-            <A11yFormExp />
             <A11FormCode />
+            <A11yFormExp />
           </>
         )}
 

@@ -29,8 +29,8 @@ export const PersonaStep2 = ({
         {personaName === "Djebrine" && (
           <>
             <BadFormNoAttribute />
-            <BadFormNoAttributeExp />
             <BadFormNoAttributeCode />
+            <BadFormNoAttributeExp />
             <BadFormNoAttributeConclusion />
           </>
         )}
