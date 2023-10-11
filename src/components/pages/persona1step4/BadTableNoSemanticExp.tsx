@@ -2,12 +2,16 @@ import { Heading2 } from "../../UI/headings/Heading2";
 import { KeyBoardInput } from "../../UI/keyboard-inputs/KeyboardInput";
 import { Section } from "../../UI/sections/Section";
 import { SrDisplay } from "../../UI/sr-display/SrDisplay";
+import { VideoDisplay } from "../../UI/video-display/VideoDisplay";
 
 export const BadTableNoSemanticExp = () => {
   return (
     <Section>
       <Heading2>Explications</Heading2>
-
+      <VideoDisplay
+        videoFile="BadTableNoSemantic.mp4"
+        trackFile="BadTableNoSemantic.vtt"
+      />
       <SrDisplay>
         <ol>
           <li className="my-4">
