@@ -1,4 +1,5 @@
 import { BadTableNoAttribute } from "../components/pages/persona1step5/BadTableNoAttribute";
+import { BadTableNoAttributeCode } from "../components/pages/persona1step5/BadTableNoAttributeCode";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
@@ -22,6 +23,7 @@ export const PersonaStep5 = ({
         {personaName === "Djebrine" && (
           <>
             <BadTableNoAttribute />
+            <BadTableNoAttributeCode />
           </>
         )}
 
