@@ -1,7 +1,9 @@
 import { Heading2 } from "../../UI/headings/Heading2";
 import { KeyBoardInput } from "../../UI/keyboard-inputs/KeyboardInput";
+import { Paragraph } from "../../UI/paragraph/Paragraph";
 import { Section } from "../../UI/sections/Section";
 import { SrDisplay } from "../../UI/sr-display/SrDisplay";
+import { HtmlTag } from "../../UI/tags/HtmlTag";
 
 export const BadTableNoAttributeExp = () => {
   return (
@@ -85,6 +87,15 @@ export const BadTableNoAttributeExp = () => {
           </li>
         </ol>
       </SrDisplay>
+
+      <Paragraph>
+        Nous voyons que l’utilisation des balises <HtmlTag tagName="table" />,
+        <HtmlTag tagName="tr" /> ainsi que <HtmlTag tagName="td" /> ont permis
+        au lecteur d’écran de donner plus d’informations concernant la structure
+        du tableau, en indiquant les lignes et les colonnes. Même si sur un
+        tableau de taille plus importante, cela peut rester compliquer de savoir
+        à quoi correspond la cellule en cours de lecture.
+      </Paragraph>
     </Section>
   );
 };
