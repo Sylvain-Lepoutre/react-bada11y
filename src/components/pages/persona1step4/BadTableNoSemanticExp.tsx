@@ -81,7 +81,7 @@ export const BadTableNoSemanticExp = () => {
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="↓" />
-            <span>10 juin 20244</span>
+            <span>10 juin 2024</span>
           </li>
         </ol>
       </SrDisplay>
