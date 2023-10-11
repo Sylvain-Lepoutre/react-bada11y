@@ -11,7 +11,11 @@ type Props = {
   personaId: number;
 };
 
-export const PersonaStep4 = ({ personaName, personaStep4Title }: Props) => {
+export const PersonaStep4 = ({
+  personaName,
+  personaStep4Title,
+  personaId,
+}: Props) => {
   return (
     <>
       <Header heading={personaName} textContent={personaStep4Title} />
@@ -31,7 +35,7 @@ export const PersonaStep4 = ({ personaName, personaStep4Title }: Props) => {
           srLabelLink1="Revenir à la page d'accueil de Inotest"
           srLabelLink2={`Continuer le parcours de ${personaName}`}
           urlLink1="/"
-          urlLink2={`/wip`}
+          urlLink2={`/persona${personaId}/step5`}
         />
       </Main>
     </>
