@@ -9,8 +9,8 @@ export const BadTableNoSemanticExp = () => {
     <Section>
       <Heading2>Explications</Heading2>
       <VideoDisplay
-        videoFile="BadTableNoSemantic.mp4"
         trackFile="BadTableNoSemantic.vtt"
+        videoFile="BadTableNoSemantic.mp4"
       />
       <SrDisplay>
         <ol>

@@ -39,6 +39,7 @@ export const personas: Persona[] = [
     step2Title: "Etape 2 : Shopping en Ligne accessible",
     step3Title: "Work In Progress",
     step4Title: "Work In Progress",
+    step5Title: "Work In Progress",
   },
   {
     id: 3,
@@ -52,6 +53,7 @@ export const personas: Persona[] = [
     step2Title: "Work In Progress",
     step3Title: "Work In Progress",
     step4Title: "Work In Progress",
+    step5Title: "Work In Progress",
   },
   {
     id: 4,
@@ -65,5 +67,6 @@ export const personas: Persona[] = [
     step2Title: "Work In Progress",
     step3Title: "Work In Progress",
     step4Title: "Work In Progress",
+    step5Title: "Work In Progress",
   },
 ];

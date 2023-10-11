@@ -6,9 +6,9 @@ import { PersonaStep1 } from "./routes/personaStep1";
 import { PersonaStep2 } from "./routes/personaStep2";
 import { PersonaStep3 } from "./routes/personaStep3";
 import { PersonaStep4 } from "./routes/personaStep4";
+import { PersonaStep5 } from "./routes/personaStep5";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
-import { PersonaStep5 } from "./routes/personaStep5";
 
 export const router = createBrowserRouter([
   {
