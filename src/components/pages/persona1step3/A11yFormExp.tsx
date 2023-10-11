@@ -4,7 +4,7 @@ import { Paragraph } from "../../UI/paragraph/Paragraph";
 import { Section } from "../../UI/sections/Section";
 import { SrDisplay } from "../../UI/sr-display/SrDisplay";
 import { HtmlTag } from "../../UI/tags/HtmlTag";
-import { VideoDisplay } from "../../UI/videos/VideoDisplay";
+import { VideoDisplay } from "../../UI/video-display/VideoDisplay";
 
 export const A11yFormExp = () => {
   return (
