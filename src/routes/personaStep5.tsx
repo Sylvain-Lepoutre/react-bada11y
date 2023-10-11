@@ -1,5 +1,6 @@
 import { BadTableNoAttribute } from "../components/pages/persona1step5/BadTableNoAttribute";
 import { BadTableNoAttributeCode } from "../components/pages/persona1step5/BadTableNoAttributeCode";
+import { BadTableNoAttributeConclusion } from "../components/pages/persona1step5/BadTableNoAttributeConclusion";
 import { BadTableNoAttributeExp } from "../components/pages/persona1step5/BadTableNoAttributeExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
@@ -26,6 +27,7 @@ export const PersonaStep5 = ({
             <BadTableNoAttribute />
             <BadTableNoAttributeCode />
             <BadTableNoAttributeExp />
+            <BadTableNoAttributeConclusion />
           </>
         )}
 
