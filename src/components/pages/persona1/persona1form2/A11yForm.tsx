@@ -6,7 +6,7 @@ import { Section } from "../../../UI/sections/Section";
 export const A11yForm = () => {
   const handleSubmit: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.preventDefault();
-    console.log("click");
+    console.log("Formulaire envoyé");
   };
 
   return (
@@ -19,11 +19,12 @@ export const A11yForm = () => {
         </h3>
 
         <div className="m-4 flex flex-col">
-          <label htmlFor="name">Nom</label>
+          <label htmlFor="lastname">Nom</label>
           <input
-            aria-required
+            required
             className="rounded-lg px-2"
-            id="name"
+            id="lastname"
+            name="lastname"
             type="text"
           />
         </div>
@@ -31,9 +32,10 @@ export const A11yForm = () => {
         <div className="m-4 flex flex-col">
           <label htmlFor="firstname">Prénom</label>
           <input
-            aria-required
+            required
             className="rounded-lg px-2"
             id="firstname"
+            name="firtsname"
             type="text"
           />
         </div>
@@ -41,9 +43,10 @@ export const A11yForm = () => {
         <div className="m-4 flex flex-col">
           <label htmlFor="email">E-mail</label>
           <input
-            aria-required
+            required
             className="rounded-lg px-2"
             id="email"
+            name="email"
             type="email"
           />
         </div>
@@ -51,19 +54,10 @@ export const A11yForm = () => {
         <div className="m-4 flex flex-col">
           <label htmlFor="password">Mot de passe</label>
           <input
-            aria-required
+            required
             className="rounded-lg px-2"
             id="password"
-            type="password"
-          />
-        </div>
-
-        <div className="m-4 flex flex-col">
-          <label htmlFor="confirm">Vérification du Mot de passe</label>
-          <input
-            aria-required
-            className="rounded-lg px-2"
-            id="confirm"
+            name="password"
             type="password"
           />
         </div>

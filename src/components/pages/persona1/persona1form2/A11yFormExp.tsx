@@ -29,12 +29,6 @@ export const A11yFormExp = () => {
             <KeyBoardInput keyName="Tab" />
             <span>Mot de Passe édition protégé obligatoire vide</span>
           </li>
-          <li className="my-4">
-            <KeyBoardInput keyName="Tab" />
-            <span>
-              Vérification du mot de Passe édition protégé obligatoire vide
-            </span>
-          </li>
         </ol>
       </SrDisplay>
 

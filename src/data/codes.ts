@@ -4,82 +4,47 @@ export const codes = {
 
     <div>
         <span>Nom</span>
-        <input type="text">
+        <input name="lastname" type="text">
     </div>
 
     <div>
         <span>Prénom</span>
-        <input type="text">
+        <input name="firstname" type="text">
     </div>
 
       <div>
         <span>E-mail</span>
-        <input type="email">
+        <input name="email" type="email">
     </div>
 
     <div>
         <span>Mot de passe</span>
-        <input type="password">
-    </div>
-
-    <div>
-        <span>Vérification du Mot de passe</span>
-        <input type="password">
+        <input name="password" type="password">
     </div>
 
     <input type="submit" value="Soumettre l'inscription">
 </div>`,
-  BadFormNoAttribute: `<form>
-    <h2>Inscription</h2>
-
-    <div>
-        <label>Nom</label>
-        <input type="text">
-    </div>
-
-    <div>
-        <label>Prénom</label>
-        <input type="text">
-    </div>
-
-    <div>
-        <label>E-mail</label>
-        <input type="email">
-    </div>
-
-    <div>
-        <label>Mot de passe</label>
-        <input type="password">
-    </div>
-
-    <input type="submit" value="Soumettre l'inscription">
-</form>`,
   A11yForm: `<form>
     <h3>Inscription</h3>
 
     <div>
-        <label for="name">Nom</label>
-        <input id="name" type="text" aria-required="true">
+        <label for="lastname">Nom</label>
+        <input id="lastnname" name="lastname" type="text" required>
     </div>
 
     <div>
         <label for="firstname">Prénom</label>
-        <input id="firstname" type="text" aria-required="true">
+        <input id="firstname" name="firstname" type="text" required>
     </div>
 
     <div>
         <label for="email">E-mail</label>
-        <input id="email" type="email" aria-required="true">
+        <input id="email" name="email" type="email" required>
     </div>
 
     <div>
         <label for="password">Mot de passe</label>
-        <input id="password" type="password" aria-required="true">
-    </div>
-
-    <div>
-        <label for="confirm">Vérification du Mot de passe</label>
-        <input id="confirm" type="password" aria-required="true">
+        <input id="password" name="password" type="password" required>
     </div>
 
     <button type="submit">Soumettre l’inscription</button>

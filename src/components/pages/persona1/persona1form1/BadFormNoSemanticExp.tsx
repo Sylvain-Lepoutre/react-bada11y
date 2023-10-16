@@ -40,10 +40,6 @@ export const BadFormNoSemanticExp = () => {
             <KeyBoardInput keyName="Tab" />
             <span>édition protégé vide</span>
           </li>
-          <li className="my-4">
-            <KeyBoardInput keyName="Tab" />
-            <span>édition protégé vide</span>
-          </li>
         </ol>
       </SrDisplay>
       <Paragraph>
