@@ -2,6 +2,9 @@ import { BadFormNoAttribute } from "../components/pages/persona1step2/BadFormNoA
 import { BadFormNoAttributeCode } from "../components/pages/persona1step2/BadFormNoAttributeCode";
 import { BadFormNoAttributeConclusion } from "../components/pages/persona1step2/BadFormNoAttributeConclusion";
 import { BadFormNoAttributeExp } from "../components/pages/persona1step2/BadFormNoAttributeExp";
+import { A11yForm } from "../components/pages/persona1step2/A11yForm";
+import { A11FormCode } from "../components/pages/persona1step2/A11yFormCode";
+import { A11yFormExp } from "../components/pages/persona1step2/A11yFormExp";
 import { A11yShopping } from "../components/pages/persona2step2/A11yShopping";
 import { A11yShoppingExp } from "../components/pages/persona2step2/A11yShoppingExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
@@ -28,10 +31,9 @@ export const PersonaStep2 = ({
       <Main>
         {personaName === "Djebrine" && (
           <>
-            <BadFormNoAttribute />
-            <BadFormNoAttributeCode />
-            <BadFormNoAttributeExp />
-            <BadFormNoAttributeConclusion />
+            <A11yForm />
+            <A11FormCode />
+            <A11yFormExp />
           </>
         )}
 
