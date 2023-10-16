@@ -1,3 +1,15 @@
+type Page = {
+  id: number;
+  name: string;
+  url: string;
+};
+
+export type Step = {
+  id: number;
+  name: string;
+  pages: Page[];
+};
+// TODO supprimer le ? quand les données seront complétées
 type Persona = {
   id: number;
   name: string;
@@ -5,6 +17,7 @@ type Persona = {
   imgSrc: string;
   linkURL: string;
   intro: string;
+  steps?: Step[];
   step1Title: string;
   step2Title: string;
   step3Title: string;
@@ -21,6 +34,24 @@ export const personas: Persona[] = [
     linkURL: "/persona1",
     intro:
       "Djebrine est un entrepreneur dynamique de 33 ans. Il est non-voyant. Chaque matin, il s’installe devant son ordinateur, équipé d’un lecteur d’écran et d’un afficheur braille. Le lecteur d’écran est un logiciel doté d’un synthétiseur vocal qui récupere l’information textuelle et la retranscrit vocalement et en braille pour Djebrine. Il traite autant le texte saisi au clavier que le contenu de l'écran (menus, boîtes de dialogue, texte des documents, pages Internet…). Ces outils technologiques lui servent de pont entre son monde sans vision et le monde numérique.",
+    steps: [
+      {
+        id: 1,
+        name: "Formulaire",
+        pages: [
+          { id: 1, name: "Formulaire non accessible", url: "form/1" },
+          { id: 2, name: "Formulaire accessible", url: "form/2" },
+        ],
+      },
+      {
+        id: 2,
+        name: "Tableau",
+        pages: [
+          { id: 1, name: "Tableau non accessible", url: "table/1" },
+          { id: 2, name: "Tableau accessible", url: "table/2" },
+        ],
+      },
+    ],
     step1Title: "Etape 1 : Formulaire d'inscription non sémantique",
     step2Title: "Etape 2 : Formulaire d'inscription accessible",
     step3Title: "Work In Progress",
