@@ -6,6 +6,7 @@ import { PersonaStep1 } from "./routes/personaStep1";
 import { PersonaStep2 } from "./routes/personaStep2";
 import { PersonaStep3 } from "./routes/personaStep3";
 import { PersonaStep4 } from "./routes/personaStep4";
+import { PersonaStep5 } from "./routes/personaStep5";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
 
@@ -66,6 +67,16 @@ export const router = createBrowserRouter([
         personaId={personas[0].id}
         personaName={personas[0].name}
         personaStep4Title={personas[0].step4Title}
+      />
+    ),
+  },
+  {
+    path: "/persona1/step5",
+    element: (
+      <PersonaStep5
+        personaId={personas[0].id}
+        personaName={personas[0].name}
+        personaStep5Title={personas[0].step5Title}
       />
     ),
   },

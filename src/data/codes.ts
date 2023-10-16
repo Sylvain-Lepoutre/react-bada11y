@@ -115,4 +115,37 @@ export const codes = {
         <div>10 juin 2024</div>
     </div>
 </div>`,
+  BadTableNoAttribute: `<table>
+    <caption>Evenement à venir</caption>
+
+    <tr>
+        <td>Evenement</td>
+        <td>Lieu</td>
+        <td>Date</td>
+    </tr>
+
+    <tr>
+        <td>Atelier sur l’accessibilité web</td>
+        <td>Centre de conférences local</td>
+        <td>15 mars 2024</td>
+    </tr>
+
+    <tr>
+        <td>Conférence sur les tendances du développement web</td>
+        <td>Bibliothèque communautaire</td>
+        <td>5 avril 2024</td>
+    </tr>
+
+    <tr>
+        <td>Formation sur les bonnes pratiques en matière d’accessibilité</td>
+        <td>Espace de coworking</td>
+        <td>20 mai 2024</td>
+    </tr>
+
+    <tr>
+        <td>Table ronde sur l’avenir du développement web</td>
+        <td>Campus universitaire</td>
+        <td>10 juin 2024</td>
+    </tr>
+</table>`,
 };

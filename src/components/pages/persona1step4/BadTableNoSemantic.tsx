@@ -6,7 +6,7 @@ export const BadTableNoSemantic = () => {
     <Section>
       <Heading2>Affichage dans le navigateur</Heading2>
       <div className="mx-auto my-4 w-3/4 rounded-lg border border-solid border-black">
-        <div className="flex rounded-t-lg bg-gray-700 p-4 text-white">
+        <div className="flex rounded-t-lg bg-gray-800 p-4 text-white">
           <div className="my-auto w-1/3 text-center">Évènement</div>
           <div className="my-auto w-1/3 text-center">Lieu</div>
           <div className="my-auto w-1/3 text-center">Date</div>
@@ -22,7 +22,7 @@ export const BadTableNoSemantic = () => {
           <div className="my-auto w-1/3 text-center">15 mars 2024</div>
         </div>
 
-        <div className="flex border-t border-solid border-black bg-gray-500 p-4 text-white">
+        <div className="flex border-t border-solid border-black bg-gray-600 p-4 text-white">
           <div className="my-auto w-1/3 text-center">
             Conférence sur les tendances du développement web
           </div>
@@ -40,7 +40,7 @@ export const BadTableNoSemantic = () => {
           <div className="my-auto w-1/3 text-center">20 mai 2024</div>
         </div>
 
-        <div className="flex rounded-b-lg border-t border-solid border-black bg-gray-500 p-4 text-white">
+        <div className="flex rounded-b-lg border-t border-solid border-black bg-gray-600 p-4 text-white">
           <div className="my-auto w-1/3 text-center">
             Table ronde sur l’avenir du développement web
           </div>

@@ -9,6 +9,7 @@ type Persona = {
   step2Title: string;
   step3Title: string;
   step4Title: string;
+  step5Title: string;
 };
 
 export const personas: Persona[] = [
@@ -24,6 +25,7 @@ export const personas: Persona[] = [
     step2Title: "Etape 2 : Formulaire d'inscription sans attribut",
     step3Title: "Etape 3 : Formulaire d'inscription accessible",
     step4Title: "Etape 4 : Tableau d'évènement non sémantique",
+    step5Title: "Etape 5: Tableau d'évènement sans attribut",
   },
   {
     id: 2,
@@ -37,6 +39,7 @@ export const personas: Persona[] = [
     step2Title: "Etape 2 : Shopping en Ligne accessible",
     step3Title: "Work In Progress",
     step4Title: "Work In Progress",
+    step5Title: "Work In Progress",
   },
   {
     id: 3,
@@ -50,6 +53,7 @@ export const personas: Persona[] = [
     step2Title: "Work In Progress",
     step3Title: "Work In Progress",
     step4Title: "Work In Progress",
+    step5Title: "Work In Progress",
   },
   {
     id: 4,
@@ -63,5 +67,6 @@ export const personas: Persona[] = [
     step2Title: "Work In Progress",
     step3Title: "Work In Progress",
     step4Title: "Work In Progress",
+    step5Title: "Work In Progress",
   },
 ];
