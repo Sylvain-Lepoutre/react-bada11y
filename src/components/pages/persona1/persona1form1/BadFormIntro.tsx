@@ -2,7 +2,7 @@ import { Heading2 } from "../../../UI/headings/Heading2";
 import { Paragraph } from "../../../UI/paragraph/Paragraph";
 import { Section } from "../../../UI/sections/Section";
 
-export const BadFormNoSemanticIntro = () => {
+export const BadFormIntro = () => {
   return (
     <Section>
       <Heading2>Introduction</Heading2>

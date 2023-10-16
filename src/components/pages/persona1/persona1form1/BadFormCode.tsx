@@ -4,7 +4,7 @@ import { codes } from "../../../../data/codes";
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { Section } from "../../../UI/sections/Section";
 
-export const BadFormNoSemanticCode = () => {
+export const BadFormCode = () => {
   return (
     <Section>
       <Heading2>Code</Heading2>

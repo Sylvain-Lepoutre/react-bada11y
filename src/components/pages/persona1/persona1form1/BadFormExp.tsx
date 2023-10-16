@@ -8,7 +8,7 @@ import { VideoDisplay } from "../../../UI/video-display/VideoDisplay";
 
 //TODO revoir pour l'affichage des commandes effectuées
 
-export const BadFormNoSemanticExp = () => {
+export const BadFormExp = () => {
   return (
     <Section>
       <Heading2>Explications</Heading2>
@@ -16,7 +16,7 @@ export const BadFormNoSemanticExp = () => {
         Un utilisateur de lecteur d’écran utilise la touche{" "}
         <KeyBoardInput keyName="Tab" /> pour passer d’un champ interactif à un
         autre, voici ce que lui dit le lecteur d’écran lorsqu’il parcourt ce
-        formulaire
+        formulaire.
       </Paragraph>
       <VideoDisplay
         trackFile="BadFormNoSemantic.vtt"
@@ -44,7 +44,7 @@ export const BadFormNoSemanticExp = () => {
       </SrDisplay>
       <Paragraph>
         On se rend compte qu’une personne non-voyante n’a aucune indication de
-        ce qu’elle doit indiquer dans les champs du formulaires
+        ce qu’elle doit indiquer dans les champs du formulaires.
       </Paragraph>
       <Paragraph>
         Nous avons utiliser uniquement des balises html{" "}
@@ -52,7 +52,7 @@ export const BadFormNoSemanticExp = () => {
         n’apporte aucune sémantique et donc aucune indication sur le contenu de
         ces balises, le lecteur d’écran arrive sur les{" "}
         <HtmlTag tagName="input" /> de type text ou password, sans savoir à quoi
-        ils sont rattachés
+        ils sont rattachés.
       </Paragraph>
       <Paragraph>
         De plus nous n’avons pas utilisé de balise <HtmlTag tagName="form" />{" "}

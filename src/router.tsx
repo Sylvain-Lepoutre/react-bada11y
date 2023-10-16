@@ -9,6 +9,7 @@ import { PersonaStep4 } from "./routes/personaStep4";
 import { PersonaStep5 } from "./routes/personaStep5";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
+import { Persona1Form1 } from "./routes/persona1Form1";
 
 export const router = createBrowserRouter([
   {
@@ -34,13 +35,22 @@ export const router = createBrowserRouter([
   {
     path: "/persona1/form/1",
     element: (
-      <PersonaStep1
-        personaId={personas[0].id}
+      <Persona1Form1
         personaName={personas[0].name}
-        personaStep1Title={personas[0].step1Title}
+        componentName={personas[0].steps[0].pages[0].name}
       />
     ),
   },
+  // {
+  //   path: "/persona1/form/1",
+  //   element: (
+  //     <PersonaStep1
+  //       personaId={personas[0].id}
+  //       personaName={personas[0].name}
+  //       personaStep1Title={personas[0].step1Title}
+  //     />
+  //   ),
+  // },
   {
     path: "/persona1/form/2",
     element: (
