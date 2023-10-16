@@ -21,10 +21,10 @@ export const A11yForm = () => {
         <div className="m-4 flex flex-col">
           <label htmlFor="lastname">Nom</label>
           <input
-            required
             className="rounded-lg px-2"
             id="lastname"
             name="lastname"
+            required
             type="text"
           />
         </div>
@@ -32,17 +32,17 @@ export const A11yForm = () => {
         <div className="m-4 flex flex-col">
           <label htmlFor="firstname">Prénom</label>
           <input
-            required
             className="rounded-lg px-2"
             id="firstname"
             name="firtsname"
+            required
             type="text"
           />
         </div>
 
         <div className="m-4 flex flex-col">
           <label htmlFor="role">Vous êtes ?</label>
-          <select name="role" id="role" required>
+          <select id="role" name="role" required>
             <option value="">Choisissez votre rôle</option>
             <option value="developer">Développeur</option>
             <option value="student">Étudiant</option>
@@ -53,10 +53,10 @@ export const A11yForm = () => {
         <div className="m-4 flex flex-col">
           <label htmlFor="email">E-mail</label>
           <input
-            required
             className="rounded-lg px-2"
             id="email"
             name="email"
+            required
             type="email"
           />
         </div>
@@ -64,10 +64,10 @@ export const A11yForm = () => {
         <div className="m-4 flex flex-col">
           <label htmlFor="password">Mot de passe</label>
           <input
-            required
             className="rounded-lg px-2"
             id="password"
             name="password"
+            required
             type="password"
           />
         </div>

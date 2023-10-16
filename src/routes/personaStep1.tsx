@@ -1,8 +1,8 @@
-import { BadFormNoSemantic } from "../components/pages/persona1/persona1form1/BadFormNoSemantic";
-import { BadFormNoSemanticCode } from "../components/pages/persona1/persona1form1/BadFormNoSemanticCode";
-import { BadFormNoSemanticConclusion } from "../components/pages/persona1/persona1form1/BadFormNoSemanticConclusion";
-import { BadFormNoSemanticExp } from "../components/pages/persona1/persona1form1/BadFormNoSemanticExp";
-import { BadFormNoSemanticIntro } from "../components/pages/persona1/persona1form1/BadFormNoSemanticIntro";
+import { BadForm } from "../components/pages/persona1/persona1form1/BadForm";
+import { BadFormCode } from "../components/pages/persona1/persona1form1/BadFormCode";
+import { BadFormConclusion } from "../components/pages/persona1/persona1form1/BadFormConclusion";
+import { BadFormExp } from "../components/pages/persona1/persona1form1/BadFormExp";
+import { BadFormIntro } from "../components/pages/persona1/persona1form1/BadFormIntro";
 import { BadShoppingNoFocus } from "../components/pages/persona2step1/BadShoppingNoFocus";
 import { BadShoppingNoFocusExp } from "../components/pages/persona2step1/BadShoppingNoFocusExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
@@ -28,11 +28,11 @@ export const PersonaStep1 = ({
       <Main>
         {personaName === "Djebrine" && (
           <>
-            <BadFormNoSemanticIntro />
-            <BadFormNoSemantic />
-            <BadFormNoSemanticCode />
-            <BadFormNoSemanticExp />
-            <BadFormNoSemanticConclusion />
+            <BadFormIntro />
+            <BadForm />
+            <BadFormCode />
+            <BadFormExp />
+            <BadFormConclusion />
           </>
         )}
 

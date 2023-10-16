@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import { personas } from "./data/personas";
+import { Persona1Form1 } from "./routes/persona1Form1";
 import { PersonaHome } from "./routes/personaHome";
 import { PersonaStep1 } from "./routes/personaStep1";
 import { PersonaStep2 } from "./routes/personaStep2";
@@ -9,7 +10,6 @@ import { PersonaStep4 } from "./routes/personaStep4";
 import { PersonaStep5 } from "./routes/personaStep5";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
-import { Persona1Form1 } from "./routes/persona1Form1";
 
 export const router = createBrowserRouter([
   {
@@ -36,8 +36,8 @@ export const router = createBrowserRouter([
     path: "/persona1/form/1",
     element: (
       <Persona1Form1
-        personaName={personas[0].name}
         componentName={personas[0].steps[0].pages[0].name}
+        personaName={personas[0].name}
       />
     ),
   },
@@ -51,36 +51,36 @@ export const router = createBrowserRouter([
   //     />
   //   ),
   // },
-  {
-    path: "/persona1/form/2",
-    element: (
-      <PersonaStep2
-        personaId={personas[0].id}
-        personaName={personas[0].name}
-        personaStep2Title={personas[0].step2Title}
-      />
-    ),
-  },
-  {
-    path: "/persona1/step4",
-    element: (
-      <PersonaStep4
-        personaId={personas[0].id}
-        personaName={personas[0].name}
-        personaStep4Title={personas[0].step4Title}
-      />
-    ),
-  },
-  {
-    path: "/persona1/step5",
-    element: (
-      <PersonaStep5
-        personaId={personas[0].id}
-        personaName={personas[0].name}
-        personaStep5Title={personas[0].step5Title}
-      />
-    ),
-  },
+  // {
+  //   path: "/persona1/form/2",
+  //   element: (
+  //     <PersonaStep2
+  //       personaId={personas[0].id}
+  //       personaName={personas[0].name}
+  //       personaStep2Title={personas[0].step2Title}
+  //     />
+  //   ),
+  // },
+  // {
+  //   path: "/persona1/step4",
+  //   element: (
+  //     <PersonaStep4
+  //       personaId={personas[0].id}
+  //       personaName={personas[0].name}
+  //       personaStep4Title={personas[0].step4Title}
+  //     />
+  //   ),
+  // },
+  // {
+  //   path: "/persona1/step5",
+  //   element: (
+  //     <PersonaStep5
+  //       personaId={personas[0].id}
+  //       personaName={personas[0].name}
+  //       personaStep5Title={personas[0].step5Title}
+  //     />
+  //   ),
+  // },
   // {
   //   path: "/persona2",
   //   element: (

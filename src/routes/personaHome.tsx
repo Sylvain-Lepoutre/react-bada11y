@@ -3,9 +3,8 @@ import { IntroSection } from "../components/pages/personaHome/IntroSection";
 import { StepSection } from "../components/pages/personaHome/StepSection";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
-
 import type { Step } from "../data/personas";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   personaName: string;
