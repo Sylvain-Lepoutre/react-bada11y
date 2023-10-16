@@ -7,7 +7,7 @@ export const PersonaSection = () => {
   return (
     <Section>
       <Heading2> Choisissez Votre Persona de sensibilisation</Heading2>
-
+      {/* TODO mettre une nav ici ?  */}
       <ul className="my-8 grid gap-12 text-center md:grid-cols-2 lg:my-12  ">
         {personas.map((persona) => (
           <PersonaCard
