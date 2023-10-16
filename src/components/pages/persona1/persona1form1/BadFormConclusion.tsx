@@ -7,9 +7,9 @@ export const BadFormConclusion = () => {
     <Section>
       <Heading2>Conclusion</Heading2>
       <Paragraph>
-        Nous allons voir par la suite que même en utilisant les bonnes balises
-        sémantiques, il reste possible de faire des erreurs, en oubliant des
-        attributs HTML.
+        Nous allons améliorer ce formulaire en utlisant les bonnes balises
+        sémantiques, ainsi que les attributs html nécéssaire afin de le rendre
+        accessible.
       </Paragraph>
     </Section>
   );
