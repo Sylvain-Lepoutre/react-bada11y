@@ -41,6 +41,16 @@ export const A11yForm = () => {
         </div>
 
         <div className="m-4 flex flex-col">
+          <label htmlFor="role">Vous êtes ?</label>
+          <select name="role" id="role" required>
+            <option value="">Choisissez votre rôle</option>
+            <option value="developer">Développeur</option>
+            <option value="student">Étudiant</option>
+            <option value="other">Autre</option>
+          </select>
+        </div>
+
+        <div className="m-4 flex flex-col">
           <label htmlFor="email">E-mail</label>
           <input
             required
