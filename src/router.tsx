@@ -71,54 +71,54 @@ export const router = createBrowserRouter([
       />
     ),
   },
-  {
-    path: "/persona2",
-    element: (
-      <PersonaHome
-        personaId={personas[1].id}
-        personaIntro={personas[1].intro}
-        personaName={personas[1].name}
-      />
-    ),
-  },
-  {
-    path: "/persona2/step1",
-    element: (
-      <PersonaStep1
-        personaId={personas[1].id}
-        personaName={personas[1].name}
-        personaStep1Title={personas[1].step1Title}
-      />
-    ),
-  },
-  {
-    path: "/persona2/step2",
-    element: (
-      <PersonaStep2
-        personaId={personas[1].id}
-        personaName={personas[1].name}
-        personaStep2Title={personas[1].step2Title}
-      />
-    ),
-  },
-  {
-    path: "/persona3",
-    element: (
-      <PersonaHome
-        personaId={personas[2].id}
-        personaIntro={personas[2].intro}
-        personaName={personas[2].name}
-      />
-    ),
-  },
-  {
-    path: "/persona4",
-    element: (
-      <PersonaHome
-        personaId={personas[3].id}
-        personaIntro={personas[3].intro}
-        personaName={personas[3].name}
-      />
-    ),
-  },
+  // {
+  //   path: "/persona2",
+  //   element: (
+  //     <PersonaHome
+  //       personaId={personas[1].id}
+  //       personaIntro={personas[1].intro}
+  //       personaName={personas[1].name}
+  //     />
+  //   ),
+  // },
+  // {
+  //   path: "/persona2/step1",
+  //   element: (
+  //     <PersonaStep1
+  //       personaId={personas[1].id}
+  //       personaName={personas[1].name}
+  //       personaStep1Title={personas[1].step1Title}
+  //     />
+  //   ),
+  // },
+  // {
+  //   path: "/persona2/step2",
+  //   element: (
+  //     <PersonaStep2
+  //       personaId={personas[1].id}
+  //       personaName={personas[1].name}
+  //       personaStep2Title={personas[1].step2Title}
+  //     />
+  //   ),
+  // },
+  // {
+  //   path: "/persona3",
+  //   element: (
+  //     <PersonaHome
+  //       personaId={personas[2].id}
+  //       personaIntro={personas[2].intro}
+  //       personaName={personas[2].name}
+  //     />
+  //   ),
+  // },
+  // {
+  //   path: "/persona4",
+  //   element: (
+  //     <PersonaHome
+  //       personaId={personas[3].id}
+  //       personaIntro={personas[3].intro}
+  //       personaName={personas[3].name}
+  //     />
+  //   ),
+  // },
 ]);

@@ -14,7 +14,12 @@ export const StepSection = ({ steps }: Props) => {
       <Heading2>Choisissez votre étape</Heading2>
       <ul className="my-8 grid gap-12 text-center md:grid-cols-2 lg:my-12">
         {steps.map((step) => (
-          <StepCard name={step.name} key={step.id} pages={step.pages} />
+          <StepCard
+            name={step.name}
+            key={step.id}
+            id={step.id}
+            pages={step.pages}
+          />
         ))}
       </ul>
     </Section>
