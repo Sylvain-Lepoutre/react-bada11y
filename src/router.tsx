@@ -37,6 +37,8 @@ export const router = createBrowserRouter([
     element: (
       <Persona1Form1
         componentName={personas[0].steps[0].pages[0].name}
+        homeUrl={personas[0].homeURL}
+        nextUrl={personas[0].steps[0].pages[1].url}
         personaName={personas[0].name}
       />
     ),

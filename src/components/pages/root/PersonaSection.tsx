@@ -14,7 +14,7 @@ export const PersonaSection = () => {
             cardTitle={persona.cardTitle}
             imgSrc={persona.imgSrc}
             key={persona.id}
-            linkURL={persona.linkURL}
+            linkURL={persona.homeURL}
           />
         ))}
       </ul>
