@@ -1,10 +1,6 @@
-import { BadFormNoAttribute } from "../components/pages/persona1step2/BadFormNoAttribute";
-import { BadFormNoAttributeCode } from "../components/pages/persona1step2/BadFormNoAttributeCode";
-import { BadFormNoAttributeConclusion } from "../components/pages/persona1step2/BadFormNoAttributeConclusion";
-import { BadFormNoAttributeExp } from "../components/pages/persona1step2/BadFormNoAttributeExp";
-import { A11yForm } from "../components/pages/persona1step2/A11yForm";
-import { A11FormCode } from "../components/pages/persona1step2/A11yFormCode";
-import { A11yFormExp } from "../components/pages/persona1step2/A11yFormExp";
+import { A11yForm } from "../components/pages/persona1/persona1form2/A11yForm";
+import { A11FormCode } from "../components/pages/persona1/persona1form2/A11yFormCode";
+import { A11yFormExp } from "../components/pages/persona1/persona1form2/A11yFormExp";
 import { A11yShopping } from "../components/pages/persona2step2/A11yShopping";
 import { A11yShoppingExp } from "../components/pages/persona2step2/A11yShoppingExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
@@ -45,12 +41,12 @@ export const PersonaStep2 = ({
         )}
 
         <DivLink
-          labelLink1="Accueil"
-          labelLink2="Continuer"
+          labelLink1="Accueil Inotest"
+          labelLink2={`Accueil ${personaName}`}
           srLabelLink1="Revenir à la page d'accueil de Inotest"
-          srLabelLink2={`Continuer le parcours de ${personaName}`}
+          srLabelLink2={`Revenir à l'accueil du parcours de ${personaName}`}
           urlLink1="/"
-          urlLink2={`/persona${personaId}/step3`}
+          urlLink2={`/persona${personaId}`}
         />
       </Main>
     </>

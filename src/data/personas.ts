@@ -23,6 +23,7 @@ export const personas: Persona[] = [
       "Djebrine est un entrepreneur dynamique de 33 ans. Il est non-voyant. Chaque matin, il s’installe devant son ordinateur, équipé d’un lecteur d’écran et d’un afficheur braille. Le lecteur d’écran est un logiciel doté d’un synthétiseur vocal qui récupere l’information textuelle et la retranscrit vocalement et en braille pour Djebrine. Il traite autant le texte saisi au clavier que le contenu de l'écran (menus, boîtes de dialogue, texte des documents, pages Internet…). Ces outils technologiques lui servent de pont entre son monde sans vision et le monde numérique.",
     step1Title: "Etape 1 : Formulaire d'inscription non sémantique",
     step2Title: "Etape 2 : Formulaire d'inscription accessible",
+    step3Title: "Work In Progress",
     step4Title: "Etape 4 : Tableau d'évènement non sémantique",
     step5Title: "Etape 5: Tableau d'évènement sans attribut",
   },

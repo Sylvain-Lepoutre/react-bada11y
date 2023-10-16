@@ -1,8 +1,8 @@
-import { BadFormNoSemantic } from "../components/pages/persona1step1/BadFormNoSemantic";
-import { BadFormNoSemanticCode } from "../components/pages/persona1step1/BadFormNoSemanticCode";
-import { BadFormNoSemanticConclusion } from "../components/pages/persona1step1/BadFormNoSemanticConclusion";
-import { BadFormNoSemanticExp } from "../components/pages/persona1step1/BadFormNoSemanticExp";
-import { BadFormNoSemanticIntro } from "../components/pages/persona1step1/BadFormNoSemanticIntro";
+import { BadFormNoSemantic } from "../components/pages/persona1/persona1form1/BadFormNoSemantic";
+import { BadFormNoSemanticCode } from "../components/pages/persona1/persona1form1/BadFormNoSemanticCode";
+import { BadFormNoSemanticConclusion } from "../components/pages/persona1/persona1form1/BadFormNoSemanticConclusion";
+import { BadFormNoSemanticExp } from "../components/pages/persona1/persona1form1/BadFormNoSemanticExp";
+import { BadFormNoSemanticIntro } from "../components/pages/persona1/persona1form1/BadFormNoSemanticIntro";
 import { BadShoppingNoFocus } from "../components/pages/persona2step1/BadShoppingNoFocus";
 import { BadShoppingNoFocusExp } from "../components/pages/persona2step1/BadShoppingNoFocusExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
