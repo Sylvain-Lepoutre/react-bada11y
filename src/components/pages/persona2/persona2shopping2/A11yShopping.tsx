@@ -1,5 +1,5 @@
-import { Heading2 } from "../../UI/headings/Heading2";
-import { Section } from "../../UI/sections/Section";
+import { Heading2 } from "../../../UI/headings/Heading2";
+import { Section } from "../../../UI/sections/Section";
 import { A11yShoppingItem } from "./A11yShoppingItem";
 
 export const A11yShopping = () => {

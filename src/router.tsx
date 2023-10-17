@@ -9,6 +9,7 @@ import { Persona2Shopping1 } from "./routes/persona2Shopping1";
 import { PersonaHome } from "./routes/personaHome";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
+import { Persona2Shopping2 } from "./routes/persona2Shopping2";
 
 export const router = createBrowserRouter([
   {
@@ -91,6 +92,16 @@ export const router = createBrowserRouter([
         nextUrl={personas[1].steps[0].pages[1].url}
         personaHomeUrl={personas[1].personaHomeUrl}
         personaName={personas[1].name}
+      />
+    ),
+  },
+  {
+    path: `${personas[1].steps[0].pages[1].url}`,
+    element: (
+      <Persona2Shopping2
+        componentName={personas[1].steps[0].pages[1].name}
+        personaName={personas[1].name}
+        personaHomeUrl={personas[1].personaHomeUrl}
       />
     ),
   },
