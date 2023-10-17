@@ -9,21 +9,17 @@ import { Main } from "../components/UI/main/Main";
 
 type Props = {
   componentName: string;
-  homeUrl: string;
+  personaHomeUrl: string;
   nextUrl: string;
   personaName: string;
 };
 
 export const Persona1Form1 = ({
   componentName,
-  homeUrl,
+  personaHomeUrl,
   nextUrl,
   personaName,
 }: Props) => {
-  console.log(homeUrl);
-
-  console.log(nextUrl);
-
   return (
     <>
       <Header heading={personaName} textContent={componentName} />
@@ -40,7 +36,7 @@ export const Persona1Form1 = ({
         labelLink2="Continuer"
         srLabelLink1={`Revenir à la page d'accueil de ${personaName}`}
         srLabelLink2="Continuer ce parcours"
-        urlLink1={homeUrl}
+        urlLink1={personaHomeUrl}
         urlLink2={nextUrl}
       />
     </>

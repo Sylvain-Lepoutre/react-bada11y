@@ -15,7 +15,7 @@ type Persona = {
   name: string;
   cardTitle: string;
   imgSrc: string;
-  homeURL: string;
+  personaHomeUrl: string;
   intro: string;
   steps: Step[];
   step1Title: string;
@@ -31,7 +31,7 @@ export const personas: Persona[] = [
     name: "Djebrine",
     cardTitle: "Djebrine, 33 ans, entrepreneur, trouble visuel",
     imgSrc: "https://placehold.co/128x128/png",
-    homeURL: "/persona1",
+    personaHomeUrl: "/persona1",
     intro:
       "Djebrine est un entrepreneur dynamique de 33 ans. Il est non-voyant. Chaque matin, il s’installe devant son ordinateur, équipé d’un lecteur d’écran et d’un afficheur braille. Le lecteur d’écran est un logiciel doté d’un synthétiseur vocal qui récupere l’information textuelle et la retranscrit vocalement et en braille pour Djebrine. Il traite autant le texte saisi au clavier que le contenu de l'écran (menus, boîtes de dialogue, texte des documents, pages Internet…). Ces outils technologiques lui servent de pont entre son monde sans vision et le monde numérique.",
     steps: [

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import { personas } from "./data/personas";
 import { Persona1Form1 } from "./routes/persona1Form1";
+import { Persona1Form2 } from "./routes/persona1Form2";
 import { PersonaHome } from "./routes/personaHome";
 import { PersonaStep1 } from "./routes/personaStep1";
 import { PersonaStep2 } from "./routes/personaStep2";
@@ -22,7 +23,7 @@ export const router = createBrowserRouter([
     element: <Wip />,
   },
   {
-    path: "/persona1",
+    path: `${personas[0].personaHomeUrl}`,
     element: (
       <PersonaHome
         personaId={personas[0].id}
@@ -33,26 +34,27 @@ export const router = createBrowserRouter([
     ),
   },
   {
-    path: "/persona1/form/1",
+    path: `${personas[0].steps[0].pages[0].url}`,
     element: (
       <Persona1Form1
         componentName={personas[0].steps[0].pages[0].name}
-        homeUrl={personas[0].homeURL}
         nextUrl={personas[0].steps[0].pages[1].url}
+        personaHomeUrl={personas[0].personaHomeUrl}
         personaName={personas[0].name}
       />
     ),
   },
-  // {
-  //   path: "/persona1/form/1",
-  //   element: (
-  //     <PersonaStep1
-  //       personaId={personas[0].id}
-  //       personaName={personas[0].name}
-  //       personaStep1Title={personas[0].step1Title}
-  //     />
-  //   ),
-  // },
+  {
+    path: `${personas[0].steps[0].pages[1].url}`,
+    element: (
+      <Persona1Form2
+        componentName={personas[0].steps[0].pages[1].name}
+        personaHomeUrl={personas[0].personaHomeUrl}
+        personaName={personas[0].name}
+      />
+    ),
+  },
+
   // {
   //   path: "/persona1/form/2",
   //   element: (
