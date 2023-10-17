@@ -9,6 +9,7 @@ import { PersonaStep4 } from "./routes/personaStep4";
 import { PersonaStep5 } from "./routes/personaStep5";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
+import { Persona1Table2 } from "./routes/persona1Table2";
 
 export const router = createBrowserRouter([
   {
@@ -59,6 +60,15 @@ export const router = createBrowserRouter([
         componentName={personas[0].steps[1].pages[0].name}
         nextUrl={personas[0].steps[1].pages[1].url}
         personaHomeUrl={personas[0].personaHomeUrl}
+        personaName={personas[0].name}
+      />
+    ),
+  },
+  {
+    path: `${personas[0].steps[1].pages[1].url}`,
+    element: (
+      <Persona1Table2
+        componentName={personas[0].steps[1].pages[1].name}
         personaName={personas[0].name}
       />
     ),
