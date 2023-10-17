@@ -3,10 +3,8 @@ import { createBrowserRouter } from "react-router-dom";
 import { personas } from "./data/personas";
 import { Persona1Form1 } from "./routes/persona1Form1";
 import { Persona1Form2 } from "./routes/persona1Form2";
+import { Persona1Table1 } from "./routes/persona1Table1";
 import { PersonaHome } from "./routes/personaHome";
-import { PersonaStep1 } from "./routes/personaStep1";
-import { PersonaStep2 } from "./routes/personaStep2";
-import { PersonaStep3 } from "./routes/personaStep3";
 import { PersonaStep4 } from "./routes/personaStep4";
 import { PersonaStep5 } from "./routes/personaStep5";
 import { Root } from "./routes/root";
@@ -54,7 +52,17 @@ export const router = createBrowserRouter([
       />
     ),
   },
-
+  {
+    path: `${personas[0].steps[1].pages[0].url}`,
+    element: (
+      <Persona1Table1
+        componentName={personas[0].steps[1].pages[0].name}
+        nextUrl={personas[0].steps[1].pages[1].url}
+        personaHomeUrl={personas[0].personaHomeUrl}
+        personaName={personas[0].name}
+      />
+    ),
+  },
   // {
   //   path: "/persona1/form/2",
   //   element: (
