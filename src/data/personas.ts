@@ -48,20 +48,29 @@ export const personas: Persona[] = [
       },
     ],
   },
-  // {
-  //   id: 2,
-  //   name: "Sophie",
-  //   cardTitle: "Sophie, 42 ans, comptable, trouble moteur",
-  //   imgSrc: "https://placehold.co/128x128/png",
-  //   linkURL: "/persona2",
-  //   intro:
-  //     "Sophie est une comptable de 42 ans. Elle lutte contre de sévères troubles musculo-squelettiques. Ses douleurs l'empeche d'utiliser une souris, elle navigue à l'aide du clavier.",
-  //   step1Title: "Etape 1 : Shopping en Ligne",
-  //   step2Title: "Etape 2 : Shopping en Ligne accessible",
-  //   step3Title: "Work In Progress",
-  //   step4Title: "Work In Progress",
-  //   step5Title: "Work In Progress",
-  // },
+  {
+    id: 2,
+    name: "Sophie",
+    cardTitle: "Sophie, 42 ans, comptable, trouble moteur",
+    imgSrc: "https://placehold.co/128x128/png",
+    personaHomeUrl: "/persona2",
+    intro:
+      "Sophie est une comptable de 42 ans. Elle lutte contre de sévères troubles musculo-squelettiques. Ses douleurs l'empeche d'utiliser une souris, elle navigue à l'aide du clavier.",
+    steps: [
+      {
+        id: 1,
+        name: "Shopping",
+        pages: [
+          {
+            id: 1,
+            name: "Shopping non accessible",
+            url: "/persona2/shopping/1",
+          },
+          { id: 2, name: "Shopping accessible", url: "/persona2/shopping/2" },
+        ],
+      },
+    ],
+  },
   // {
   //   id: 3,
   //   name: "Amine",

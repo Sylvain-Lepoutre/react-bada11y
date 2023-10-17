@@ -5,6 +5,7 @@ import { Persona1Form1 } from "./routes/persona1Form1";
 import { Persona1Form2 } from "./routes/persona1Form2";
 import { Persona1Table1 } from "./routes/persona1Table1";
 import { Persona1Table2 } from "./routes/persona1Table2";
+import { Persona2Shopping1 } from "./routes/persona2Shopping1";
 import { PersonaHome } from "./routes/personaHome";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
@@ -71,46 +72,28 @@ export const router = createBrowserRouter([
       />
     ),
   },
-  // {
-  //   path: "/persona1/form/2",
-  //   element: (
-  //     <PersonaStep2
-  //       personaId={personas[0].id}
-  //       personaName={personas[0].name}
-  //       personaStep2Title={personas[0].step2Title}
-  //     />
-  //   ),
-  // },
-  // {
-  //   path: "/persona1/step4",
-  //   element: (
-  //     <PersonaStep4
-  //       personaId={personas[0].id}
-  //       personaName={personas[0].name}
-  //       personaStep4Title={personas[0].step4Title}
-  //     />
-  //   ),
-  // },
-  // {
-  //   path: "/persona1/step5",
-  //   element: (
-  //     <PersonaStep5
-  //       personaId={personas[0].id}
-  //       personaName={personas[0].name}
-  //       personaStep5Title={personas[0].step5Title}
-  //     />
-  //   ),
-  // },
-  // {
-  //   path: "/persona2",
-  //   element: (
-  //     <PersonaHome
-  //       personaId={personas[1].id}
-  //       personaIntro={personas[1].intro}
-  //       personaName={personas[1].name}
-  //     />
-  //   ),
-  // },
+  {
+    path: `${personas[1].personaHomeUrl}`,
+    element: (
+      <PersonaHome
+        personaId={personas[1].id}
+        personaIntro={personas[1].intro}
+        personaName={personas[1].name}
+        personaSteps={personas[1].steps}
+      />
+    ),
+  },
+  {
+    path: `${personas[1].steps[0].pages[0].url}`,
+    element: (
+      <Persona2Shopping1
+        componentName={personas[1].steps[0].pages[0].name}
+        nextUrl={personas[1].steps[0].pages[1].url}
+        personaHomeUrl={personas[1].personaHomeUrl}
+        personaName={personas[1].name}
+      />
+    ),
+  },
   // {
   //   path: "/persona2/step1",
   //   element: (

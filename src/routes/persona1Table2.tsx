@@ -1,6 +1,6 @@
+import { A11yTable } from "../components/pages/persona1/persona1table2/A11yTable";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
-import { A11yTable } from "../components/pages/persona1/persona1table2/A11yTable";
 
 type Props = {
   componentName: string;
