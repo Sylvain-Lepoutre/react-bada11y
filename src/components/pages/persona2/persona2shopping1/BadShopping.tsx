@@ -1,8 +1,8 @@
-import { Heading2 } from "../../UI/headings/Heading2";
-import { Section } from "../../UI/sections/Section";
+import { Heading2 } from "../../../UI/headings/Heading2";
+import { Section } from "../../../UI/sections/Section";
 import { BadShoppingItem } from "./BadShoppingItem";
 
-export const BadShoppingNoFocus = () => {
+export const BadShopping = () => {
   return (
     <Section>
       <div className="my-12">

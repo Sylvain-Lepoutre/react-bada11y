@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Heading3 } from "../../UI/headings/Heading3";
+import { Heading3 } from "../../../UI/headings/Heading3";
 
 type Props = {
   itemName: string;

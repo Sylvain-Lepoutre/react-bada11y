@@ -1,8 +1,8 @@
-import { Heading2 } from "../../UI/headings/Heading2";
-import { Paragraph } from "../../UI/paragraph/Paragraph";
-import { Section } from "../../UI/sections/Section";
+import { Heading2 } from "../../../UI/headings/Heading2";
+import { Paragraph } from "../../../UI/paragraph/Paragraph";
+import { Section } from "../../../UI/sections/Section";
 
-export const BadShoppingNoFocusExp = () => {
+export const BadShoppingExp = () => {
   return (
     <Section>
       <Heading2>Explications</Heading2>
