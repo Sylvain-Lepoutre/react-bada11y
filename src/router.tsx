@@ -6,8 +6,6 @@ import { Persona1Form2 } from "./routes/persona1Form2";
 import { Persona1Table1 } from "./routes/persona1Table1";
 import { Persona1Table2 } from "./routes/persona1Table2";
 import { PersonaHome } from "./routes/personaHome";
-import { PersonaStep4 } from "./routes/personaStep4";
-import { PersonaStep5 } from "./routes/personaStep5";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
 
