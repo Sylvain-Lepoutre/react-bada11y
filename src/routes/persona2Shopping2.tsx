@@ -1,8 +1,8 @@
-import { Header } from "../components/UI/headers/Header";
-import { Main } from "../components/UI/main/Main";
 import { A11yShopping } from "../components/pages/persona2/persona2shopping2/A11yShopping";
 import { A11yShoppingExp } from "../components/pages/persona2/persona2shopping2/A11yShoppingExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
+import { Header } from "../components/UI/headers/Header";
+import { Main } from "../components/UI/main/Main";
 
 type Props = {
   componentName: string;

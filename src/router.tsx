@@ -6,10 +6,10 @@ import { Persona1Form2 } from "./routes/persona1Form2";
 import { Persona1Table1 } from "./routes/persona1Table1";
 import { Persona1Table2 } from "./routes/persona1Table2";
 import { Persona2Shopping1 } from "./routes/persona2Shopping1";
+import { Persona2Shopping2 } from "./routes/persona2Shopping2";
 import { PersonaHome } from "./routes/personaHome";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
-import { Persona2Shopping2 } from "./routes/persona2Shopping2";
 
 export const router = createBrowserRouter([
   {
@@ -100,8 +100,8 @@ export const router = createBrowserRouter([
     element: (
       <Persona2Shopping2
         componentName={personas[1].steps[0].pages[1].name}
-        personaName={personas[1].name}
         personaHomeUrl={personas[1].personaHomeUrl}
+        personaName={personas[1].name}
       />
     ),
   },
