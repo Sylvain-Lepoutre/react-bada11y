@@ -1,7 +1,7 @@
-import { Heading2 } from "../../UI/headings/Heading2";
-import { Section } from "../../UI/sections/Section";
+import { Heading2 } from "../../../UI/headings/Heading2";
+import { Section } from "../../../UI/sections/Section";
 
-export const BadTableNoSemantic = () => {
+export const BadTable = () => {
   return (
     <Section>
       <Heading2>Affichage dans le navigateur</Heading2>

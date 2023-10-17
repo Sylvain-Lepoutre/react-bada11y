@@ -1,7 +1,7 @@
-import { BadTableNoSemantic } from "../components/pages/persona1step4/BadTableNoSemantic";
-import { BadTableNoSemanticCode } from "../components/pages/persona1step4/BadTableNoSemanticCode";
-import { BadTableNoSemanticConclusion } from "../components/pages/persona1step4/BadTableNoSemanticConclusion";
-import { BadTableNoSemanticExp } from "../components/pages/persona1step4/BadTableNoSemanticExp";
+import { BadTableNoSemantic } from "../components/pages/persona1/persona1table1/BadTable";
+import { BadTableNoSemanticCode } from "../components/pages/persona1/persona1table1/BadTableCode";
+import { BadTableNoSemanticConclusion } from "../components/pages/persona1/persona1table1/BadTableConclusion";
+import { BadTableNoSemanticExp } from "../components/pages/persona1/persona1table1/BadTableExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
