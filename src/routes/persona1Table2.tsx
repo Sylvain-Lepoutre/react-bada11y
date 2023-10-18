@@ -1,4 +1,6 @@
+import { A11yTableExp } from "../components/pages/persona1/persona1table2/A11TableExp";
 import { A11yTable } from "../components/pages/persona1/persona1table2/A11yTable";
+import { A11TableCode } from "../components/pages/persona1/persona1table2/A11yTableCode";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
@@ -23,6 +25,8 @@ export const Persona1Table2 = ({
 
       <Main>
         <A11yTable />
+        <A11TableCode />
+        <A11yTableExp />
       </Main>
 
       <DivLink

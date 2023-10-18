@@ -9,15 +9,9 @@ export const A11yTable = () => {
         <caption>Événements à venir</caption>
         <thead>
           <tr className="flex rounded-t-lg bg-gray-700 p-4 text-white">
-            <th className="w-1/3 text-center" scope="col">
-              Événement
-            </th>
-            <th className="w-1/3 text-center" scope="col">
-              Lieu
-            </th>
-            <th className="w-1/3 text-center" scope="col">
-              Date
-            </th>
+            <th className="w-1/3 text-center">Événement</th>
+            <th className="w-1/3 text-center">Lieu</th>
+            <th className="w-1/3 text-center">Date</th>
           </tr>
         </thead>
         <tbody>

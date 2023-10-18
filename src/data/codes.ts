@@ -33,7 +33,7 @@ export const codes = {
 
     <input type="submit" value="Soumettre l'inscription">
 </div>`,
-  A11yForm: `<form>
+  Persona1A11yForm: `<form>
     <h3>Inscription</h3>
 
     <div>
@@ -99,4 +99,39 @@ export const codes = {
         <div>10 juin 2024</div>
     </div>
 </div>`,
+  Persona1A11yTable: `<table>
+    <caption>Événements à venir</caption>
+    <thead>
+        <tr>
+            <th>Événement</th>
+            <th>Lieu</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Atelier sur l’accessibilité web</td>
+            <td>Centre de conférences local</td>
+            <td>15 mars 2024</td>
+        </tr>
+
+        <tr>
+            <td>Conférence sur les tendances du développement web</td>
+            <td>Bibliothèque communautaire</td>
+            <td>5 avril 2024</td>
+        </tr>
+
+        <tr>
+            <td>Formation sur les bonnes pratiques en matière d’accessibilité</td>
+            <td>Espace de coworking</td>
+            <td>20 mai 2024</td>
+        </tr>
+
+        <tr>
+            <td>Table ronde sur l’avenir du développement web</td>
+            <td>Campus universitaire</td>
+            <td>10 juin 2024</td>
+        </tr>
+    </tbody>
+</table>`,
 };
