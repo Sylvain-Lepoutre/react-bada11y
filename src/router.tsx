@@ -69,6 +69,7 @@ export const router = createBrowserRouter([
     element: (
       <Persona1Table2
         componentName={personas[0].steps[1].pages[1].name}
+        personaHomeUrl={personas[0].personaHomeUrl}
         personaName={personas[0].name}
       />
     ),
