@@ -47,6 +47,16 @@ export const codes = {
     </div>
 
     <div>
+        <label htmlFor="role">Vous êtes ?</label>
+        <select id="role" name="role" required>
+            <option value="">Choisissez votre rôle</option>
+            <option value="developer">Développeur</option>
+            <option value="student">Étudiant</option>
+            <option value="other">Autre</option>
+        </select>
+    </div>
+
+    <div>
         <label for="email">E-mail</label>
         <input id="email" name="email" type="email" required>
     </div>
