@@ -1,8 +1,7 @@
-import { BadForm } from "../components/pages/persona1/persona1form1/BadForm";
-import { BadFormCode } from "../components/pages/persona1/persona1form1/BadFormCode";
-import { BadFormConclusion } from "../components/pages/persona1/persona1form1/BadFormConclusion";
-import { BadFormExp } from "../components/pages/persona1/persona1form1/BadFormExp";
 import { BadTable } from "../components/pages/persona1/persona1table1/BadTable";
+import { BadTableCode } from "../components/pages/persona1/persona1table1/BadTableCode";
+import { BadTableConclusion } from "../components/pages/persona1/persona1table1/BadTableConclusion";
+import { BadTableExp } from "../components/pages/persona1/persona1table1/BadTableExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
@@ -29,10 +28,9 @@ export const Persona1Table1 = ({
 
       <Main>
         <BadTable />
-        <BadForm />
-        <BadFormCode />
-        <BadFormExp />
-        <BadFormConclusion />
+        <BadTableCode />
+        <BadTableExp />
+        <BadTableConclusion />
       </Main>
 
       <DivLink
