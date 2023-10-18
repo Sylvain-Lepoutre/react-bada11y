@@ -22,6 +22,15 @@ export const BadForm = () => {
         </div>
 
         <div className="m-4 flex flex-col">
+          <span>Vous êtes ?</span>
+          <select name="role">
+            <option value="developer">Développeur</option>
+            <option value="student">Étudiant</option>
+            <option value="other">Autre</option>
+          </select>
+        </div>
+
+        <div className="m-4 flex flex-col">
           <span>E-mail</span>
           <input className="rounded-lg px-2" name="email" type="email" />
         </div>
