@@ -1,12 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import { personas } from "./data/personas";
+import { Persona1Form1 } from "./routes/persona1Form1";
+import { Persona1Form2 } from "./routes/persona1Form2";
+import { Persona1Table1 } from "./routes/persona1Table1";
+import { Persona1Table2 } from "./routes/persona1Table2";
+import { Persona2Shopping1 } from "./routes/persona2Shopping1";
+import { Persona2Shopping2 } from "./routes/persona2Shopping2";
 import { PersonaHome } from "./routes/personaHome";
-import { PersonaStep1 } from "./routes/personaStep1";
-import { PersonaStep2 } from "./routes/personaStep2";
-import { PersonaStep3 } from "./routes/personaStep3";
-import { PersonaStep4 } from "./routes/personaStep4";
-import { PersonaStep5 } from "./routes/personaStep5";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
 
@@ -21,113 +22,127 @@ export const router = createBrowserRouter([
     element: <Wip />,
   },
   {
-    path: "/persona1",
+    path: `${personas[0].personaHomeUrl}`,
     element: (
       <PersonaHome
         personaId={personas[0].id}
         personaIntro={personas[0].intro}
         personaName={personas[0].name}
+        personaSteps={personas[0].steps}
       />
     ),
   },
   {
-    path: "/persona1/step1",
+    path: `${personas[0].steps[0].pages[0].url}`,
     element: (
-      <PersonaStep1
-        personaId={personas[0].id}
+      <Persona1Form1
+        componentName={personas[0].steps[0].pages[0].name}
+        nextUrl={personas[0].steps[0].pages[1].url}
+        personaHomeUrl={personas[0].personaHomeUrl}
         personaName={personas[0].name}
-        personaStep1Title={personas[0].step1Title}
       />
     ),
   },
   {
-    path: "/persona1/step2",
+    path: `${personas[0].steps[0].pages[1].url}`,
     element: (
-      <PersonaStep2
-        personaId={personas[0].id}
+      <Persona1Form2
+        componentName={personas[0].steps[0].pages[1].name}
+        personaHomeUrl={personas[0].personaHomeUrl}
         personaName={personas[0].name}
-        personaStep2Title={personas[0].step2Title}
       />
     ),
   },
   {
-    path: "/persona1/step3",
+    path: `${personas[0].steps[1].pages[0].url}`,
     element: (
-      <PersonaStep3
-        personaId={personas[0].id}
+      <Persona1Table1
+        componentName={personas[0].steps[1].pages[0].name}
+        nextUrl={personas[0].steps[1].pages[1].url}
+        personaHomeUrl={personas[0].personaHomeUrl}
         personaName={personas[0].name}
-        personaStep3Title={personas[0].step3Title}
       />
     ),
   },
   {
-    path: "/persona1/step4",
+    path: `${personas[0].steps[1].pages[1].url}`,
     element: (
-      <PersonaStep4
-        personaId={personas[0].id}
+      <Persona1Table2
+        componentName={personas[0].steps[1].pages[1].name}
         personaName={personas[0].name}
-        personaStep4Title={personas[0].step4Title}
       />
     ),
   },
   {
-    path: "/persona1/step5",
-    element: (
-      <PersonaStep5
-        personaId={personas[0].id}
-        personaName={personas[0].name}
-        personaStep5Title={personas[0].step5Title}
-      />
-    ),
-  },
-  {
-    path: "/persona2",
+    path: `${personas[1].personaHomeUrl}`,
     element: (
       <PersonaHome
         personaId={personas[1].id}
         personaIntro={personas[1].intro}
         personaName={personas[1].name}
+        personaSteps={personas[1].steps}
       />
     ),
   },
   {
-    path: "/persona2/step1",
+    path: `${personas[1].steps[0].pages[0].url}`,
     element: (
-      <PersonaStep1
-        personaId={personas[1].id}
+      <Persona2Shopping1
+        componentName={personas[1].steps[0].pages[0].name}
+        nextUrl={personas[1].steps[0].pages[1].url}
+        personaHomeUrl={personas[1].personaHomeUrl}
         personaName={personas[1].name}
-        personaStep1Title={personas[1].step1Title}
       />
     ),
   },
   {
-    path: "/persona2/step2",
+    path: `${personas[1].steps[0].pages[1].url}`,
     element: (
-      <PersonaStep2
-        personaId={personas[1].id}
+      <Persona2Shopping2
+        componentName={personas[1].steps[0].pages[1].name}
+        personaHomeUrl={personas[1].personaHomeUrl}
         personaName={personas[1].name}
-        personaStep2Title={personas[1].step2Title}
       />
     ),
   },
-  {
-    path: "/persona3",
-    element: (
-      <PersonaHome
-        personaId={personas[2].id}
-        personaIntro={personas[2].intro}
-        personaName={personas[2].name}
-      />
-    ),
-  },
-  {
-    path: "/persona4",
-    element: (
-      <PersonaHome
-        personaId={personas[3].id}
-        personaIntro={personas[3].intro}
-        personaName={personas[3].name}
-      />
-    ),
-  },
+  // {
+  //   path: "/persona2/step1",
+  //   element: (
+  //     <PersonaStep1
+  //       personaId={personas[1].id}
+  //       personaName={personas[1].name}
+  //       personaStep1Title={personas[1].step1Title}
+  //     />
+  //   ),
+  // },
+  // {
+  //   path: "/persona2/step2",
+  //   element: (
+  //     <PersonaStep2
+  //       personaId={personas[1].id}
+  //       personaName={personas[1].name}
+  //       personaStep2Title={personas[1].step2Title}
+  //     />
+  //   ),
+  // },
+  // {
+  //   path: "/persona3",
+  //   element: (
+  //     <PersonaHome
+  //       personaId={personas[2].id}
+  //       personaIntro={personas[2].intro}
+  //       personaName={personas[2].name}
+  //     />
+  //   ),
+  // },
+  // {
+  //   path: "/persona4",
+  //   element: (
+  //     <PersonaHome
+  //       personaId={personas[3].id}
+  //       personaIntro={personas[3].intro}
+  //       personaName={personas[3].name}
+  //     />
+  //   ),
+  // },
 ]);
