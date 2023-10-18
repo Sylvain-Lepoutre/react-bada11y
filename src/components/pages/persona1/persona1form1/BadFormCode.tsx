@@ -10,7 +10,7 @@ export const BadFormCode = () => {
       <Heading2>Code</Heading2>
       <CodeBlock
         language="html"
-        text={codes.BadFormNoSemantic}
+        text={codes.Persona1BadForm}
         theme={a11yDark}
       />
     </Section>

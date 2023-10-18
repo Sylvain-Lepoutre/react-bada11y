@@ -10,7 +10,7 @@ export const BadTableCode = () => {
       <Heading2>Code</Heading2>
       <CodeBlock
         language="html"
-        text={codes.BadTableNoSemantic}
+        text={codes.Persona1BadTable}
         theme={a11yDark}
       />
     </Section>
