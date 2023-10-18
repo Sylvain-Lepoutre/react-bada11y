@@ -6,6 +6,7 @@ import { BadFormIntro } from "../components/pages/persona1/persona1form1/BadForm
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   componentName: string;
@@ -20,6 +21,8 @@ export const Persona1Form1 = ({
   nextUrl,
   personaName,
 }: Props) => {
+  useDocumentTitle(`${componentName} - ${personaName} - Inotest`);
+
   return (
     <>
       <Header heading={personaName} textContent={componentName} />

@@ -10,6 +10,7 @@ export const A11yFormExp = () => {
   return (
     <Section>
       <Heading2>Explications</Heading2>
+      {/* TODO refaire la vidéo */}
       <VideoDisplay trackFile="A11yForm.vtt" videoFile="A11yForm.mp4" />
       <SrDisplay>
         <ol>
@@ -20,6 +21,25 @@ export const A11yFormExp = () => {
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
             <span>Prénom édition obligatoire vide</span>
+          </li>
+          <li className="my-4">
+            <KeyBoardInput keyName="Tab" />
+            <span>
+              Vous êtes ? liste déroulante Choisissez votre rôle réduit
+              obligatoire entrée invalide
+            </span>
+          </li>
+          <li className="my-4">
+            <KeyBoardInput keyName="↓" />
+            <span>Développeur</span>
+          </li>
+          <li className="my-4">
+            <KeyBoardInput keyName="↓" />
+            <span>Étudiant</span>
+          </li>
+          <li className="my-4">
+            <KeyBoardInput keyName="↓" />
+            <span>Autre</span>
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />

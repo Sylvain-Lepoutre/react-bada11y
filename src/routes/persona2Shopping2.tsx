@@ -3,6 +3,7 @@ import { A11yShoppingExp } from "../components/pages/persona2/persona2shopping2/
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   componentName: string;
@@ -15,6 +16,8 @@ export const Persona2Shopping2 = ({
   personaHomeUrl,
   personaName,
 }: Props) => {
+  useDocumentTitle(`${componentName} - ${personaName} - Inotest`);
+
   return (
     <>
       <Header heading={personaName} textContent={componentName} />
