@@ -12,7 +12,16 @@ export const codes = {
         <input name="firstname" type="text">
     </div>
 
-      <div>
+    <div>
+        <span>Vous êtes ?</span>
+        <select name="role">
+          <option value="developer">Développeur</option>
+          <option value="student">Étudiant</option>
+          <option value="other">Autre</option>
+        </select>
+    </div>
+
+    <div>
         <span>E-mail</span>
         <input name="email" type="email">
     </div>
