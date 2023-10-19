@@ -80,6 +80,8 @@ export const router = createBrowserRouter([
     element: (
       <Persona1Nav1
         componentName={personas[0].steps[2].pages[0].name}
+        nextUrl={personas[0].steps[2].pages[1].url}
+        personaHomeUrl={personas[0].personaHomeUrl}
         personaName={personas[0].name}
       />
     ),

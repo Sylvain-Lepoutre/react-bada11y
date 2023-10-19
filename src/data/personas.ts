@@ -51,6 +51,7 @@ export const personas: Persona[] = [
         name: "Navigation",
         pages: [
           { id: 1, name: "Navigation non accessible", url: "/persona1/nav/1" },
+          { id: 2, name: "Navigation accessible", url: "/persona1/nav/2" },
         ],
       },
     ],
