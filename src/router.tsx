@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { personas } from "./data/personas";
 import { Persona1Form1 } from "./routes/persona1Form1";
 import { Persona1Form2 } from "./routes/persona1Form2";
+import { Persona1Nav1 } from "./routes/persona1Nav1";
 import { Persona1Table1 } from "./routes/persona1Table1";
 import { Persona1Table2 } from "./routes/persona1Table2";
 import { Persona2Shopping1 } from "./routes/persona2Shopping1";
@@ -70,6 +71,15 @@ export const router = createBrowserRouter([
       <Persona1Table2
         componentName={personas[0].steps[1].pages[1].name}
         personaHomeUrl={personas[0].personaHomeUrl}
+        personaName={personas[0].name}
+      />
+    ),
+  },
+  {
+    path: `${personas[0].steps[2].pages[0].url}`,
+    element: (
+      <Persona1Nav1
+        componentName={personas[0].steps[2].pages[0].name}
         personaName={personas[0].name}
       />
     ),
