@@ -14,7 +14,7 @@ export const BadShoppingExp = () => {
         parcours sur les différents produits.
       </Paragraph>
       <Paragraph>
-        Tout nos champs interactifs doivent avoir un style visuel qui est
+        Tout nos éléments interactifs doivent avoir un style visuel qui est
         modifié lorsque l’élément possède le focus afin que l’utilisateur sache
         toujours où il es lorsqu’il navigue au clavier, ou avec une techonologie
         d’assistance simulant l’utilisation d’un clavier.

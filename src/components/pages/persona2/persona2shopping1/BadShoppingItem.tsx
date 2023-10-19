@@ -3,10 +3,11 @@ import { useState } from "react";
 import { Heading3 } from "../../../UI/headings/Heading3";
 
 type Props = {
+  imgFile: string;
   itemName: string;
 };
 
-export const BadShoppingItem = ({ itemName }: Props) => {
+export const BadShoppingItem = ({ imgFile, itemName }: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleAddToCart = () => {
@@ -19,9 +20,10 @@ export const BadShoppingItem = ({ itemName }: Props) => {
   return (
     <li className="relative flex border-spacing-4 flex-col items-center justify-center rounded-2xl border border-black">
       <Heading3>{itemName}</Heading3>
-      <img alt="" className="mx-auto" src="https://placehold.co/256x256/png" />
+      <img alt="" className="mx-auto h-72 w-80" src={`/img/${imgFile}`} />
       <button
-        className="mx-auto my-4 w-fit rounded-2xl border border-black bg-gray-300 p-4 outline-none"
+        aria-label={`Ajouter ${itemName} au panier`}
+        className="mx-auto my-4 w-fit rounded-2xl border border-black bg-gray-300 p-4 text-white outline-none"
         onClick={handleAddToCart}
       >
         Ajouter au panier

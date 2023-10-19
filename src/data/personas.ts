@@ -46,6 +46,14 @@ export const personas: Persona[] = [
           { id: 2, name: "Tableau accessible", url: "/persona1/table/2" },
         ],
       },
+      {
+        id: 3,
+        name: "Navigation",
+        pages: [
+          { id: 1, name: "Navigation non accessible", url: "/persona1/nav/1" },
+          { id: 2, name: "Navigation accessible", url: "/persona1/nav/2" },
+        ],
+      },
     ],
   },
   {

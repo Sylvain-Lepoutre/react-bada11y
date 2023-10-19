@@ -8,19 +8,22 @@ export const BadShopping = () => {
       <div className="my-12">
         <Heading2>Fruits</Heading2>
         <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <BadShoppingItem itemName="Pommes" />
-          <BadShoppingItem itemName="Poires" />
-          <BadShoppingItem itemName="Bananes" />
-          <BadShoppingItem itemName="Abricots" />
+          <BadShoppingItem imgFile="pommes.jpg" itemName="Pommes" />
+          <BadShoppingItem imgFile="poires.jpg" itemName="Poires" />
+          <BadShoppingItem imgFile="bananes.jpg" itemName="Bananes" />
+          <BadShoppingItem imgFile="abricots.jpg" itemName="Abricots" />
         </ul>
       </div>
       <div>
         <Heading2>Légumes</Heading2>
         <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <BadShoppingItem itemName="Haricots Verts" />
-          <BadShoppingItem itemName="Choux" />
-          <BadShoppingItem itemName="Courgettes" />
-          <BadShoppingItem itemName="Navets" />
+          <BadShoppingItem
+            imgFile="haricots-vert.jpg"
+            itemName="Haricots Verts"
+          />
+          <BadShoppingItem imgFile="chou.jpg" itemName="Choux" />
+          <BadShoppingItem imgFile="courgette.jpg" itemName="Courgettes" />
+          <BadShoppingItem imgFile="navet.jpg " itemName="Navets" />
         </ul>
       </div>
     </Section>

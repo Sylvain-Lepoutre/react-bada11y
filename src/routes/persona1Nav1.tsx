@@ -1,11 +1,10 @@
-import { BadTable } from "../components/pages/persona1/persona1table1/BadTable";
-import { BadTableCode } from "../components/pages/persona1/persona1table1/BadTableCode";
-import { BadTableConclusion } from "../components/pages/persona1/persona1table1/BadTableConclusion";
-import { BadTableExp } from "../components/pages/persona1/persona1table1/BadTableExp";
+import { BadNav } from "../components/pages/persona1/persona1nav1/BadNav";
+import { BadNavCode } from "../components/pages/persona1/persona1nav1/BadNavCode";
+import { BadNavExp } from "../components/pages/persona1/persona1nav1/BadNavExp";
+import { BadNavIntro } from "../components/pages/persona1/persona1nav1/BadNavIntro";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   componentName: string;
@@ -14,30 +13,28 @@ type Props = {
   personaName: string;
 };
 
-export const Persona1Table1 = ({
+export const Persona1Nav1 = ({
   componentName,
   nextUrl,
   personaHomeUrl,
   personaName,
 }: Props) => {
-  useDocumentTitle(`${componentName} - ${personaName} - Inotest`);
-
   return (
     <>
       <Header heading={personaName} textContent={componentName} />
 
       <Main>
-        <BadTable />
-        <BadTableCode />
-        <BadTableExp />
-        <BadTableConclusion />
+        <BadNavIntro />
+        <BadNav />
+        <BadNavCode />
+        <BadNavExp />
       </Main>
 
       <DivLink
         labelLink1={`Accueil ${personaName}`}
         labelLink2="Continuer"
         srLabelLink1={`Revenir à la page d'accueil de ${personaName}`}
-        srLabelLink2="Continuer ce parcous"
+        srLabelLink2="Continuer ce parcours"
         urlLink1={personaHomeUrl}
         urlLink2={nextUrl}
       />
