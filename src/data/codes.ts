@@ -134,4 +134,18 @@ export const codes = {
         </tr>
     </tbody>
 </table>`,
+  Persona1BadNav: `<div>
+    <a href="/">
+        Accueil
+    </a>
+    <a href="/produits">
+        Produits
+    </a>
+    <a href="http://">
+        Services
+    </a>
+    <a href="http://">
+        Contact
+    </a>
+</div>`,
 };
