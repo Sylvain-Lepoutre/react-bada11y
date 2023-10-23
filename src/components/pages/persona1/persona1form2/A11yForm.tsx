@@ -19,7 +19,7 @@ export const A11yForm = () => {
         aria-labelledby={id}
         className="mx-auto my-4 rounded-lg bg-gray-200 p-4"
       >
-        <h3 id={id} className="flex flex-col text-center">
+        <h3 className="flex flex-col text-center" id={id}>
           Inscription
           <span className="text-sm">(tous les champs sont obligatoires)</span>
         </h3>
