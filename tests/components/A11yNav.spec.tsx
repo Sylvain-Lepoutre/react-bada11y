@@ -1,7 +1,8 @@
-import { describe, expect, test } from "vitest";
-import { A11yNav } from "../../src/components/pages/persona1/persona1nav2/A11yNav";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { describe, expect, test } from "vitest";
+
+import { A11yNav } from "../../src/components/pages/persona1/persona1nav2/A11yNav";
 
 const anchors = ["Accueil", "Produits", "Services", "Contact"];
 
