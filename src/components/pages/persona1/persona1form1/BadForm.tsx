@@ -5,20 +5,31 @@ export const BadForm = () => {
   return (
     <Section>
       <Heading2>Affichage dans le navigateur</Heading2>
+
       <div className="mx-auto my-4 w-3/4 rounded-xl bg-gray-200 p-4">
         <div className="flex flex-col text-center">
           Inscription
-          <span className="text-sm">(tout les champs sont obligatoires)</span>
+          <span className="text-sm">(tous les champs sont obligatoires)</span>
         </div>
 
         <div className="m-4 flex flex-col">
           <span>Nom</span>
-          <input className="rounded-lg px-2" name="lastname" type="text" />
+          <input
+            className="rounded-lg px-2"
+            data-testid="lastname"
+            name="lastname"
+            type="text"
+          />
         </div>
 
         <div className="m-4 flex flex-col">
           <span>Prénom</span>
-          <input className="rounded-lg px-2" name="firstname" type="text" />
+          <input
+            className="rounded-lg px-2"
+            data-testid="firstname"
+            name="firstname"
+            type="text"
+          />
         </div>
 
         <div className="m-4 flex flex-col">

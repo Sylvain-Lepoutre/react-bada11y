@@ -5,7 +5,7 @@ export const BadFormNoSemantic = () => {
 
       <div className="m-4 flex flex-col">
         <span>Nom</span>
-        <input className="rounded-lg px-2" type="text" />
+        <input className="rounded-lg px-2" data-testid="" type="text" />
       </div>
 
       <div className="m-4 flex flex-col">

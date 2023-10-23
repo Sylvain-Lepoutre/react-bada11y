@@ -1,4 +1,4 @@
-import type { MouseEventHandler } from "react";
+import { useId, type MouseEventHandler } from "react";
 
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { Section } from "../../../UI/sections/Section";
@@ -9,13 +9,19 @@ export const A11yForm = () => {
     console.log("Formulaire envoyé");
   };
 
+  const id = useId();
+
   return (
     <Section>
       <Heading2>Affichage dans le navigateur</Heading2>
-      <form className="mx-auto my-4 rounded-lg bg-gray-200 p-4">
-        <h3 className="flex flex-col text-center">
+
+      <form
+        aria-labelledby={id}
+        className="mx-auto my-4 rounded-lg bg-gray-200 p-4"
+      >
+        <h3 id={id} className="flex flex-col text-center">
           Inscription
-          <span className="text-sm">(tout les champs sont obligatoires)</span>
+          <span className="text-sm">(tous les champs sont obligatoires)</span>
         </h3>
 
         <div className="m-4 flex flex-col">
@@ -41,8 +47,8 @@ export const A11yForm = () => {
         </div>
 
         <div className="m-4 flex flex-col">
-          <label htmlFor="role">Vous êtes ?</label>
-          <select id="role" name="role" required>
+          <label htmlFor="job">Vous êtes ?</label>
+          <select id="job" name="job" required>
             <option value="">Choisissez votre rôle</option>
             <option value="developer">Développeur</option>
             <option value="student">Étudiant</option>
