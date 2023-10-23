@@ -5,7 +5,10 @@ export const A11yNav = () => {
   return (
     <Section>
       <Heading2>Affichage dans le navigateur</Heading2>
-      <nav className="mx-auto my-4 w-9/12  rounded-lg border border-black p-4">
+      <nav
+        className="mx-auto my-4 w-9/12  rounded-lg border border-black p-4"
+        role="navigation"
+      >
         <ul className="mx-auto my-4 flex justify-around">
           <li>
             <a className="p-4" href="/">

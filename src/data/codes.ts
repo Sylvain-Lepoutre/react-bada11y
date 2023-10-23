@@ -148,7 +148,7 @@ export const codes = {
         Contact
     </a>
 </div>`,
-  Persona1A11yNav: `<nav>
+  Persona1A11yNav: `<nav role="navigation">
     <ul>
         <li>
             <a href="/">Accueil</a>
