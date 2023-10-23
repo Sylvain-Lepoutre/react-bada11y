@@ -1,4 +1,6 @@
 import { A11yNav } from "../components/pages/persona1/persona1nav2/A11yNav";
+import { A11yNavCode } from "../components/pages/persona1/persona1nav2/A11yNavCode";
+import { A11yNavExp } from "../components/pages/persona1/persona1nav2/A11yNavExp";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
@@ -22,6 +24,8 @@ export const Persona1Nav2 = ({
       <Header heading={personaName} textContent={componentName} />
       <Main>
         <A11yNav />
+        <A11yNavCode />
+        <A11yNavExp />
       </Main>
 
       <DivLink
