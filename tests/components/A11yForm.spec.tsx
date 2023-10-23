@@ -1,82 +1,75 @@
 import { prettyDOM, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { describe, expect, test } from "vitest";
 
 import { A11yForm } from "../../src/components/pages/persona1/persona1form2/A11yForm";
 
 // data-testid="test"
 
+const labels = [
+  "Nom",
+  "Prénom",
+  "Vous êtes ?",
+  "E-mail",
+  "Mot de passe",
+] as const;
+
 describe("WAI-ARIA Roles, States, and Properties", () => {
-  it("should have the 'form' role", () => {
+  test("the form has the 'form' role", () => {
     render(<A11yForm />);
 
     expect(screen.getByRole("form")).toBeInTheDocument();
   });
 
-  it("should have an input with 'id' corresponding to his label 'htmlFor'", () => {
+  test("all labels have an associated form element", () => {
     render(<A11yForm />);
 
-    const inputs = screen.getAllByRole("textbox");
-    const labels = screen.getAllByLabelText(/.*/);
+    for (const label of labels) {
+      const inputElement = screen.getByLabelText(label);
 
-    labels.map((label) => {
-      console.log("LABEL ID: ", label.id);
-    });
-
-    inputs.map((input) => {
-      console.log("INPUT ID: ", input.id);
-      const correspondingLabel = labels.find((label) => label.id === input.id);
-      expect(correspondingLabel).toBeTruthy();
-    });
+      expect(inputElement).toBeInTheDocument();
+    }
   });
 
-  it("should have required attribute on inputs", () => {
+  test("should have required attribute on inputs", () => {
     render(<A11yForm />);
 
-    const inputs = screen.getAllByRole("textbox");
-
-    inputs.map((input) => {
-      expect(input).toBeRequired();
-    });
+    for (const label of labels) {
+      const inputElement = screen.getByLabelText(label);
+      expect(inputElement).toBeRequired();
+    }
   });
 });
 
 describe("Keyboard Interaction", () => {
-  it("should move the focus onto the first input", async () => {
+  test("should move the focus onto the first input", async () => {
     render(<A11yForm />);
 
     const user = userEvent.setup();
-    await user.tab();
 
-    const firstInput = screen.getByLabelText("Nom");
+    for (const label of labels) {
+      await user.tab();
 
-    expect(firstInput).toHaveFocus();
-  });
+      const inputElement = screen.getByLabelText(label);
 
-  it("should move the focus onto the second input", async () => {
-    render(<A11yForm />);
-
-    const user = userEvent.setup();
-    await user.tab();
-    await user.tab();
-
-    const secondInput = screen.getByLabelText("Prénom");
-
-    expect(secondInput).toHaveFocus();
+      expect(inputElement).toHaveFocus();
+    }
   });
 });
 
-describe("Mouse interaction", () => {
-  it("should put the focus on the input field", async () => {
+describe("Mouse Interaction", () => {
+  test("should put the focus on the input field", async () => {
     render(<A11yForm />);
 
-    const emailLabel = screen.getByLabelText("E-mail");
-    console.log("E-mail Label :", emailLabel.id);
-    const emailInput = screen.getByRole("textbox", { name: "E-mail" });
-    console.log("E-Mail Input :", emailInput.id);
-
     const user = userEvent.setup();
-    await user.click(emailLabel);
-    expect(emailInput).toHaveFocus();
+
+    for (const label of labels) {
+      const labelElement = screen.getByText(label);
+      const inputElement = screen.getByLabelText(label);
+
+      await user.click(labelElement);
+
+      expect(inputElement).toHaveFocus();
+    }
   });
 });
