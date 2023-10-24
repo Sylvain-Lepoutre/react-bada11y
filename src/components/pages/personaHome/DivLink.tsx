@@ -20,14 +20,14 @@ export const DivLink = ({
   return (
     <div className="mx-auto my-16 flex w-10/12 justify-between sm:w-6/12 lg:w-4/12">
       <ButtonLink
+        to={urlLink1}
         label={labelLink1}
-        srLabel={srLabelLink1}
-        url={urlLink1}
+        aria-label={srLabelLink1}
       ></ButtonLink>
       <ButtonLink
         label={labelLink2}
-        srLabel={srLabelLink2}
-        url={urlLink2}
+        aria-label={srLabelLink2}
+        to={urlLink2}
       ></ButtonLink>
     </div>
   );
