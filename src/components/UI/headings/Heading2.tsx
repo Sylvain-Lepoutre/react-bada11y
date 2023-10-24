@@ -7,13 +7,13 @@ type Props = DetailedHTMLProps<
 >;
 
 export const Heading2 = ({ children, className, ...rest }: Props) => {
-  const combinedClassName = twMerge(
+  const mergedClassName = twMerge(
     "my-4 text-center text-2xl lg:text-3xl",
     className,
   );
 
   return (
-    <h2 className={combinedClassName} {...rest}>
+    <h2 className={mergedClassName} {...rest}>
       {children}
     </h2>
   );
