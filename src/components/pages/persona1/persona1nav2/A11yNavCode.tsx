@@ -1,9 +1,9 @@
+import { useId } from "react";
 import { a11yDark, CodeBlock } from "react-code-blocks";
 
 import { codes } from "../../../../data/codes";
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { Section } from "../../../UI/sections/Section";
-import { useId } from "react";
 
 export const A11yNavCode = () => {
   const id = useId();

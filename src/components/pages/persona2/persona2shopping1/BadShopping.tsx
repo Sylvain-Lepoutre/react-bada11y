@@ -1,8 +1,9 @@
 import { useId } from "react";
+
 import { Heading2 } from "../../../UI/headings/Heading2";
+import { Heading3 } from "../../../UI/headings/Heading3";
 import { Section } from "../../../UI/sections/Section";
 import { BadShoppingItem } from "./BadShoppingItem";
-import { Heading3 } from "../../../UI/headings/Heading3";
 
 export const BadShopping = () => {
   const id = useId();
