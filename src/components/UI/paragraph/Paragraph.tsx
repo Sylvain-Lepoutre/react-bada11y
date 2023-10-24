@@ -1,7 +1,17 @@
-import type { ReactNode } from "react";
+import type { DetailedHTMLProps, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
-type Props = { children: ReactNode };
+type Props = DetailedHTMLProps<
+  HTMLAttributes<HTMLParagraphElement>,
+  HTMLParagraphElement
+>;
 
-export const Paragraph = ({ children }: Props) => {
-  return <p className="my-4 text-center lg:text-xl">{children}</p>;
+export const Paragraph = ({ children, className, ...rest }: Props) => {
+  const mergedClassName = twMerge("my-4 text-center lg:text-xl", className);
+
+  return (
+    <p className={mergedClassName} {...rest}>
+      {children}
+    </p>
+  );
 };
