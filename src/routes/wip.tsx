@@ -14,8 +14,8 @@ export const Wip = () => {
 
       <div className="text-center">
         <ButtonLink
-          label="Accueil"
           aria-label="Revenir à la page d'accueil de Inotest"
+          label="Accueil"
           to="/"
         />
       </div>
