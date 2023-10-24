@@ -1,12 +1,15 @@
+import { useId } from "react";
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { KeyBoardInput } from "../../../UI/keyboard-inputs/KeyboardInput";
 import { Section } from "../../../UI/sections/Section";
 import { SrDisplay } from "../../../UI/sr-display/SrDisplay";
 
 export const A11yTableExp = () => {
+  const id = useId();
+
   return (
-    <Section>
-      <Heading2>Explications</Heading2>
+    <Section aria-labelledby={id}>
+      <Heading2 id={id}>Explications</Heading2>
       {/* TODO Vidéo */}
       <SrDisplay>
         <ol>

@@ -1,3 +1,4 @@
+import { useId } from "react";
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { KeyBoardInput } from "../../../UI/keyboard-inputs/KeyboardInput";
 import { Paragraph } from "../../../UI/paragraph/Paragraph";
@@ -6,9 +7,11 @@ import { SrDisplay } from "../../../UI/sr-display/SrDisplay";
 import { HtmlTag } from "../../../UI/tags/HtmlTag";
 
 export const BadNavExp = () => {
+  const id = useId();
+
   return (
-    <Section>
-      <Heading2>Explications</Heading2>
+    <Section aria-labelledby={id}>
+      <Heading2 id={id}>Explications</Heading2>
       <Paragraph>
         Nous voyons que notre code utilise uniquement les balises{" "}
         <HtmlTag tagName="a" /> comme balise sémantique, les liens sont donc
