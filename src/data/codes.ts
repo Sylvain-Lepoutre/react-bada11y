@@ -164,4 +164,11 @@ export const codes = {
         </li>
     </ul>
 </nav>`,
+  Persona4BadTextHtml: `<p>
+    / ... /
+</p>`,
+
+  Persona4BadTextCss: `p {
+    line-height: 1;
+}`,
 };
