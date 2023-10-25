@@ -1,5 +1,6 @@
 import { BadText } from "../components/pages/persona4/persona4text1/BadText";
 import { BadTextCode } from "../components/pages/persona4/persona4text1/BadTextCode";
+import { BadTextExp } from "../components/pages/persona4/persona4text1/BadTextExp";
 import { BadTextIntro } from "../components/pages/persona4/persona4text1/BadTextIntro";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
@@ -29,6 +30,7 @@ export const Persona4Text1 = ({
         <BadTextIntro />
         <BadText />
         <BadTextCode />
+        <BadTextExp />
       </Main>
 
       <DivLink
