@@ -8,5 +8,7 @@ type Props = DetailedHTMLProps<
 };
 
 export const HtmlTag = ({ tagName }: Props) => {
-  return <span>&lt;{tagName}&gt;</span>;
+  return (
+    <span className="rounded-md bg-gray-500/25 px-1">&lt;{tagName}&gt;</span>
+  );
 };
