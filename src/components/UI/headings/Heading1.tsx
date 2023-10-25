@@ -1,5 +1,6 @@
 import type { DetailedHTMLProps, HTMLAttributes } from "react";
-import { twMerge } from "tailwind-merge";
+
+import { cn } from "../../../helpers/cn";
 
 type Props = DetailedHTMLProps<
   HTMLAttributes<HTMLHeadingElement>,
@@ -7,12 +8,11 @@ type Props = DetailedHTMLProps<
 >;
 
 export const Heading1 = ({ children, className, ...rest }: Props) => {
-  const mergedClassName = twMerge(
-    "my-4 text-center text-4xl lg:text-5xl",
-    className,
-  );
   return (
-    <h1 className={mergedClassName} {...rest}>
+    <h1
+      className={cn("my-4 text-center text-4xl lg:text-5xl", className)}
+      {...rest}
+    >
       {children}
     </h1>
   );
