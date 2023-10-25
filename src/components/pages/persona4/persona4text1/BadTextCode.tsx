@@ -4,7 +4,6 @@ import { a11yDark, CodeBlock } from "react-code-blocks";
 import { codes } from "../../../../data/codes";
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { Heading3 } from "../../../UI/headings/Heading3";
-import { Paragraph } from "../../../UI/paragraph/Paragraph";
 import { Section } from "../../../UI/sections/Section";
 
 export const BadTextCode = () => {

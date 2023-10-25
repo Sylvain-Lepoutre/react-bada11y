@@ -177,8 +177,8 @@ export const router = createBrowserRouter([
     element: (
       <Persona4Text1
         componentName={personas[3].steps[0].pages[0].name}
-        nextUrl={personas[3].steps[0].pages[1].url}
-        personaHomeUrl={personas[3].personaHomeUrl}
+        // nextUrl={personas[3].steps[0].pages[1].url}
+        // personaHomeUrl={personas[3].personaHomeUrl}
         personaName={personas[3].name}
       />
     ),
