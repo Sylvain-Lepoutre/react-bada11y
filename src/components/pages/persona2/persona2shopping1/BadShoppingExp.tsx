@@ -1,11 +1,15 @@
+import { useId } from "react";
+
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { Paragraph } from "../../../UI/paragraph/Paragraph";
 import { Section } from "../../../UI/sections/Section";
 
 export const BadShoppingExp = () => {
+  const id = useId();
+
   return (
-    <Section>
-      <Heading2>Explications</Heading2>
+    <Section aria-labelledby={id}>
+      <Heading2 id={id}>Explications</Heading2>
       <Paragraph>
         Comme nous l’avons vu, Sophie doit utiliser son clavier pour naviguer,
         elle utilise la touche Tab pour passer de champ interactif en champ

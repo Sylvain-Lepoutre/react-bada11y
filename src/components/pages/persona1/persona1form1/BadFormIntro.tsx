@@ -1,11 +1,15 @@
+import { useId } from "react";
+
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { Paragraph } from "../../../UI/paragraph/Paragraph";
 import { Section } from "../../../UI/sections/Section";
 
 export const BadFormIntro = () => {
+  const id = useId();
+
   return (
-    <Section>
-      <Heading2>Introduction</Heading2>
+    <Section aria-labelledby={id}>
+      <Heading2 id={id}>Introduction</Heading2>
       <Paragraph>
         La perception de Djebrine diffère de la vision traditionnelle.
         Contrairement à une personne voyante qui peut obtenir une “vue

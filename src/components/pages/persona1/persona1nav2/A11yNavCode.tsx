@@ -5,7 +5,7 @@ import { codes } from "../../../../data/codes";
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { Section } from "../../../UI/sections/Section";
 
-export const BadFormCode = () => {
+export const A11yNavCode = () => {
   const id = useId();
 
   return (
@@ -13,7 +13,7 @@ export const BadFormCode = () => {
       <Heading2 id={id}>Code</Heading2>
       <CodeBlock
         language="html"
-        text={codes.Persona1BadForm}
+        text={codes.Persona1A11yNav}
         theme={a11yDark}
       />
     </Section>

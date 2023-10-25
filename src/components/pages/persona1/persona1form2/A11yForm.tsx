@@ -10,16 +10,17 @@ export const A11yForm = () => {
   };
 
   const id = useId();
+  const idForm = useId();
 
   return (
-    <Section>
-      <Heading2>Affichage dans le navigateur</Heading2>
+    <Section aria-labelledby={id}>
+      <Heading2 id={id}>Affichage dans le navigateur</Heading2>
 
       <form
-        aria-labelledby={id}
+        aria-labelledby={idForm}
         className="mx-auto my-4 rounded-lg bg-gray-200 p-4"
       >
-        <h3 id={id} className="flex flex-col text-center">
+        <h3 className="flex flex-col text-center" id={idForm}>
           Inscription
           <span className="text-sm">(tous les champs sont obligatoires)</span>
         </h3>

@@ -42,7 +42,7 @@ describe("WAI-ARIA Roles, States, and Properties", () => {
 });
 
 describe("Keyboard Interaction", () => {
-  test("should move the focus onto the first input", async () => {
+  test("should move the focus onto next input", async () => {
     render(<A11yForm />);
 
     const user = userEvent.setup();
@@ -58,7 +58,7 @@ describe("Keyboard Interaction", () => {
 });
 
 describe("Mouse Interaction", () => {
-  test("should put the focus on the input field", async () => {
+  test("should put the focus on the input field when click on his label", async () => {
     render(<A11yForm />);
 
     const user = userEvent.setup();

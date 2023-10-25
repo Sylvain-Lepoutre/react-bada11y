@@ -17,6 +17,7 @@ export const BadShoppingItem = ({ imgFile, itemName }: Props) => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
   return (
     <li className="relative flex border-spacing-4 flex-col items-center justify-center rounded-2xl border border-black">
       <Heading3>{itemName}</Heading3>

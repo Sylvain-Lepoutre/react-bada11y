@@ -1,10 +1,14 @@
+import { useId } from "react";
+
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { Section } from "../../../UI/sections/Section";
 
 export const A11yTable = () => {
+  const id = useId();
+
   return (
-    <Section>
-      <Heading2>Affichage dans le navigateur</Heading2>
+    <Section aria-labelledby={id}>
+      <Heading2 id={id}>Affichage dans le navigateur</Heading2>
       <table className="mx-auto my-4 w-3/4 rounded-lg border border-solid border-black">
         <caption>Événements à venir</caption>
         <thead>

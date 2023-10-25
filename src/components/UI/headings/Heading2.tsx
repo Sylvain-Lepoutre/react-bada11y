@@ -1,9 +1,19 @@
-import type { ReactNode } from "react";
+import type { DetailedHTMLProps, HtmlHTMLAttributes } from "react";
 
-type Props = {
-  children: ReactNode;
-};
+import { cn } from "../../../helpers/cn";
 
-export const Heading2 = ({ children }: Props) => {
-  return <h2 className="my-4 text-center text-2xl lg:text-3xl">{children}</h2>;
+type Props = DetailedHTMLProps<
+  HtmlHTMLAttributes<HTMLHeadingElement>,
+  HTMLHeadingElement
+>;
+
+export const Heading2 = ({ children, className, ...rest }: Props) => {
+  return (
+    <h2
+      className={cn("my-4 text-center text-2xl lg:text-3xl", className)}
+      {...rest}
+    >
+      {children}
+    </h2>
+  );
 };

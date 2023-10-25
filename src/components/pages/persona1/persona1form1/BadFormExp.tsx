@@ -1,3 +1,5 @@
+import { useId } from "react";
+
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { KeyBoardInput } from "../../../UI/keyboard-inputs/KeyboardInput";
 import { Paragraph } from "../../../UI/paragraph/Paragraph";
@@ -9,9 +11,11 @@ import { VideoDisplay } from "../../../UI/video-display/VideoDisplay";
 //TODO revoir pour l'affichage des commandes effectuées
 
 export const BadFormExp = () => {
+  const id = useId();
+
   return (
-    <Section>
-      <Heading2>Explications</Heading2>
+    <Section aria-labelledby={id}>
+      <Heading2 id={id}>Explications</Heading2>
       <Paragraph>
         Un utilisateur de lecteur d’écran utilise la touche{" "}
         <KeyBoardInput keyName="Tab" /> pour passer d’un champ interactif à un

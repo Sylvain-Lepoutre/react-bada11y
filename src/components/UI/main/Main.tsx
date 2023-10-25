@@ -1,12 +1,16 @@
-import type { ReactNode } from "react";
+import type { DetailedHTMLProps, HTMLAttributes } from "react";
 
-type Props = {
-  children: ReactNode;
-};
+import { cn } from "../../../helpers/cn";
 
-export const Main = ({ children }: Props) => {
+type Props = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
+
+export const Main = ({ children, className, ...rest }: Props) => {
   return (
-    <main className="mx-auto my-12 w-11/12 lg:w-9/12" role="main">
+    <main
+      className={cn("mx-auto my-12 w-11/12 lg:w-9/12", className)}
+      role="main"
+      {...rest}
+    >
       {children}
     </main>
   );

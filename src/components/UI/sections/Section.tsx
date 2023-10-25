@@ -1,12 +1,18 @@
-import type { ReactNode } from "react";
+import type { DetailedHTMLProps, DetailsHTMLAttributes } from "react";
 
-type Props = {
-  children: ReactNode;
-};
+import { cn } from "../../../helpers/cn";
 
-export const Section = ({ children }: Props) => {
+type Props = DetailedHTMLProps<DetailsHTMLAttributes<HTMLElement>, HTMLElement>;
+
+export const Section = ({ children, className, ...rest }: Props) => {
   return (
-    <section className="my-10 rounded-2xl bg-white p-4 shadow-Custom lg:px-8">
+    <section
+      className={cn(
+        "my-10 rounded-2xl bg-white p-4 shadow-Custom lg:px-8",
+        className,
+      )}
+      {...rest}
+    >
       {children}
     </section>
   );

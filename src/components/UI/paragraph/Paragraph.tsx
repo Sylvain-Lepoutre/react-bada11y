@@ -1,7 +1,16 @@
-import type { ReactNode } from "react";
+import type { DetailedHTMLProps, HTMLAttributes } from "react";
 
-type Props = { children: ReactNode };
+import { cn } from "../../../helpers/cn";
 
-export const Paragraph = ({ children }: Props) => {
-  return <p className="my-4 text-center lg:text-xl">{children}</p>;
+type Props = DetailedHTMLProps<
+  HTMLAttributes<HTMLParagraphElement>,
+  HTMLParagraphElement
+>;
+
+export const Paragraph = ({ children, className, ...rest }: Props) => {
+  return (
+    <p className={cn("my-4 text-center lg:text-xl", className)} {...rest}>
+      {children}
+    </p>
+  );
 };

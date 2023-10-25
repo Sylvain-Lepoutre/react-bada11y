@@ -1,3 +1,5 @@
+import { useId } from "react";
+
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { KeyBoardInput } from "../../../UI/keyboard-inputs/KeyboardInput";
 import { Paragraph } from "../../../UI/paragraph/Paragraph";
@@ -7,9 +9,11 @@ import { HtmlTag } from "../../../UI/tags/HtmlTag";
 import { VideoDisplay } from "../../../UI/video-display/VideoDisplay";
 
 export const A11yFormExp = () => {
+  const id = useId();
+
   return (
-    <Section>
-      <Heading2>Explications</Heading2>
+    <Section aria-labelledby={id}>
+      <Heading2 id={id}>Explications</Heading2>
       {/* TODO refaire la vidéo */}
       <VideoDisplay trackFile="A11yForm.vtt" videoFile="A11yForm.mp4" />
       <SrDisplay>

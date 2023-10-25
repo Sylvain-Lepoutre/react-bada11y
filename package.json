@@ -21,10 +21,12 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
+    "clsx": "^2.0.0",
     "react": "^18.2.0",
     "react-code-blocks": "^0.1.4",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0"
+    "react-router-dom": "^6.15.0",
+    "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.1.0",

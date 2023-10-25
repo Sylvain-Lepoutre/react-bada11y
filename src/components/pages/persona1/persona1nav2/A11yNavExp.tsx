@@ -6,25 +6,19 @@ import { Paragraph } from "../../../UI/paragraph/Paragraph";
 import { Section } from "../../../UI/sections/Section";
 import { SrDisplay } from "../../../UI/sr-display/SrDisplay";
 import { HtmlTag } from "../../../UI/tags/HtmlTag";
+import { InlineCode } from "../../../UI/tags/InlineCode";
 
-export const BadNavExp = () => {
+export const A11yNavExp = () => {
   const id = useId();
 
   return (
     <Section aria-labelledby={id}>
       <Heading2 id={id}>Explications</Heading2>
-      <Paragraph>
-        Nous voyons que notre code utilise uniquement les balises{" "}
-        <HtmlTag tagName="a" /> comme balise sémantique, les liens sont donc
-        bien reconnus par les technologie d’assistance. Nous allons voir ce
-        qu’indique un lecteur d’écran.
-      </Paragraph>
-
       <SrDisplay>
         <ol>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
-            <span>Accueil lien</span>
+            <span>navigation région liste de 4 éléments Accueil lien</span>
           </li>
           <li className="my-4">
             <KeyBoardInput keyName="Tab" />
@@ -42,20 +36,18 @@ export const BadNavExp = () => {
       </SrDisplay>
 
       <Paragraph>
-        Le lecteur d’écran ne lit donc que “lien” sans aucune autre informations
-        sémantique.
+        Avec l’utilisation de la balise <HtmlTag tagName="nav" />, et de
+        l’attribut ARIA, <InlineCode code='role="navigation"' />, nous indiquons
+        correctement que nos lien de navigations sont dans un menu de
+        navigation, et les utilsateurs de technologie d’assistance pourront se
+        rendre directement à celui ci grâce aux commandes de ces outils.
       </Paragraph>
 
       <Paragraph>
-        Les différentes technologie d’assistance dont le lecteur d’écran fait
-        partie permettent aux utilisateur d’aller directement au menu de
-        navigation, mais il faut que celui-ci soit identifié sémantiquement.
-      </Paragraph>
-
-      <Paragraph>
-        De même indiqué que chaque lien est un élément faisant partie d’une
-        liste peut aider les utilsateurs à mieux se situer dans le flux
-        d’information.
+        Nous avons aussi utlisé les balises <HtmlTag tagName="ul" /> et
+        <HtmlTag tagName="li" /> afin d’indiquer que ce menu est une liste qui
+        comprend 4 éléments. Cela renforce la structure de notre page afin
+        d’assurer une meilleure expérience de navigation.
       </Paragraph>
     </Section>
   );
