@@ -149,24 +149,26 @@ export const router = createBrowserRouter([
   //     />
   //   ),
   // },
-  // {
-  //   path: "/persona3",
-  //   element: (
-  //     <PersonaHome
-  //       personaId={personas[2].id}
-  //       personaIntro={personas[2].intro}
-  //       personaName={personas[2].name}
-  //     />
-  //   ),
-  // },
-  // {
-  //   path: "/persona4",
-  //   element: (
-  //     <PersonaHome
-  //       personaId={personas[3].id}
-  //       personaIntro={personas[3].intro}
-  //       personaName={personas[3].name}
-  //     />
-  //   ),
-  // },
+  {
+    path: `${personas[2].personaHomeUrl}`,
+    element: (
+      <PersonaHome
+        personaId={personas[2].id}
+        personaIntro={personas[2].intro}
+        personaName={personas[2].name}
+        personaSteps={personas[2].steps}
+      />
+    ),
+  },
+  {
+    path: `${personas[3].personaHomeUrl}`,
+    element: (
+      <PersonaHome
+        personaId={personas[3].id}
+        personaIntro={personas[3].intro}
+        personaName={personas[3].name}
+        personaSteps={personas[3].steps}
+      />
+    ),
+  },
 ]);

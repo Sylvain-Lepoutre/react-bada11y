@@ -79,22 +79,39 @@ export const personas: Persona[] = [
       },
     ],
   },
-  // {
-  //   id: 3,
-  //   name: "Amine",
-  //   cardTitle: "Amine, 23 ans, étudiant, trouble auditif",
-  //   imgSrc: "https://placehold.co/128x128/png",
-  //   personaHomeUrl: "/persona3",
-  //   intro:
-  //     "Amine est un jeune homme de 23 ans, étudiant en Master dans ce domaine. Il est sourd depuis l'âge d'un an à la suite d'une méningite. Il aime regarder des films en ligne, cependant les sous-titres ne sont pas toujours présents ou sont mal syncrhonisés, voire incomplets, cela rend son expérience frustrante et désagréable.",
-  // },
-  // {
-  //   id: 4,
-  //   name: "Claire",
-  //   cardTitle: "Claire, 30 ans, professeur, trouble cognitif",
-  //   imgSrc: "https://placehold.co/128x128/png",
-  //   personaHomeUrl: "/persona4",
-  //   intro:
-  //     "Claire est une professeure de yoga de 33 ans. Elle est dyslexique et a un trouble du déficit de l'attention avec hyperactivité. Elle s’épanouit par le yoga, mais le monde numérique reste un défi pour elle. Sa dyslexie la rend réticente face aux textes long, et elle a du mal à maintenir sa concentraion.",
-  // },
+  {
+    id: 3,
+    name: "Amine",
+    cardTitle: "Amine, 23 ans, étudiant, trouble auditif",
+    imgSrc: "https://placehold.co/128x128/png",
+    personaHomeUrl: "/persona3",
+    intro:
+      "Amine est un jeune homme de 23 ans, étudiant en Master dans ce domaine. Il est sourd depuis l'âge d'un an à la suite d'une méningite. Il aime regarder des films en ligne, cependant les sous-titres ne sont pas toujours présents ou sont mal syncrhonisés, voire incomplets, cela rend son expérience frustrante et désagréable.",
+    steps: [
+      {
+        id: 1,
+        name: "WIP",
+        pages: [{ id: 1, name: "WIP", url: "/persona3/wip" }],
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Claire",
+    cardTitle: "Claire, 30 ans, professeur, trouble cognitif",
+    imgSrc: "https://placehold.co/128x128/png",
+    personaHomeUrl: "/persona4",
+    intro:
+      "Claire est une professeure de yoga de 33 ans. Elle est dyslexique et a un trouble du déficit de l'attention avec hyperactivité. Elle s’épanouit par le yoga, mais le monde numérique reste un défi pour elle. Sa dyslexie la rend réticente face aux textes long, et elle a du mal à maintenir sa concentraion.",
+    steps: [
+      {
+        id: 1,
+        name: "Texte long",
+        pages: [
+          { id: 1, name: "Texte long non accessible", url: "/persona4/text/1" },
+          { id: 2, name: "Texte long accessible", url: "/persona4/text/2" },
+        ],
+      },
+    ],
+  },
 ];
