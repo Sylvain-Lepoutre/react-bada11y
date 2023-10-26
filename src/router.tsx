@@ -30,7 +30,6 @@ export const router = createBrowserRouter([
     path: `${personas[0].personaHomeUrl}`,
     element: (
       <PersonaHome
-        personaId={personas[0].id}
         personaIntro={personas[0].intro}
         personaName={personas[0].name}
         personaSteps={personas[0].steps}
@@ -104,7 +103,6 @@ export const router = createBrowserRouter([
     path: `${personas[1].personaHomeUrl}`,
     element: (
       <PersonaHome
-        personaId={personas[1].id}
         personaIntro={personas[1].intro}
         personaName={personas[1].name}
         personaSteps={personas[1].steps}
@@ -156,7 +154,6 @@ export const router = createBrowserRouter([
     path: `${personas[2].personaHomeUrl}`,
     element: (
       <PersonaHome
-        personaId={personas[2].id}
         personaIntro={personas[2].intro}
         personaName={personas[2].name}
         personaSteps={personas[2].steps}
@@ -167,7 +164,6 @@ export const router = createBrowserRouter([
     path: `${personas[3].personaHomeUrl}`,
     element: (
       <PersonaHome
-        personaId={personas[3].id}
         personaIntro={personas[3].intro}
         personaName={personas[3].name}
         personaSteps={personas[3].steps}
