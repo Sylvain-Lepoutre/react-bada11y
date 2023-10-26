@@ -9,8 +9,8 @@ import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   componentName: string;
-  personaHomeUrl: string;
   nextUrl: string;
+  personaHomeUrl: string;
   personaName: string;
 };
 

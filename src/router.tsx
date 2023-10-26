@@ -9,12 +9,12 @@ import { Persona1Table1 } from "./routes/persona1Table1";
 import { Persona1Table2 } from "./routes/persona1Table2";
 import { Persona2Shopping1 } from "./routes/persona2Shopping1";
 import { Persona2Shopping2 } from "./routes/persona2Shopping2";
+import { Persona4Font1 } from "./routes/persona4Font1";
 import { Persona4Text1 } from "./routes/persona4Text1";
 import { Persona4Text2 } from "./routes/persona4Text2";
 import { PersonaHome } from "./routes/personaHome";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
-import { Persona4Font1 } from "./routes/persona4Font1";
 
 export const router = createBrowserRouter([
   {
@@ -200,7 +200,7 @@ export const router = createBrowserRouter([
     element: (
       <Persona4Font1
         componentName={personas[3].steps[1].pages[0].name}
-        nextUrl={personas[0].steps[1].pages[1].url}
+        nextUrl={personas[3].steps[1].pages[1].url}
         personaHomeUrl={personas[3].personaHomeUrl}
         personaName={personas[3].name}
       />
