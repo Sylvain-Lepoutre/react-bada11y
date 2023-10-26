@@ -1,3 +1,4 @@
+import { BadFont } from "../components/pages/persona4/persona4font1/BadFont";
 import { BadFontIntro } from "../components/pages/persona4/persona4font1/BadFontIntro";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
@@ -25,6 +26,7 @@ export const Persona4Font1 = ({
 
       <Main>
         <BadFontIntro />
+        <BadFont />
       </Main>
 
       <DivLink
