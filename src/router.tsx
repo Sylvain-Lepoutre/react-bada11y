@@ -14,6 +14,7 @@ import { Persona4Text2 } from "./routes/persona4Text2";
 import { PersonaHome } from "./routes/personaHome";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
+import { Persona4Font1 } from "./routes/persona4Font1";
 
 export const router = createBrowserRouter([
   {
@@ -189,6 +190,17 @@ export const router = createBrowserRouter([
     element: (
       <Persona4Text2
         componentName={personas[3].steps[0].pages[1].name}
+        personaHomeUrl={personas[3].personaHomeUrl}
+        personaName={personas[3].name}
+      />
+    ),
+  },
+  {
+    path: `${personas[3].steps[1].pages[0].url}`,
+    element: (
+      <Persona4Font1
+        componentName={personas[3].steps[1].pages[0].name}
+        nextUrl={personas[0].steps[1].pages[1].url}
         personaHomeUrl={personas[3].personaHomeUrl}
         personaName={personas[3].name}
       />

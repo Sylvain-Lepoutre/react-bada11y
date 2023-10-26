@@ -112,6 +112,22 @@ export const personas: Persona[] = [
           { id: 2, name: "Texte long accessible", url: "/persona4/text/2" },
         ],
       },
+      {
+        id: 2,
+        name: "Polices de caractères",
+        pages: [
+          {
+            id: 1,
+            name: "Polices de caractères non accessibles",
+            url: "/persona4/font/1",
+          },
+          {
+            id: 2,
+            name: "Polices de caractères accessibles",
+            url: "/persona4/font/2",
+          },
+        ],
+      },
     ],
   },
 ];
