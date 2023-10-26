@@ -167,8 +167,56 @@ export const codes = {
   Persona4BadTextHtml: `<p>
     / ... /
 </p>`,
-
   Persona4BadTextCss: `p {
     line-height: 1;
 }`,
+  Persona4A11yTextHtml: `<div>
+    <h3>
+        / ... /
+    </h3>
+
+    <p>
+        / ... /
+    </p>
+
+    <p>
+        / ... /
+    </p>
+
+    <h3>
+        / ... /
+    </h3>
+
+    <p>
+        / ... /
+    </p>
+
+    <h3>
+        / ... /
+    </h3>
+
+    <p>
+        / ... /
+    </p>
+
+    <p>
+        / ... /
+    </p>
+</div>`,
+  Persona4A11yTextCSS: `div {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+   margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    line-height: 1.75rem;
+  }`,
 };
