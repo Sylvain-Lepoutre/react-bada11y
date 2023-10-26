@@ -2,7 +2,9 @@ import { DivLink } from "../components/pages/personaHome/DivLink";
 import { IntroSection } from "../components/pages/personaHome/IntroSection";
 import { StepSection } from "../components/pages/personaHome/StepSection";
 import { Header } from "../components/UI/headers/Header";
+import { ButtonLink } from "../components/UI/links/ButtonLink";
 import { Main } from "../components/UI/main/Main";
+import { Section } from "../components/UI/sections/Section";
 import type { Step } from "../data/personas";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
@@ -31,14 +33,10 @@ export const PersonaHome = ({
         <IntroSection introContent={personaIntro} />
 
         <StepSection steps={personaSteps} />
-        <DivLink
-          labelLink1="Retour"
-          labelLink2="Commencer"
-          srLabelLink1="Revenir à la page d'accueil de Inotest"
-          srLabelLink2={`Commencer le parcours de ${personaName}`}
-          urlLink1="/"
-          urlLink2={`/persona${personaId}/step1`}
-        />
+
+        <div className="flex justify-center">
+          <ButtonLink to="/" label="Retour à l'accueil Inotest" />
+        </div>
       </Main>
     </>
   );
