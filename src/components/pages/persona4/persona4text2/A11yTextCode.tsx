@@ -1,9 +1,10 @@
 import { useId } from "react";
-import { Section } from "../../../UI/sections/Section";
-import { Heading2 } from "../../../UI/headings/Heading2";
-import { CodeBlock, a11yDark } from "react-code-blocks";
+import { a11yDark, CodeBlock } from "react-code-blocks";
+
 import { codes } from "../../../../data/codes";
+import { Heading2 } from "../../../UI/headings/Heading2";
 import { Heading3 } from "../../../UI/headings/Heading3";
+import { Section } from "../../../UI/sections/Section";
 
 export const A11yTextCode = () => {
   const id = useId();
