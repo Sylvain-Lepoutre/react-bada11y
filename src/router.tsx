@@ -13,6 +13,7 @@ import { Persona4Text1 } from "./routes/persona4Text1";
 import { PersonaHome } from "./routes/personaHome";
 import { Root } from "./routes/root";
 import { Wip } from "./routes/wip";
+import { Persona4Text2 } from "./routes/persona4Form2";
 
 export const router = createBrowserRouter([
   {
@@ -178,6 +179,16 @@ export const router = createBrowserRouter([
       <Persona4Text1
         componentName={personas[3].steps[0].pages[0].name}
         nextUrl={personas[3].steps[0].pages[1].url}
+        personaHomeUrl={personas[3].personaHomeUrl}
+        personaName={personas[3].name}
+      />
+    ),
+  },
+  {
+    path: `${personas[3].steps[0].pages[1].url}`,
+    element: (
+      <Persona4Text2
+        componentName={personas[3].steps[0].pages[1].name}
         personaHomeUrl={personas[3].personaHomeUrl}
         personaName={personas[3].name}
       />
