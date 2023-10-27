@@ -3,6 +3,7 @@ import { StepSection } from "../components/pages/personaHome/StepSection";
 import { Header } from "../components/UI/headers/Header";
 import { ButtonLink } from "../components/UI/links/ButtonLink";
 import { Main } from "../components/UI/main/Main";
+import { SkipLinks } from "../components/UI/skip-links/SkipLinks";
 import type { Step } from "../data/personas";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
@@ -23,6 +24,8 @@ export const PersonaHome = ({
 
   return (
     <>
+      <SkipLinks />
+
       <Header heading={personaName} />
 
       <Main>

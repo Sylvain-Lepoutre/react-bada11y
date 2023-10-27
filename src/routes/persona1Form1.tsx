@@ -6,6 +6,7 @@ import { BadFormIntro } from "../components/pages/persona1/persona1form1/BadForm
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
+import { SkipLinks } from "../components/UI/skip-links/SkipLinks";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
@@ -25,6 +26,8 @@ export const Persona1Form1 = ({
 
   return (
     <>
+      <SkipLinks />
+
       <Header heading={personaName} textContent={componentName} />
 
       <Main>
