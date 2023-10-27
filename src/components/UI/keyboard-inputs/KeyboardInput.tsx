@@ -10,15 +10,10 @@ type Props = DetailedHTMLProps<
 };
 
 export const KeyBoardInput = ({ keyName, className, ...rest }: Props) => {
-  // const mergedClassName = twMerge(
-  //   "mx-2 rounded-md border border-black bg-gray-100 px-2 py-1 text-black",
-  //   className,
-  // );
-
   return (
     <span
       className={cn(
-        "mx-2 rounded-md border border-black bg-gray-100 px-2 py-1 text-black",
+        "mx-2 rounded-md border border-black bg-gray-100 px-3 py-1 text-black",
         className,
       )}
       {...rest}
