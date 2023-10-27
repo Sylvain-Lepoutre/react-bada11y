@@ -32,31 +32,31 @@ export const BadFormExp = () => {
         <ol>
           <li className="my-4 flex items-center">
             <KeyBoardInput keyName="Tab" />
-            <span className="mx-2">édition vide</span>
+            <span>édition vide</span>
           </li>
           <li className="my-4 flex items-center">
             <KeyBoardInput keyName="Tab" />
-            <span className="mx-2">édition vide</span>
+            <span>édition vide</span>
           </li>
           <li className="my-4 flex items-center">
             <KeyBoardInput keyName="Tab" />
-            <span className="mx-2">liste déroulante Développeur réduit</span>
+            <span>liste déroulante Développeur réduit</span>
           </li>
           <li className="my-4 flex items-center">
             <KeyBoardInput keyName="↓" />
-            <span className="mx-2">étudiant</span>
+            <span>étudiant</span>
           </li>
           <li className="my-4 flex items-center">
             <KeyBoardInput keyName="↓" />
-            <span className="mx-2">autre</span>
+            <span>autre</span>
           </li>
           <li className="my-4 flex items-center">
             <KeyBoardInput keyName="Tab" />
-            <span className="mx-2">édition vide</span>
+            <span>édition vide</span>
           </li>
           <li className="my-4 flex items-center">
             <KeyBoardInput keyName="Tab" />
-            <span className="mx-2">édition protégé vide</span>
+            <span>édition protégé vide</span>
           </li>
         </ol>
       </SrDisplay>
