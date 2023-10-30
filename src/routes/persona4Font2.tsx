@@ -1,3 +1,4 @@
+import { A11yFont } from "../components/pages/persona4/persona4font2/A11yFont";
 import { DivLink } from "../components/pages/personaHome/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
@@ -20,7 +21,9 @@ export const Persona4Font2 = ({
     <>
       <Header heading={personaName} textContent={componentName} />
 
-      <Main></Main>
+      <Main>
+        <A11yFont />
+      </Main>
 
       <DivLink
         labelLink1={`Accueil ${personaName}`}
