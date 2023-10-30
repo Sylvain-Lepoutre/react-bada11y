@@ -11,26 +11,11 @@ export const BadFont = () => {
     <Section aria-labelledby={id}>
       <Heading2 id={id}>Affichage dans le navigateur</Heading2>
 
-      <Paragraph className="great-vibes">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
-        asperiores adipisci fuga porro quia consequatur beatae quas aperiam
-        repellat. Id sint magni a eum possimus voluptates quae temporibus
-        repellat enim!
-      </Paragraph>
+      <Paragraph className="great-vibes text-5xl">liI1 oO0</Paragraph>
 
-      <Paragraph className="courgette">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
-        asperiores adipisci fuga porro quia consequatur beatae quas aperiam
-        repellat. Id sint magni a eum possimus voluptates quae temporibus
-        repellat enim!
-      </Paragraph>
+      <Paragraph className="courgette text-5xl">liI1 oO0</Paragraph>
 
-      <Paragraph className="spectral-sc">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
-        asperiores adipisci fuga porro quia consequatur beatae quas aperiam
-        repellat. Id sint magni a eum possimus voluptates quae temporibus
-        repellat enim!
-      </Paragraph>
+      <Paragraph className="spectral-sc text-5xl">liI1 oO0</Paragraph>
     </Section>
   );
 };
