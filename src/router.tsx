@@ -10,6 +10,7 @@ import { Persona1Table2 } from "./routes/persona1Table2";
 import { Persona2Shopping1 } from "./routes/persona2Shopping1";
 import { Persona2Shopping2 } from "./routes/persona2Shopping2";
 import { Persona4Font1 } from "./routes/persona4Font1";
+import { Persona4Font2 } from "./routes/persona4Font2";
 import { Persona4Text1 } from "./routes/persona4Text1";
 import { Persona4Text2 } from "./routes/persona4Text2";
 import { PersonaHome } from "./routes/personaHome";
@@ -198,6 +199,16 @@ export const router = createBrowserRouter([
         componentName={personas[3].steps[1].pages[0].name}
         nextUrl={personas[3].steps[1].pages[1].url}
         personaHomeUrl={personas[3].personaHomeUrl}
+        personaName={personas[3].name}
+      />
+    ),
+  },
+  {
+    path: `${personas[3].steps[1].pages[1].url}`,
+    element: (
+      <Persona4Font2
+        componentName={personas[3].steps[1].pages[1].name}
+        // personaHomeUrl={personas[3].personaHomeUrl}
         personaName={personas[3].name}
       />
     ),
