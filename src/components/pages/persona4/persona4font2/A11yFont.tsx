@@ -7,7 +7,7 @@ export const A11yFont = () => {
     <Section>
       <Heading2>Affichage dans le navigateur</Heading2>
 
-      <Paragraph className="text-5xl">liI1 oO0</Paragraph>
+      <Paragraph>liI1 oO0</Paragraph>
     </Section>
   );
 };

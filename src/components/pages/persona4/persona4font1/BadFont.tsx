@@ -11,11 +11,11 @@ export const BadFont = () => {
     <Section aria-labelledby={id}>
       <Heading2 id={id}>Affichage dans le navigateur</Heading2>
 
-      <Paragraph className="great-vibes text-5xl">liI1 oO0</Paragraph>
+      <Paragraph className="great-vibes">liI1 oO0</Paragraph>
 
-      <Paragraph className="courgette text-5xl">liI1 oO0</Paragraph>
+      <Paragraph className="courgette">liI1 oO0</Paragraph>
 
-      <Paragraph className="spectral-sc text-5xl">liI1 oO0</Paragraph>
+      <Paragraph className="spectral-sc">liI1 oO0</Paragraph>
     </Section>
   );
 };
