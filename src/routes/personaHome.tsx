@@ -34,7 +34,7 @@ export const PersonaHome = ({
         <StepSection steps={personaSteps} />
 
         <div className="flex justify-center">
-          <ButtonLink label="Retour à l'accueil Inotest" to="/" />
+          <ButtonLink href="/" label="Retour à l'accueil Inotest" />
         </div>
       </Main>
     </>

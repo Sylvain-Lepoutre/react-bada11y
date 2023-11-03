@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "astro build",
-    "format": "pnpm run format:prettier && pnpm run format:astro && pnpm run format:jsdoc && pnpm run format:jsxattribute-sort && pnpm run format:packagejson && pnpm run format:sort-imports && pnpm run format:tailwindcss",
-    "format:astro": "prettier --config ./.config/prettier/astro/prettier.config.js --write ./**/*.astro",
+    "format": "pnpm run format:prettier && pnpm run format:jsdoc && pnpm run format:jsxattribute-sort && pnpm run format:packagejson && pnpm run format:sort-imports && pnpm run format:tailwindcss",
     "format:jsdoc": "prettier --config ./.config/prettier/jsdoc/prettier.config.js --write ./**/*.cjs ./**/*.js ./**/*.ts ./**/*.tsx",
     "format:jsxattribute-sort": "prettier --config ./.config/prettier/jsxattribute-sort/prettier.config.js --write ./**/*.tsx",
     "format:packagejson": "prettier --config ./.config/prettier/packagejson/prettier.config.js --write ./package.json",

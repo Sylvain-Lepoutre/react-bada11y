@@ -21,13 +21,13 @@ export const DivLink = ({
     <div className="mx-auto my-16 flex w-10/12 justify-between sm:w-6/12 lg:w-4/12">
       <ButtonLink
         aria-label={srLabelLink1}
+        href={urlLink1}
         label={labelLink1}
-        to={urlLink1}
       ></ButtonLink>
       <ButtonLink
         aria-label={srLabelLink2}
+        href={urlLink2}
         label={labelLink2}
-        to={urlLink2}
       ></ButtonLink>
     </div>
   );
