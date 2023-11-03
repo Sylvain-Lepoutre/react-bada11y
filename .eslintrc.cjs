@@ -4,6 +4,8 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
+    "plugin:astro/recommended",
+    "plugin:astro/jsx-a11y-recommended",
     "plugin:jsdoc/recommended-typescript",
     "plugin:jsx-a11y/recommended",
     "plugin:markdown/recommended",

@@ -1,6 +1,6 @@
 /** @type {import("tailwindcss").Config} */
 module.exports = {
-  content: ["./**/*.{mdx,tsx}"],
+  content: ["./**/*.{astro,mdx,tsx}"],
   plugins: [
     "@tailwindcss/aspect-ratio",
     "@tailwindcss/container-queries",

@@ -1,17 +1,8 @@
 {
+  "extends": "astro/tsconfigs/strictest",
   "include": ["."],
   "compilerOptions": {
-    "esModuleInterop": true,
-    "exactOptionalPropertyTypes": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
     "jsx": "react-jsx",
-    "lib": ["DOM", "ESNext"],
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "noEmit": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "verbatimModuleSyntax": true
+    "lib": ["DOM", "ESNext"]
   }
 }
