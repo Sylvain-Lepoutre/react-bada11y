@@ -55,16 +55,32 @@ export const personas: Record<
         id: 2,
         name: "Tableau",
         pages: [
-          { id: 1, name: "Tableau non accessible", url: "/persona1/table/1" },
-          { id: 2, name: "Tableau accessible", url: "/persona1/table/2" },
+          {
+            id: 1,
+            name: "Tableau non accessible",
+            url: "/personas/djebrine/table/1",
+          },
+          {
+            id: 2,
+            name: "Tableau accessible",
+            url: "/personas/djebrine/table/2",
+          },
         ],
       },
       {
         id: 3,
         name: "Navigation",
         pages: [
-          { id: 1, name: "Navigation non accessible", url: "/persona1/nav/1" },
-          { id: 2, name: "Navigation accessible", url: "/persona1/nav/2" },
+          {
+            id: 1,
+            name: "Navigation non accessible",
+            url: "/personas/djebrine/nav/1",
+          },
+          {
+            id: 2,
+            name: "Navigation accessible",
+            url: "/personas/djebrine/nav/2",
+          },
         ],
       },
     ],

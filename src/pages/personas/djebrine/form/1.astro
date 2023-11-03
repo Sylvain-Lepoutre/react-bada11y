@@ -15,8 +15,8 @@ import { personas } from "../../../../data/personas";
 const { name, personaHomeUrl, steps } = personas.djebrine;
 ---
 
-<BaseLayout title="">
-  <Header heading={name} textContent={steps[0]?.name ?? ""} />
+<BaseLayout title={`${steps[0]?.pages[0]?.name} - ${name} - Inotest`}>
+  <Header heading={name} textContent={steps[0]?.pages[0]?.name ?? ""} />
 
   <Main>
     <BadFormIntro />

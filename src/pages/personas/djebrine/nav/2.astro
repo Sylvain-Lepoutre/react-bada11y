@@ -1,0 +1,31 @@
+---
+import { A11yNav } from "../../../../components/pages/persona1/persona1nav2/A11yNav";
+import { A11yNavCode } from "../../../../components/pages/persona1/persona1nav2/A11yNavCode";
+import { A11yNavExp } from "../../../../components/pages/persona1/persona1nav2/A11yNavExp";
+import { DivLink } from "../../../../components/pages/personaHome/DivLink";
+import { Header } from "../../../../components/UI/headers/Header";
+import { Main } from "../../../../components/UI/main/Main";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+
+import { personas } from "../../../../data/personas";
+
+const { name, personaHomeUrl, steps } = personas.djebrine;
+---
+
+<BaseLayout title={`${steps[2]?.pages[1]?.name} - ${name} - Inotest`}>
+  <Header heading={name} textContent={steps[2]?.pages[1]?.name ?? ""} />
+  <Main>
+    <A11yNav />
+    <A11yNavCode />
+    <A11yNavExp />
+  </Main>
+
+  <DivLink
+    labelLink1={`Accueil ${name}`}
+    labelLink2="Accueil Inotest"
+    srLabelLink1={`Revenir à la page d'accueil de ${name}`}
+    srLabelLink2="Revenir à la page d'accueil Inotest"
+    urlLink1={personaHomeUrl}
+    urlLink2="/"
+  />
+</BaseLayout>

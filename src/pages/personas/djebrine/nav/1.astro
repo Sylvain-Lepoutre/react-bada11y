@@ -1,0 +1,34 @@
+---
+import { BadNav } from "../../../../components/pages/persona1/persona1nav1/BadNav";
+import { BadNavCode } from "../../../../components/pages/persona1/persona1nav1/BadNavCode";
+import { BadNavExp } from "../../../../components/pages/persona1/persona1nav1/BadNavExp";
+import { BadNavIntro } from "../../../../components/pages/persona1/persona1nav1/BadNavIntro";
+import { DivLink } from "../../../../components/pages/personaHome/DivLink";
+import { Header } from "../../../../components/UI/headers/Header";
+import { Main } from "../../../../components/UI/main/Main";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+
+import { personas } from "../../../../data/personas";
+
+const { name, personaHomeUrl, steps } = personas.djebrine;
+---
+
+<BaseLayout title={`${steps[2]?.pages[0]?.name} - ${name} - Inotest`}>
+  <Header heading={name} textContent={steps[2]?.pages[0]?.name ?? ""} />
+
+  <Main>
+    <BadNavIntro />
+    <BadNav />
+    <BadNavCode />
+    <BadNavExp />
+  </Main>
+
+  <DivLink
+    labelLink1={`Accueil ${name}`}
+    labelLink2="Continuer"
+    srLabelLink1={`Revenir à la page d'accueil de ${name}`}
+    srLabelLink2="Continuer ce parcours"
+    urlLink1={personaHomeUrl}
+    urlLink2={steps[2]?.pages[1]?.url ?? ""}
+  />
+</BaseLayout>
