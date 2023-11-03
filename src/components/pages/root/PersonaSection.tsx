@@ -13,14 +13,26 @@ export const PersonaSection = () => {
       <Heading2 id={id}> Choisissez Votre Persona de sensibilisation</Heading2>
       <nav>
         <ul className="my-8 grid gap-12 text-center md:grid-cols-2 lg:my-12">
-          {personas.map((persona) => (
-            <PersonaCard
-              cardTitle={persona.cardTitle}
-              imgSrc={persona.imgSrc}
-              key={persona.id}
-              linkURL={persona.personaHomeUrl}
-            />
-          ))}
+          <PersonaCard
+            cardTitle={personas.djebrine.cardTitle}
+            imgSrc={personas.djebrine.imgSrc}
+            linkURL={personas.djebrine.personaHomeUrl}
+          />
+          <PersonaCard
+            cardTitle={personas.claire.cardTitle}
+            imgSrc={personas.claire.imgSrc}
+            linkURL={personas.claire.personaHomeUrl}
+          />
+          <PersonaCard
+            cardTitle={personas.amine.cardTitle}
+            imgSrc={personas.amine.imgSrc}
+            linkURL={personas.amine.personaHomeUrl}
+          />
+          <PersonaCard
+            cardTitle={personas.sophie.cardTitle}
+            imgSrc={personas.sophie.imgSrc}
+            linkURL={personas.sophie.personaHomeUrl}
+          />
         </ul>
       </nav>
     </Section>
