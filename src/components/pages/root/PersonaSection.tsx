@@ -19,9 +19,9 @@ export const PersonaSection = () => {
             linkURL={personas.djebrine.personaHomeUrl}
           />
           <PersonaCard
-            cardTitle={personas.claire.cardTitle}
-            imgSrc={personas.claire.imgSrc}
-            linkURL={personas.claire.personaHomeUrl}
+            cardTitle={personas.sophie.cardTitle}
+            imgSrc={personas.sophie.imgSrc}
+            linkURL={personas.sophie.personaHomeUrl}
           />
           <PersonaCard
             cardTitle={personas.amine.cardTitle}
@@ -29,9 +29,9 @@ export const PersonaSection = () => {
             linkURL={personas.amine.personaHomeUrl}
           />
           <PersonaCard
-            cardTitle={personas.sophie.cardTitle}
-            imgSrc={personas.sophie.imgSrc}
-            linkURL={personas.sophie.personaHomeUrl}
+            cardTitle={personas.claire.cardTitle}
+            imgSrc={personas.claire.imgSrc}
+            linkURL={personas.claire.personaHomeUrl}
           />
         </ul>
       </nav>

@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+
+import { BadText } from "../../../../components/pages/persona4/persona4text1/BadText";
+import { BadTextCode } from "../../../../components/pages/persona4/persona4text1/BadTextCode";
+import { BadTextExp } from "../../../../components/pages/persona4/persona4text1/BadTextExp";
+import { BadTextIntro } from "../../../../components/pages/persona4/persona4text1/BadTextIntro";
+import { DivLink } from "../../../../components/pages/personaHome/DivLink";
+import { Header } from "../../../../components/UI/headers/Header";
+import { Main } from "../../../../components/UI/main/Main";
+
+import { personas } from "../../../../data/personas";
+
+const { name, personaHomeUrl, steps } = personas.claire;
+---
+
+<BaseLayout title={`${steps[0]?.pages[0]?.name} - ${name} - Inotest`}>
+  <Header heading={name} textContent={steps[0]?.pages[0]?.name} />
+
+  <Main>
+    <BadTextIntro />
+    <BadText />
+    <BadTextCode />
+    <BadTextExp />
+  </Main>
+
+  <DivLink
+    labelLink1={`Accueil ${name}`}
+    labelLink2="Continuer"
+    srLabelLink1={`Revenir à la page d'accueil de ${name}`}
+    srLabelLink2="Continuer ce parcours"
+    urlLink1={personaHomeUrl}
+    urlLink2={steps[0]?.pages[1]?.url ?? ""}
+  />
+</BaseLayout>

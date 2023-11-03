@@ -1,24 +1,23 @@
 ---
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 
-import { A11yForm } from "../../../../components/pages/persona1/persona1form2/A11yForm";
-import { A11FormCode } from "../../../../components/pages/persona1/persona1form2/A11yFormCode";
-import { A11yFormExp } from "../../../../components/pages/persona1/persona1form2/A11yFormExp";
+import { A11yFont } from "../../../../components/pages/persona4/persona4font2/A11yFont";
+import { A11yFontExp } from "../../../../components/pages/persona4/persona4font2/A11yFontExp";
 import { DivLink } from "../../../../components/pages/personaHome/DivLink";
 import { Header } from "../../../../components/UI/headers/Header";
 import { Main } from "../../../../components/UI/main/Main";
 
 import { personas } from "../../../../data/personas";
 
-const { name, personaHomeUrl, steps } = personas.djebrine;
+const { name, personaHomeUrl, steps } = personas.claire;
 ---
 
-<BaseLayout title={`${steps[0]?.pages[1]?.name} - ${name} - Inotest`}>
-  <Header heading={name} textContent={steps[0]?.pages[1]?.name ?? ""} />
+<BaseLayout title={`${steps[1]?.pages[1]?.name} - ${name} - Inotest`}>
+  <Header heading={name} textContent={steps[1]?.pages[1]?.name ?? ""} />
+
   <Main>
-    <A11yForm />
-    <A11FormCode />
-    <A11yFormExp />
+    <A11yFont />
+    <A11yFontExp />
   </Main>
 
   <DivLink

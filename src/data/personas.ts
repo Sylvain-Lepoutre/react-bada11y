@@ -103,9 +103,13 @@ export const personas: Record<
           {
             id: 1,
             name: "Shopping non accessible",
-            url: "/persona2/shopping/1",
+            url: "/personas/sophie/shopping/1",
           },
-          { id: 2, name: "Shopping accessible", url: "/persona2/shopping/2" },
+          {
+            id: 2,
+            name: "Shopping accessible",
+            url: "/personas/sophie/shopping/2",
+          },
         ],
       },
     ],
@@ -143,8 +147,16 @@ export const personas: Record<
         id: 1,
         name: "Texte long",
         pages: [
-          { id: 1, name: "Texte long non accessible", url: "/persona4/text/1" },
-          { id: 2, name: "Texte long accessible", url: "/persona4/text/2" },
+          {
+            id: 1,
+            name: "Texte long non accessible",
+            url: "/personas/claire/text/1",
+          },
+          {
+            id: 2,
+            name: "Texte long accessible",
+            url: "/personas/claire/text/2",
+          },
         ],
       },
       {
@@ -154,12 +166,12 @@ export const personas: Record<
           {
             id: 1,
             name: "Polices de caractères non accessibles",
-            url: "/persona4/font/1",
+            url: "/personas/claire/font/1",
           },
           {
             id: 2,
             name: "Polices de caractères accessibles",
-            url: "/persona4/font/2",
+            url: "/personas/claire/font/2",
           },
         ],
       },
