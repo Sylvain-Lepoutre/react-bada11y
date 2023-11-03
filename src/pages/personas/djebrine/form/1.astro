@@ -9,7 +9,6 @@ import { BadFormIntro } from "../../../../components/pages/persona1/persona1form
 import { DivLink } from "../../../../components/pages/personaHome/DivLink";
 import { Header } from "../../../../components/UI/headers/Header";
 import { Main } from "../../../../components/UI/main/Main";
-import { SkipLinks } from "../../../../components/UI/skip-links/SkipLinks";
 
 import { personas } from "../../../../data/personas";
 
@@ -17,8 +16,6 @@ const { name, personaHomeUrl, steps } = personas.djebrine;
 ---
 
 <BaseLayout title="">
-  <SkipLinks />
-
   <Header heading={name} textContent={steps[0]?.name ?? ""} />
 
   <Main>
