@@ -4,8 +4,8 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { IntroSection } from "../../../components/pages/personaHome/IntroSection";
 import { StepSection } from "../../../components/pages/personaHome/StepSection";
 import { Header } from "../../../components/UI/headers/Header";
-import { ButtonLink } from "../../../components/UI/links/ButtonLink";
 import { Main } from "../../../components/UI/main/Main";
+import { SingleLink } from "../../../components/UI/links/SingleLink";
 
 import { personas, type Step } from "../../../data/personas";
 
@@ -62,8 +62,10 @@ const { personaName, personaIntro, personaSteps } = Astro.props;
 
     <StepSection steps={personaSteps} />
 
-    <div className="flex justify-center">
-      <ButtonLink href="/" label="Retour à l'accueil Inotest" />
-    </div>
+    <SingleLink
+      srLabelLink="Retour à l'accueil Inotest"
+      urlLink="/"
+      labelLink="Accueil"
+    />
   </Main>
 </BaseLayout>
