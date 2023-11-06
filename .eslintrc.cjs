@@ -37,6 +37,23 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "testing-library/no-manual-cleanup": "off",
   },
+  overrides: [
+    {
+      files: ["*.astro"],
+      rules: {
+        "react/no-unknown-property": ["error", { ignore: ["class"] }],
+      },
+    },
+    {
+      files: ["*.d.ts"],
+      rules: {
+        "@typescript-eslint/consistent-type-definitions": [
+          "error",
+          "interface",
+        ],
+      },
+    },
+  ],
   settings: {
     react: {
       version: "detect",

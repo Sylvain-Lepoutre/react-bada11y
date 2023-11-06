@@ -12,17 +12,16 @@
     "format:prettier": "prettier --write .",
     "format:sort-imports": "prettier --config ./.config/prettier/sort-imports/prettier.config.js --write ./**/*.js ./**/*.ts ./**/*.tsx",
     "format:tailwindcss": "prettier --config ./.config/prettier/tailwindcss/prettier.config.js --write ./**/*.tsx",
-    "lint": "pnpm run lint:eslint && pnpm run lint:astro",
+    "lint": "pnpm run lint:eslint && pnpm run lint:astro && pnpm run lint:tsc",
     "lint:astro": "astro check",
     "lint:eslint": "eslint --ext .astro,.cjs,.js,.ts,.tsx .",
     "lint:tsc": "tsc",
     "serve:dev": "astro dev",
-    "serve:preview": "astro preview",
+    "serve:preview": "astro build && astro preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "@astrojs/prism": "^3.0.0",
     "@fontsource/atkinson-hyperlegible": "^5.0.17",
     "clsx": "^2.0.0",
     "react": "^18.2.0",
@@ -33,6 +32,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.3.1",
+    "@astrojs/prism": "^3.0.0",
     "@astrojs/react": "^3.0.4",
     "@astrojs/tailwind": "^5.0.2",
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
