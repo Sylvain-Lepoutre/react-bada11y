@@ -1,12 +1,18 @@
 ---
+import { Prism } from "@astrojs/prism";
+
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { Section } from "../../../UI/sections/Section";
 
 import { Code } from "astro:components";
+
+import { codes } from "../../../../data/codes";
 ---
 
 <Section>
   <Heading2>Code</Heading2>
 
-  <Code code="const toto = 5" lang="javascript" theme="material-theme-darker" />
+  <Code code={codes.Persona1A11yForm} lang="html" theme="one-dark-pro" />
+
+  <Prism code={codes.Persona1A11yForm} lang="html" />
 </Section>

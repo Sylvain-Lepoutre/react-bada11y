@@ -22,6 +22,7 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
+    "@astrojs/prism": "^3.0.0",
     "@fontsource/atkinson-hyperlegible": "^5.0.17",
     "clsx": "^2.0.0",
     "react": "^18.2.0",
