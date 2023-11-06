@@ -2,8 +2,8 @@ import { BadNav } from "../components/pages/persona1/persona1nav1/BadNav";
 import { BadNavCode } from "../components/pages/persona1/persona1nav1/BadNavCode";
 import { BadNavExp } from "../components/pages/persona1/persona1nav1/BadNavExp";
 import { BadNavIntro } from "../components/pages/persona1/persona1nav1/BadNavIntro";
-import { DivLink } from "../components/UI/links/DivLink";
 import { Header } from "../components/UI/headers/Header";
+import { DivLink } from "../components/UI/links/DivLink";
 import { Main } from "../components/UI/main/Main";
 
 type Props = {

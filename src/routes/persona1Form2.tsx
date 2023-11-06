@@ -1,8 +1,8 @@
 import { A11yForm } from "../components/pages/persona1/persona1form2/A11yForm";
 import { A11FormCode } from "../components/pages/persona1/persona1form2/A11yFormCode";
 import { A11yFormExp } from "../components/pages/persona1/persona1form2/A11yFormExp";
-import { DivLink } from "../components/UI/links/DivLink";
 import { Header } from "../components/UI/headers/Header";
+import { DivLink } from "../components/UI/links/DivLink";
 import { Main } from "../components/UI/main/Main";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 

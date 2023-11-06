@@ -2,8 +2,8 @@ import { BadText } from "../components/pages/persona4/persona4text1/BadText";
 import { BadTextCode } from "../components/pages/persona4/persona4text1/BadTextCode";
 import { BadTextExp } from "../components/pages/persona4/persona4text1/BadTextExp";
 import { BadTextIntro } from "../components/pages/persona4/persona4text1/BadTextIntro";
-import { DivLink } from "../components/UI/links/DivLink";
 import { Header } from "../components/UI/headers/Header";
+import { DivLink } from "../components/UI/links/DivLink";
 import { Main } from "../components/UI/main/Main";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 

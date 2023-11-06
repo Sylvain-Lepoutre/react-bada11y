@@ -1,8 +1,8 @@
 import { A11yNav } from "../components/pages/persona1/persona1nav2/A11yNav";
 import { A11yNavCode } from "../components/pages/persona1/persona1nav2/A11yNavCode";
 import { A11yNavExp } from "../components/pages/persona1/persona1nav2/A11yNavExp";
-import { DivLink } from "../components/UI/links/DivLink";
 import { Header } from "../components/UI/headers/Header";
+import { DivLink } from "../components/UI/links/DivLink";
 import { Main } from "../components/UI/main/Main";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
