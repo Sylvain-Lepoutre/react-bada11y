@@ -1,6 +1,6 @@
 import { A11yFont } from "../components/pages/persona4/persona4font2/A11yFont";
 import { A11yFontExp } from "../components/pages/persona4/persona4font2/A11yFontExp";
-import { DivLink } from "../components/pages/personaHome/DivLink";
+import { DivLink } from "../components/UI/links/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";

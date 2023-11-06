@@ -1,6 +1,6 @@
 import { BadShopping } from "../components/pages/persona2/persona2shopping1/BadShopping";
 import { BadShoppingExp } from "../components/pages/persona2/persona2shopping1/BadShoppingExp";
-import { DivLink } from "../components/pages/personaHome/DivLink";
+import { DivLink } from "../components/UI/links/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";

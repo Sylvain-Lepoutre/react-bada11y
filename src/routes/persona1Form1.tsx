@@ -3,7 +3,7 @@ import { BadFormCode } from "../components/pages/persona1/persona1form1/BadFormC
 import { BadFormConclusion } from "../components/pages/persona1/persona1form1/BadFormConclusion";
 import { BadFormExp } from "../components/pages/persona1/persona1form1/BadFormExp";
 import { BadFormIntro } from "../components/pages/persona1/persona1form1/BadFormIntro";
-import { DivLink } from "../components/pages/personaHome/DivLink";
+import { DivLink } from "../components/UI/links/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
 import { SkipLinks } from "../components/UI/skip-links/SkipLinks";

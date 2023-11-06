@@ -2,7 +2,7 @@ import { BadTable } from "../components/pages/persona1/persona1table1/BadTable";
 import { BadTableCode } from "../components/pages/persona1/persona1table1/BadTableCode";
 import { BadTableConclusion } from "../components/pages/persona1/persona1table1/BadTableConclusion";
 import { BadTableExp } from "../components/pages/persona1/persona1table1/BadTableExp";
-import { DivLink } from "../components/pages/personaHome/DivLink";
+import { DivLink } from "../components/UI/links/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";

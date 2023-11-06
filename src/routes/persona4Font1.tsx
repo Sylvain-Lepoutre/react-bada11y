@@ -2,7 +2,7 @@ import { BadFont } from "../components/pages/persona4/persona4font1/BadFont";
 import { BadFontConclusion } from "../components/pages/persona4/persona4font1/BadFontConclusion";
 import { BadFontExp } from "../components/pages/persona4/persona4font1/BadFontExp";
 import { BadFontIntro } from "../components/pages/persona4/persona4font1/BadFontIntro";
-import { DivLink } from "../components/pages/personaHome/DivLink";
+import { DivLink } from "../components/UI/links/DivLink";
 import { Header } from "../components/UI/headers/Header";
 import { Main } from "../components/UI/main/Main";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";

@@ -1,4 +1,4 @@
-import { ButtonLink } from "../../UI/links/ButtonLink";
+import { ButtonLink } from "./ButtonLink";
 
 type Props = {
   labelLink1: string;
