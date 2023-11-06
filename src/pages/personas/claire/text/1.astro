@@ -15,7 +15,7 @@ const { name, personaHomeUrl, steps } = personas.claire;
 ---
 
 <BaseLayout title={`${steps[0]?.pages[0]?.name} - ${name} - Inotest`}>
-  <Header heading={name} textContent={steps[0]?.pages[0]?.name} />
+  <Header heading={name} textContent={steps[0]?.pages[0]?.name ?? ""} />
 
   <Main>
     <BadTextIntro />
