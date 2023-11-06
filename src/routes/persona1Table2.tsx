@@ -4,7 +4,6 @@ import { A11TableCode } from "../components/pages/persona1/persona1table2/A11yTa
 import { Header } from "../components/UI/headers/Header";
 import { DivLink } from "../components/UI/links/DivLink";
 import { Main } from "../components/UI/main/Main";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   componentName: string;
@@ -17,8 +16,6 @@ export const Persona1Table2 = ({
   personaHomeUrl,
   personaName,
 }: Props) => {
-  useDocumentTitle(`${componentName} - ${personaName} - Inotest`);
-
   return (
     <>
       <Header heading={personaName} textContent={componentName} />

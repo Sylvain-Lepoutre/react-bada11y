@@ -7,7 +7,6 @@ import { Header } from "../components/UI/headers/Header";
 import { DivLink } from "../components/UI/links/DivLink";
 import { Main } from "../components/UI/main/Main";
 import { SkipLinks } from "../components/UI/skip-links/SkipLinks";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   componentName: string;
@@ -22,8 +21,6 @@ export const Persona1Form1 = ({
   nextUrl,
   personaName,
 }: Props) => {
-  useDocumentTitle(`${componentName} - ${personaName} - Inotest`);
-
   return (
     <>
       <SkipLinks />

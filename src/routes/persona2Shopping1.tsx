@@ -3,7 +3,6 @@ import { BadShoppingExp } from "../components/pages/persona2/persona2shopping1/B
 import { Header } from "../components/UI/headers/Header";
 import { DivLink } from "../components/UI/links/DivLink";
 import { Main } from "../components/UI/main/Main";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   componentName: string;
@@ -18,9 +17,6 @@ export const Persona2Shopping1 = ({
   personaHomeUrl,
   personaName,
 }: Props) => {
-  useDocumentTitle(`${componentName} - ${personaName} - Inotest`);
-  BadShopping;
-
   return (
     <>
       <Header heading={personaName} textContent={componentName} />

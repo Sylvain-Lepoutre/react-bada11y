@@ -4,7 +4,6 @@ import { A11yFormExp } from "../components/pages/persona1/persona1form2/A11yForm
 import { Header } from "../components/UI/headers/Header";
 import { DivLink } from "../components/UI/links/DivLink";
 import { Main } from "../components/UI/main/Main";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   componentName: string;
@@ -17,8 +16,6 @@ export const Persona1Form2 = ({
   personaHomeUrl,
   personaName,
 }: Props) => {
-  useDocumentTitle(`${componentName} - ${personaName} - Inotest`);
-
   return (
     <>
       <Header heading={personaName} textContent={componentName} />

@@ -5,7 +5,6 @@ import { ButtonLink } from "../components/UI/links/ButtonLink";
 import { Main } from "../components/UI/main/Main";
 import { SkipLinks } from "../components/UI/skip-links/SkipLinks";
 import type { Step } from "../data/personas";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   personaName: string;
@@ -18,10 +17,6 @@ export const PersonaHome = ({
   personaIntro,
   personaSteps,
 }: Props) => {
-  useDocumentTitle(`Accueil parcours ${personaName} - Inotest`);
-  console.log("personaName :", personaName);
-  console.log("personaSteps :", personaSteps);
-
   return (
     <>
       <SkipLinks />

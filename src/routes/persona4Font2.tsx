@@ -3,7 +3,6 @@ import { A11yFontExp } from "../components/pages/persona4/persona4font2/A11yFont
 import { Header } from "../components/UI/headers/Header";
 import { DivLink } from "../components/UI/links/DivLink";
 import { Main } from "../components/UI/main/Main";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   componentName: string;
@@ -16,8 +15,6 @@ export const Persona4Font2 = ({
   personaHomeUrl,
   personaName,
 }: Props) => {
-  useDocumentTitle(`${componentName} - ${personaName} - Inotest`);
-
   return (
     <>
       <Header heading={personaName} textContent={componentName} />

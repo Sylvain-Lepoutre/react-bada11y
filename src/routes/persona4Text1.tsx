@@ -5,7 +5,6 @@ import { BadTextIntro } from "../components/pages/persona4/persona4text1/BadText
 import { Header } from "../components/UI/headers/Header";
 import { DivLink } from "../components/UI/links/DivLink";
 import { Main } from "../components/UI/main/Main";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 type Props = {
   componentName: string;
@@ -20,8 +19,6 @@ export const Persona4Text1 = ({
   nextUrl,
   personaName,
 }: Props) => {
-  useDocumentTitle(`${componentName} - ${personaName} - Inotest`);
-
   return (
     <>
       <Header heading={personaName} textContent={componentName} />
