@@ -12,7 +12,7 @@ const errorHandler = defineMiddleware(async ({ locals, redirect }, next) => {
 
     return response;
   } catch (_) {
-    redirect("/error");
+    return redirect("/error");
   }
 });
 
