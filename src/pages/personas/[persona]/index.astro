@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+import { IntroSection } from "../../../components/pages/personaHome/IntroSection";
+import { StepSection } from "../../../components/pages/personaHome/StepSection";
+import { Header } from "../../../components/UI/headers/Header";
+import { Main } from "../../../components/UI/main/Main";
+
+import { personas, type Step } from "../../../data/personas";
+import { SingleLink } from "../../../components/UI/links/SingleLink";
+
+export function getStaticPaths() {
+  const pages = [
+    {
+      persona: personas.djebrine.slug,
+      personaName: personas.djebrine.name,
+      personaIntro: personas.djebrine.intro,
+      personaSteps: personas.djebrine.steps,
+    },
+    {
+      persona: personas.sophie.slug,
+      personaName: personas.sophie.name,
+      personaIntro: personas.sophie.intro,
+      personaSteps: personas.sophie.steps,
+    },
+    {
+      persona: personas.amine.slug,
+      personaName: personas.amine.name,
+      personaIntro: personas.amine.intro,
+      personaSteps: personas.amine.steps,
+    },
+    {
+      persona: personas.claire.slug,
+      personaName: personas.claire.name,
+      personaIntro: personas.claire.intro,
+      personaSteps: personas.claire.steps,
+    },
+  ];
+
+  return pages.map(({ persona, personaName, personaIntro, personaSteps }) => {
+    return {
+      params: { persona },
+      props: { personaName, personaIntro, personaSteps },
+    };
+  });
+}
+
+type Props = {
+  personaName: string;
+  personaIntro: string;
+  personaSteps: Step[];
+};
+
+const { personaName, personaIntro, personaSteps } = Astro.props;
+---
+
+<BaseLayout title={personaName}>
+  <Header heading={personaName} />
+
+  <Main>
+    <IntroSection introContent={personaIntro} />
+
+    <StepSection steps={personaSteps} />
+
+    <SingleLink
+      srLabelLink="Retour à l'accueil Inotest"
+      urlLink="/"
+      labelLink="Accueil"
+    />
+  </Main>
+</BaseLayout>

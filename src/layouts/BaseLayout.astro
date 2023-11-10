@@ -1,0 +1,28 @@
+---
+import "@fontsource/atkinson-hyperlegible";
+import "../styles/global.css";
+import { SkipLinks } from "../components/UI/skip-links/SkipLinks";
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="shortcut icon" href="/a11y_logo-128.png" type="image/x-icon" />
+    <link href="/PrismThemes/a11ydark.css" rel="stylesheet" />
+
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <SkipLinks />
+    <slot />
+  </body>
+</html>

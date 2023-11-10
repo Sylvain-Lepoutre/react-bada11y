@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+
+import { A11yShopping } from "../../../../components/pages/persona2/persona2shopping2/A11yShopping";
+import { A11yShoppingExp } from "../../../../components/pages/persona2/persona2shopping2/A11yShoppingExp";
+import { DivLink } from "../../../../components/UI/links/DivLink";
+import { Header } from "../../../../components/UI/headers/Header";
+import { Main } from "../../../../components/UI/main/Main";
+
+import { personas } from "../../../../data/personas";
+
+const { name, personaHomeUrl, steps } = personas.sophie;
+---
+
+<BaseLayout title={`${steps[0]?.pages[1]?.name} - ${name} - Inotest`}>
+  <Header heading={name} textContent={steps[0]?.pages[1]?.name ?? ""} />
+
+  <Main>
+    <A11yShopping />
+    <A11yShoppingExp />
+  </Main>
+
+  <DivLink
+    labelLink1={`Accueil ${name}`}
+    labelLink2="Accueil Inotest"
+    srLabelLink1={`Revenir à la page d'accueil de ${name}`}
+    srLabelLink2="Revenir à la page d'accueil Inotest"
+    urlLink1={personaHomeUrl}
+    urlLink2="/"
+  />
+</BaseLayout>

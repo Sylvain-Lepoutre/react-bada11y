@@ -1,0 +1,9 @@
+---
+import ErrorLayout from "../layouts/ErrorLayout.astro";
+
+const { httpStatus } = Astro.locals;
+---
+
+<ErrorLayout title="">
+  <h1>Erreur {httpStatus}</h1>
+</ErrorLayout>

@@ -1,0 +1,14 @@
+---
+import { Heading2 } from "../../../UI/headings/Heading2";
+import { Section } from "../../../UI/sections/Section";
+
+import { Code } from "astro:components";
+
+import { codes } from "../../../../data/codes";
+---
+
+<Section>
+  <Heading2>Code</Heading2>
+
+  <Code code={codes.Persona1A11yForm} lang="html" theme="one-dark-pro" />
+</Section>

@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+
+import { A11yTextExp } from "../../../../components/pages/persona4/persona4text2/A11TextExp";
+import { A11yText } from "../../../../components/pages/persona4/persona4text2/A11yText";
+import { A11yTextCode } from "../../../../components/pages/persona4/persona4text2/A11yTextCode";
+import { DivLink } from "../../../../components/UI/links/DivLink";
+import { Header } from "../../../../components/UI/headers/Header";
+import { Main } from "../../../../components/UI/main/Main";
+
+import { personas } from "../../../../data/personas";
+
+const { name, personaHomeUrl, steps } = personas.claire;
+---
+
+<BaseLayout title={`${steps[0]?.pages[1]?.name} - ${name} - Inotest`}>
+  <Header heading={name} textContent={steps[0]?.pages[0]?.name ?? ""} />
+
+  <Main>
+    <A11yText />
+    <A11yTextCode />
+    <A11yTextExp />
+  </Main>
+
+  <DivLink
+    labelLink1={`Accueil ${name}`}
+    labelLink2="Accueil Inotest"
+    srLabelLink1={`Revenir à la page d'accueil de ${name}`}
+    srLabelLink2="Revenir à la page d'accueil Inotest"
+    urlLink1={personaHomeUrl}
+    urlLink2="/"
+  />
+</BaseLayout>

@@ -25,7 +25,7 @@ export const ObjectiveSection = () => {
         />
 
         <ObjectiveCard
-          cardContent="Sur Inotest, vous pouvez passer d’un persona à une autre, ce qui vous
+          cardContent="Sur Inotest, vous pouvez passer d’une persona à une autre, ce qui vous
         permet de comprendre les défis auxquels sont confrontées différentes
         personnes en ligne."
           cardTitle="Changez de perspective"

@@ -1,0 +1,22 @@
+---
+import ErrorLayout from "../layouts/ErrorLayout.astro";
+
+import { Heading1 } from "../components/UI/headings/Heading1";
+import { Main } from "../components/UI/main/Main";
+import { SingleLink } from "../components/UI/links/SingleLink";
+import { Paragraph } from "../components/UI/paragraph/Paragraph";
+---
+
+<ErrorLayout title="">
+  <Main>
+    <Heading1>Erreur 404</Heading1>
+
+    <Paragraph>Cette page n’existe pas</Paragraph>
+  </Main>
+
+  <SingleLink
+    srLabelLink="Retour à l'accueil Inotest"
+    urlLink="/"
+    labelLink="Accueil"
+  />
+</ErrorLayout>

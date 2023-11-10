@@ -1,6 +1,7 @@
 {
   "extends": "../../../tsconfig.json",
   "files": [
+    "../../prettier/astro/prettier.config.js",
     "../../prettier/jsdoc/prettier.config.js",
     "../../prettier/jsxattribute-sort/prettier.config.js",
     "../../prettier/packagejson/prettier.config.js",
