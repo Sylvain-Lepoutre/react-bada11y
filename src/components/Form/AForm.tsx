@@ -3,10 +3,10 @@ import { email, minLength, object, string, type Input } from "valibot";
 
 const LevelAFormSchema = object({
   lastname: string("Veuillez indiquer votre nom", [
-    minLength(1, "Veuillez indiquer votre nom"),
+    minLength(2, "Veuillez indiquer votre nom"),
   ]),
   firstname: string("Veuillez indiquer votre prénom.", [
-    minLength(1, "Veuillez indiquer votre prénom"),
+    minLength(2, "Veuillez indiquer votre prénom"),
   ]),
   email: string("Veuillez indiquer votre email", [
     minLength(2, "Veuillez indiquer votre email."),
@@ -36,6 +36,11 @@ export const AForm = () => {
       className="mx-auto my-4 w-3/4 rounded-xl bg-gray-500 p-4"
       onSubmit={handleSubmit}
     >
+      <div className="flex flex-col text-center">
+        Inscription
+        <span className="text-sm">(tous les champs sont obligatoires)</span>
+      </div>
+
       <div className="m-4 flex flex-col">
         <label htmlFor="lastname">Nom</label>
 
@@ -52,7 +57,9 @@ export const AForm = () => {
                 type="text"
                 {...props}
               />
-              <div id="lastname-error">{field.error.value}</div>
+              {field.error && (
+                <div id="lastname-error">{field.error.value}</div>
+              )}
             </>
           )}
         </Field>
@@ -65,6 +72,9 @@ export const AForm = () => {
           {(field, props) => (
             <>
               <input
+                aria-describedby="firstname-error"
+                // aria-errormessage="firstname-error"
+                aria-invalid={field.error.value !== ""}
                 className="rounded-lg px-2"
                 id="firstname"
                 required
@@ -84,6 +94,7 @@ export const AForm = () => {
           {(field, props) => (
             <>
               <input
+                aria-describedby="email-error"
                 className="rounded-lg px-2"
                 id="email"
                 required
@@ -101,7 +112,7 @@ export const AForm = () => {
         <Field name="job">
           {(field, props) => (
             <>
-              <select id="job" required {...props}>
+              <select className="rounded-lg p-1" id="job" required {...props}>
                 <option value="developer">Développeur</option>
                 <option value="student">Étudiant</option>
                 <option value="other">Autre</option>
@@ -119,8 +130,10 @@ export const AForm = () => {
           {(field, props) => (
             <>
               <input
+                aria-describedby="password-error"
                 className="rounded-lg px-2"
                 id="password"
+                required
                 type="password"
                 {...props}
               />
