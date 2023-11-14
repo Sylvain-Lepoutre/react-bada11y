@@ -3,13 +3,12 @@ import { email, minLength, object, string, type Input } from "valibot";
 
 const LevelAFormSchema = object({
   lastname: string("Veuillez indiquer votre nom", [
-    minLength(2, "Veuillez indiquer votre nom"),
+    minLength(1, "Veuillez indiquer votre nom"),
   ]),
   firstname: string("Veuillez indiquer votre prénom.", [
-    minLength(2, "Veuillez indiquer votre prénom"),
+    minLength(1, "Veuillez indiquer votre prénom"),
   ]),
   email: string("Veuillez indiquer votre email", [
-    minLength(2, "Veuillez indiquer votre email."),
     email("L’adresse email n'est pas valide"),
   ]),
   job: string("Veuillez indiquer votre poste", [
@@ -23,7 +22,7 @@ const LevelAFormSchema = object({
 type LevelAForm = Input<typeof LevelAFormSchema>;
 
 export const AForm = () => {
-  const [levelAForm, { Form, Field }] = useForm<LevelAForm>({
+  const [levelAAForm, { Form, Field }] = useForm<LevelAForm>({
     validate: valiForm(LevelAFormSchema),
   });
 
