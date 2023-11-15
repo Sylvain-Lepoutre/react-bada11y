@@ -1,5 +1,6 @@
-import { Heading2 } from "../../../UI/headings/Heading2";
 import { Paragraph } from "~/components/UI/";
+
+import { Heading2 } from "../../../UI/headings/Heading2";
 import { Section } from "../../../UI/sections/Section";
 
 export const A11yFontExp = () => {
