@@ -4,8 +4,6 @@ import { personas } from "~/data/personas";
 // console.log(personas);
 
 export const NavPanel = () => {
-  console.log(Object.values(personas));
-
   return (
     <div className="flex flex-col gap-8">
       <header>InoTest</header>
