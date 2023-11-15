@@ -1,18 +1,12 @@
-import type { DetailedHTMLProps, DetailsHTMLAttributes } from "react";
+import type { JSX } from "react";
 
-import { cn } from "../../../helpers/cn";
+import { cn } from "~/helpers/cn";
 
-type Props = DetailedHTMLProps<DetailsHTMLAttributes<HTMLElement>, HTMLElement>;
+type Props = JSX.IntrinsicElements["section"];
 
 export const Section = ({ children, className, ...rest }: Props) => {
   return (
-    <section
-      className={cn(
-        "my-10 rounded-2xl bg-white p-4 shadow-Custom lg:px-8",
-        className,
-      )}
-      {...rest}
-    >
+    <section className={cn("", className)} {...rest}>
       {children}
     </section>
   );

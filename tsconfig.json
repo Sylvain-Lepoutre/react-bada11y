@@ -3,9 +3,13 @@
   "include": ["."],
   "compilerOptions": {
     "allowJs": false,
+    "baseUrl": ".",
     "exactOptionalPropertyTypes": true,
     "jsx": "react-jsx",
     "lib": ["DOM", "ESNext"],
+    "paths": {
+      "~/*": ["./src/*"]
+    },
     "noUncheckedIndexedAccess": true
   }
 }

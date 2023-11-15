@@ -16,7 +16,7 @@
     "lint:astro": "astro check",
     "lint:eslint": "eslint --ext .astro,.cjs,.js,.ts,.tsx .",
     "lint:tsc": "tsc",
-    "serve:dev": "astro dev",
+    "serve:dev": "astro dev --host",
     "serve:preview": "astro build && astro preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage"

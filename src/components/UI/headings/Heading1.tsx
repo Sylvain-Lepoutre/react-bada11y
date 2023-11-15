@@ -1,11 +1,8 @@
-import type { DetailedHTMLProps, HTMLAttributes } from "react";
+import type { JSX } from "react";
 
-import { cn } from "../../../helpers/cn";
+import { cn } from "~/helpers/cn";
 
-type Props = DetailedHTMLProps<
-  HTMLAttributes<HTMLHeadingElement>,
-  HTMLHeadingElement
->;
+type Props = JSX.IntrinsicElements["h1"];
 
 export const Heading1 = ({ children, className, ...rest }: Props) => {
   return (

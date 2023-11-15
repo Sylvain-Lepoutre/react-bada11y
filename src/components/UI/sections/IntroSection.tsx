@@ -1,10 +1,13 @@
-import { Paragraph } from "~/components/UI/";
-import { Section } from "../../UI/sections/Section";
+import { Heading2, Paragraph } from "~/components/UI";
+
+import { Section } from "./Section";
 
 export const IntroSection = () => {
   return (
     <Section>
-      <Paragraph>
+      <Heading2>Titre de la section</Heading2>
+
+      <Paragraph className="max-w-[80ch]">
         Bienvenue sur Inotest, le site où nous vous invitons à explorer le web
         sous un nouvel angle, en partageant l’expérience de ceux qui font face à
         des défis d’accessibilité en ligne. Notre mission est de sensibiliser à

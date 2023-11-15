@@ -1,24 +1,16 @@
-import type { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
+import type { JSX } from "react";
 
-import { cn } from "../../../helpers/cn";
+import { cn } from "~/helpers/cn";
 
-type Props = DetailedHTMLProps<
-  AnchorHTMLAttributes<HTMLAnchorElement>,
-  HTMLAnchorElement
-> & {
-  label: string;
-};
+type Props = JSX.IntrinsicElements["a"];
 
-export const ButtonLink = ({ className, label, ...rest }: Props) => {
+export const ButtonLink = ({ children, className, ...rest }: Props) => {
   return (
     <a
-      className={cn(
-        "items-center rounded-2xl bg-white p-4 text-center shadow-CustomCard outline outline-2 outline-BluePastel hover:cursor-pointer hover:shadow-CustomCardHover hover:-outline-offset-8  focus:scale-105 focus:font-bold",
-        className,
-      )}
+      className={cn("inline-block bg-BluePastel px-4 py-2", className)}
       {...rest}
     >
-      {label}
+      {children}
     </a>
   );
 };

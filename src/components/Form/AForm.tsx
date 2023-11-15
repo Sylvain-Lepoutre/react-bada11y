@@ -22,7 +22,7 @@ const LevelAFormSchema = object({
 type LevelAForm = Input<typeof LevelAFormSchema>;
 
 export const AForm = () => {
-  const [levelAAForm, { Form, Field }] = useForm<LevelAForm>({
+  const [levelAForm, { Form, Field }] = useForm<LevelAForm>({
     validate: valiForm(LevelAFormSchema),
   });
 

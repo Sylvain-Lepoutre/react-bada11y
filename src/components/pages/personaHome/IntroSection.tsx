@@ -1,4 +1,4 @@
-import { Paragraph } from "../../UI/paragraph/Paragraph";
+import { Paragraph } from "~/components/UI/";
 import { Section } from "../../UI/sections/Section";
 
 type Props = {
