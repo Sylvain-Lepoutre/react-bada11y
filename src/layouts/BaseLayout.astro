@@ -1,6 +1,7 @@
 ---
 import "@fontsource/atkinson-hyperlegible";
 import "../styles/global.css";
+
 import { SkipLinks } from "../components/UI/skip-links/SkipLinks";
 
 type Props = {
@@ -16,13 +17,15 @@ const { title } = Astro.props;
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <link rel="shortcut icon" href="/a11y_logo-128.png" type="image/x-icon" />
-    <link href="/PrismThemes/a11ydark.css" rel="stylesheet" />
 
     <title>{title}</title>
   </head>
 
-  <body>
+  <body class="p-4 text-base lg:text-lg xl:text-xl">
     <SkipLinks />
-    <slot />
+
+    <div class="flex gap-4">
+      <slot />
+    </div>
   </body>
 </html>

@@ -1,5 +1,6 @@
+import { Paragraph } from "~/components/UI/";
+
 import { Heading3 } from "../../UI/headings/Heading3";
-import { Paragraph } from "../../UI/paragraph/Paragraph";
 
 type Props = { cardTitle: string; cardContent: string };
 

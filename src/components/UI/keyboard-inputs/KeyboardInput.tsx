@@ -1,11 +1,8 @@
-import type { DetailedHTMLProps, HTMLAttributes } from "react";
+import type { JSX } from "react";
 
 import { cn } from "../../../helpers/cn";
 
-type Props = DetailedHTMLProps<
-  HTMLAttributes<HTMLSpanElement>,
-  HTMLSpanElement
-> & {
+type Props = JSX.IntrinsicElements["span"] & {
   keyName: string;
 };
 

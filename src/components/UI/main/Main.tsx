@@ -1,8 +1,8 @@
-import type { DetailedHTMLProps, HTMLAttributes } from "react";
+import type { JSX } from "react";
 
 import { cn } from "../../../helpers/cn";
 
-type Props = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
+type Props = JSX.IntrinsicElements["main"];
 
 export const Main = ({ children, className, ...rest }: Props) => {
   return (

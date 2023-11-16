@@ -10,6 +10,8 @@ export default {
     "",
     "<THIRD_PARTY_MODULES>",
     "",
+    "^~",
+    "",
     "^\\.",
   ],
   importOrderTypeScriptVersion: "5.0.0",

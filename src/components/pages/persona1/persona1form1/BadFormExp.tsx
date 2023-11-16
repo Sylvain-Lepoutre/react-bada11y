@@ -1,8 +1,9 @@
 import { useId } from "react";
 
+import { Paragraph } from "~/components/UI/";
+
 import { Heading2 } from "../../../UI/headings/Heading2";
 import { KeyBoardInput } from "../../../UI/keyboard-inputs/KeyboardInput";
-import { Paragraph } from "../../../UI/paragraph/Paragraph";
 import { Section } from "../../../UI/sections/Section";
 import { SrDisplay } from "../../../UI/sr-display/SrDisplay";
 import { HtmlTag } from "../../../UI/tags/HtmlTag";
