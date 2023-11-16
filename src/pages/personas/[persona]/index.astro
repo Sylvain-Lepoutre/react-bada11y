@@ -1,8 +1,9 @@
 ---
-import BaseLayout from "../../../layouts/BaseLayout.astro";
+import BaseLayout from "~/layouts/BaseLayout.astro";
 
-import { IntroSection } from "../../../components/pages/personaHome/IntroSection";
-import { StepSection } from "../../../components/pages/personaHome/StepSection";
+import { IntroSection, MainPanel, SettingsPanel } from "~/components/UI";
+
+import { StepSection } from "~/components/pages/personaHome/StepSection";
 import { Header } from "../../../components/UI/headers/Header";
 import { Main } from "../../../components/UI/main/Main";
 
@@ -55,17 +56,17 @@ const { personaName, personaIntro, personaSteps } = Astro.props;
 ---
 
 <BaseLayout title={personaName}>
-  <Header heading={personaName} />
+  <SettingsPanel />
 
-  <Main>
-    <IntroSection introContent={personaIntro} />
+  <MainPanel>
+    <IntroSection title={personaName}>{personaIntro}</IntroSection>
 
-    <StepSection steps={personaSteps} />
+    <!-- TODO -->
 
     <SingleLink
-      srLabelLink="Retour à l'accueil Inotest"
-      urlLink="/"
       labelLink="Accueil"
+      srLabelLink="Retour à l’accueil"
+      urlLink="/"
     />
-  </Main>
+  </MainPanel>
 </BaseLayout>

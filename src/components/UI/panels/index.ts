@@ -1,2 +1,2 @@
-export { HomePanel } from "./HomePanel";
-export { NavPanel } from "./NavPanel";
+export { MainPanel } from "./MainPanel";
+export { SettingsPanel } from "./SettingsPanel";

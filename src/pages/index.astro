@@ -1,10 +1,27 @@
 ---
 import BaseLayout from "~/layouts/BaseLayout.astro";
 
-import { HomePanel, NavPanel } from "~/components/UI";
+import {
+  IntroSection,
+  MainPanel,
+  ObjectiveSection,
+  SettingsPanel,
+} from "~/components/UI";
 ---
 
 <BaseLayout title="InoTest - Découvrez l’inclusion en ligne">
-  <NavPanel />
-  <HomePanel />
+  <SettingsPanel />
+
+  <MainPanel>
+    <IntroSection title="Titre de la section">
+      Bienvenue sur Inotest, le site où nous vous invitons à explorer le web
+      sous un nouvel angle, en partageant l’expérience de ceux qui font face à
+      des défis d’accessibilité en ligne. Notre mission est de sensibiliser à
+      l’importance de l’inclusion numérique en offrant une expérience unique à
+      travers quatre personas, chacun représentant un type de handicap pour
+      lequel le web n’est pas toujours adapté.
+    </IntroSection>
+
+    <ObjectiveSection />
+  </MainPanel>
 </BaseLayout>
