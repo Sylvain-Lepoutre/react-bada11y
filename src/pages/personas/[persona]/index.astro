@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "~/layouts/BaseLayout.astro";
 
-import { IntroSection, MainPanel, SettingsPanel } from "~/components/UI";
+import {
+  ComponentsSection,
+  IntroSection,
+  MainPanel,
+  SettingsPanel,
+} from "~/components/UI";
 
 import { StepSection } from "~/components/pages/personaHome/StepSection";
 import { Header } from "../../../components/UI/headers/Header";
@@ -56,12 +61,13 @@ const { personaName, personaIntro, personaSteps } = Astro.props;
 ---
 
 <BaseLayout title={personaName}>
-  <SettingsPanel />
+  <SettingsPanel client:load />
 
   <MainPanel>
     <IntroSection title={personaName}>{personaIntro}</IntroSection>
 
     <!-- TODO -->
+    <ComponentsSection client:load />
 
     <SingleLink
       labelLink="Accueil"
