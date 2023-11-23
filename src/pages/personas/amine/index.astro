@@ -1,0 +1,20 @@
+---
+import { IntroSection, MainPanel, SettingsPanel } from "~/components/UI";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+
+const titlePage = "Amine";
+---
+
+<BaseLayout title={titlePage}>
+  <SettingsPanel />
+
+  <MainPanel>
+    <IntroSection title={titlePage}>
+      Amine est un jeune homme de 23 ans, étudiant en Master dans ce domaine. Il
+      est sourd depuis l'âge d'un an à la suite d'une méningite. Il aime
+      regarder des films en ligne, cependant les sous-titres ne sont pas
+      toujours présents ou sont mal syncrhonisés, voire incomplets, cela rend
+      son expérience frustrante et désagréable.
+    </IntroSection>
+  </MainPanel>
+</BaseLayout>

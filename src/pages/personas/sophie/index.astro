@@ -1,0 +1,18 @@
+---
+import { IntroSection, MainPanel, SettingsPanel } from "~/components/UI";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+
+const titlePage = "Sophie";
+---
+
+<BaseLayout title={titlePage}>
+  <SettingsPanel />
+
+  <MainPanel>
+    <IntroSection title={titlePage}>
+      Sophie est une comptable de 42 ans. Elle lutte contre de sévères troubles
+      musculo-squelettiques. Ses douleurs l'empeche d'utiliser une souris, elle
+      navigue à l'aide du clavier.
+    </IntroSection>
+  </MainPanel>
+</BaseLayout>

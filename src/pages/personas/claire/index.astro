@@ -1,0 +1,20 @@
+---
+import { IntroSection, MainPanel, SettingsPanel } from "~/components/UI";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+
+const titlePage = "Claire";
+---
+
+<BaseLayout title={titlePage}>
+  <SettingsPanel />
+
+  <MainPanel>
+    <IntroSection title={titlePage}>
+      Claire est une professeure de yoga de 33 ans. Elle est dyslexique et a un
+      trouble du déficit de l'attention avec hyperactivité. Elle s’épanouit par
+      le yoga, mais le monde numérique reste un défi pour elle. Sa dyslexie la
+      rend réticente face aux textes long, et elle a du mal à maintenir sa
+      concentraion.
+    </IntroSection>
+  </MainPanel>
+</BaseLayout>
