@@ -1,52 +1,28 @@
 import { useStore } from "@nanostores/react";
-import { useState, type ChangeEvent } from "react";
+import { useRef, type ChangeEventHandler } from "react";
 
-import { ButtonLink } from "~/components/UI";
+import { Dialog, type DialogHandle } from "~/components/UI";
 import { personas } from "~/data/personas";
 import { levelSetting, personaSetting } from "~/helpers/settings";
 
 export const SettingsPanel = () => {
-  const [conformanceLevel, setConformanceLevel] = useState("");
-
-  const [displayLevelAInfo, setDisplayLevelAInfo] = useState(false);
-  const [displayLevelAAInfo, setDisplayLevelAAInfo] = useState(false);
-
-  const [selectedPersona, setSelectedPersona] = useState("");
-
-  const handleChangeConformanceLevel = (
-    event: ChangeEvent<HTMLInputElement>,
-  ) => {
-    setConformanceLevel(event.target.value);
-    levelSetting.set(event.target.value);
-  };
-
-  const handleClickLevelAInfo = () => {
-    setDisplayLevelAInfo(!displayLevelAInfo);
-    setDisplayLevelAAInfo(false);
-  };
-
-  const handleClickLevelAAInfo = () => {
-    setDisplayLevelAAInfo(!displayLevelAAInfo);
-    setDisplayLevelAInfo(false);
-  };
-
-  const handleChangeSelectedPersona = (
-    event: ChangeEvent<HTMLInputElement>,
-  ) => {
-    setSelectedPersona(event.target.value);
-    personaSetting.set(event.target.value);
-  };
-
   const $levelSetting = useStore(levelSetting);
   const $personaSetting = useStore(personaSetting);
 
-  console.log("SettingsPanel : ", $levelSetting);
-  console.log("SettingsPanel : ", $personaSetting);
+  const handleChangeConformanceLevel: ChangeEventHandler<HTMLInputElement> = (
+    event,
+  ) => {
+    levelSetting.set(event.target.value);
+  };
 
-  console.log("ConformanceLevel : ", conformanceLevel);
-  console.log("DisplayLevelA : ", displayLevelAInfo);
-  console.log("DisplayLevelAA : ", displayLevelAAInfo);
-  console.log("SelectedPersona : ", selectedPersona);
+  const handleChangeSelectedPersona: ChangeEventHandler<HTMLInputElement> = (
+    event,
+  ) => {
+    personaSetting.set(event.target.value);
+  };
+
+  const dialogARef = useRef<DialogHandle>(null);
+  const dialogAARef = useRef<DialogHandle>(null);
 
   return (
     <div className="flex flex-col gap-8">
@@ -57,7 +33,7 @@ export const SettingsPanel = () => {
         <div className="flex flex-col">
           <div className="relative">
             <input
-              checked={conformanceLevel === "levelA"}
+              checked={$levelSetting === "levelA"}
               id="levelA"
               name="conformance"
               onChange={handleChangeConformanceLevel}
@@ -65,21 +41,31 @@ export const SettingsPanel = () => {
               value="levelA"
             />
             <label htmlFor="levelA">
-              Niveau A <button onClick={handleClickLevelAInfo}>?</button>
+              Niveau A{" "}
+              <button onClick={() => dialogARef.current?.open()} type="button">
+                ?
+              </button>
             </label>
-            {displayLevelAInfo && (
-              <p className="absolute -right-64 top-0 w-64 bg-gray-500">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-                repudiandae nihil sunt iste quod aspernatur excepturi inventore
-                voluptatum repellendus quos magni, numquam vero ipsam
-                reprehenderit quisquam voluptatibus? Magnam, fuga vitae?
+
+            <Dialog className="w-64 bg-gray-500" ref={dialogARef}>
+              <h1>Niveau de conformité A</h1>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi beatae cum, culpa architecto itaque, possimus unde ex,
+                exercitationem vel in quo illum ducimus nobis tenetur earum
+                dignissimos odit? Molestiae, ducimus!
               </p>
-            )}
+
+              <button onClick={() => dialogARef.current?.close()} type="button">
+                Fermer
+              </button>
+            </Dialog>
           </div>
 
           <div className="relative">
             <input
-              checked={conformanceLevel === "levelAA"}
+              checked={$levelSetting === "levelAA"}
               id="levelAA"
               name="conformance"
               onChange={handleChangeConformanceLevel}
@@ -87,21 +73,34 @@ export const SettingsPanel = () => {
               value="levelAA"
             />
             <label htmlFor="levelAA">
-              Niveau AA <button onClick={handleClickLevelAAInfo}>?</button>
+              Niveau AA{" "}
+              <button onClick={() => dialogAARef.current?.open()} type="button">
+                ?
+              </button>
             </label>
-            {displayLevelAAInfo && (
-              <p className="absolute -right-64 top-0 w-64 bg-gray-500">
+
+            <Dialog className="w-64 bg-gray-500" ref={dialogAARef}>
+              <h1>Niveau de conformité AA</h1>
+
+              <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Ratione excepturi praesentium fuga nemo, quasi fugit consectetur
                 dolores dolorem iure nostrum quod magnam at! Aliquid vitae ex
                 suscipit quae cupiditate quos.
               </p>
-            )}
+
+              <button
+                onClick={() => dialogAARef.current?.close()}
+                type="button"
+              >
+                Fermer
+              </button>
+            </Dialog>
           </div>
         </div>
 
-        {conformanceLevel === "levelA" && <h2>TEST niveau A</h2>}
-        {conformanceLevel === "levelAA" && <h2>TEST niveau AA</h2>}
+        {$levelSetting === "levelA" && <p>TEST niveau A</p>}
+        {$levelSetting === "levelAA" && <p>TEST niveau AA</p>}
       </section>
 
       <section>
@@ -122,7 +121,7 @@ export const SettingsPanel = () => {
           ))}
         </div>
 
-        {selectedPersona && <p>{selectedPersona}</p>}
+        {$personaSetting !== "" && <p>TEST {$personaSetting}</p>}
       </section>
     </div>
   );

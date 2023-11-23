@@ -1,6 +1,7 @@
 import { useStore } from "@nanostores/react";
 
 import { AAForm, AForm } from "~/components/Form";
+import { AATable, ATable } from "~/components/Table";
 import { Heading2 } from "~/components/UI";
 import { levelSetting, personaSetting } from "~/helpers/settings";
 
@@ -10,20 +11,25 @@ export const ComponentsSection = () => {
   const $levelSetting = useStore(levelSetting);
   const $personaSetting = useStore(personaSetting);
 
-  console.log("ComponentsSections : ", $levelSetting);
-  console.log("ComponentsSections : ", $personaSetting);
+  const hasAllSettingsSet = $levelSetting !== "" && $personaSetting !== "";
 
   return (
     <>
-      {$levelSetting && $personaSetting && (
+      {hasAllSettingsSet ? (
         <Section>
-          <Heading2>
-            {$personaSetting}
+          <Heading2>{$personaSetting}</Heading2>
 
-            {$levelSetting === "levelA" ? <AForm /> : <AAForm />}
-          </Heading2>
+          {$levelSetting === "levelA" ? (
+            <>
+              <AForm /> <ATable />
+            </>
+          ) : (
+            <>
+              <AAForm /> <AATable />
+            </>
+          )}
         </Section>
-      )}
+      ) : null}
     </>
   );
 };
