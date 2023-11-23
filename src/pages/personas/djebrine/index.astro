@@ -1,12 +1,18 @@
 ---
-import { IntroSection, MainPanel, SettingsPanel } from "~/components/UI";
+import {
+  ComponentsSection,
+  IntroSection,
+  MainPanel,
+  SettingsPanel,
+} from "~/components/UI";
+import { levelSetting } from "~/helpers/settings";
 import BaseLayout from "~/layouts/BaseLayout.astro";
 
 const titlePage = "Djebrine";
 ---
 
 <BaseLayout title={titlePage}>
-  <SettingsPanel />
+  <SettingsPanel client:load />
 
   <MainPanel>
     <IntroSection title={titlePage}>
@@ -19,5 +25,7 @@ const titlePage = "Djebrine";
       dialogue, texte des documents, pages Internet…). Ces outils technologiques
       lui servent de pont entre son monde sans vision et le monde numérique.
     </IntroSection>
+
+    <ComponentsSection client:load />
   </MainPanel>
 </BaseLayout>
