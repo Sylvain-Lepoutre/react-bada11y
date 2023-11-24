@@ -1,0 +1,117 @@
+---
+import { MainPanel } from "~/components/UI";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+
+const titlePage = "Détails pour le composant formulaire";
+---
+
+<BaseLayout title={titlePage}>
+  <MainPanel>
+    <div>
+      <h2>1.3.5 Identifier la finalité de la saisie</h2>
+      <p>
+        La finalité de chaque champ de saisie recueillant des informations sur
+        l’utilisateur peut être déterminée par un programme informatique lorsque
+        : Le champ de saisie répond à une finalité identifiée dans la section
+        Finalités de saisie des composants d’interface utilisateur et Le contenu
+        est implémenté via des technologies permettant d’identifier la finalité
+        de la saisie attendue pour le champ.
+      </p>
+    </div>
+    <div>
+      <h2>1.4.3 Contraste (minimum)</h2>
+      <p>
+        La présentation visuelle du texte et du texte sous forme d’image a un
+        rapport de contraste d’au moins 4,5:1, sauf dans les cas suivants :
+        Texte agrandi le texte agrandi et le texte agrandi sous forme d’image
+        ont un rapport de contraste d’au moins 3:1. Texte décoratif aucune
+        exigence de contraste pour le texte ou le texte sous forme d’image qui
+        fait partie d’un composant d’interface utilisateur inactif, qui est
+        purement décoratif, qui est invisible pour tous ou qui est une partie
+        d’une image contenant un autre contenu significatif. Logotypes aucune
+        exigence de contraste pour le texte faisant partie d’un logo ou d’un nom
+        de marque.
+      </p>
+    </div>
+    <div>
+      <h2>2.4.6 En-têtes et étiquettes</h2>
+      <p>Les en-têtes et les étiquettes décrivent le sujet ou le but.</p>
+    </div>
+    <div>
+      <h2>2.5.8 Taille de la cible (minimum)</h2>
+      <p>
+        La taille de la cible pour les entrées du pointeur est d’au moins 24 x
+        24 pixels CSS, sauf dans les cas suivants : Espacement : Les cibles de
+        taille inférieure (celles de moins de 24 x 24 pixels CSS) sont
+        positionnées de telle sorte que si un cercle de 24 pixels CSS de
+        diamètre est centré sur la boîte englobante de chacune d’elles, les
+        cercles n’intersectent pas une autre cible ou le cercle d’une autre
+        cible de taille inférieure ; Équivalent : La fonction peut être réalisée
+        par un autre contrôle sur la même page qui répond à ce critère ; Inline
+        : La cible se trouve dans une phrase ou sa taille est limitée par la
+        hauteur de ligne du texte non ciblé ; Contrôle par l’agent utilisateur :
+        La taille de la cible est déterminée par l’agent utilisateur et n’est
+        pas modifiée par l’auteur ; Essentielle : Une présentation particulière
+        de la cible est essentielle ou est légalement requise pour l’information
+        transmise.
+      </p>
+    </div>
+    <div>
+      <h2>3.2.4 Identification cohérente</h2>
+      <p>
+        Dans un ensemble de pages Web les composants qui ont la même
+        fonctionnalité sont identifiés de la même façon.
+      </p>
+    </div>
+    <div>
+      <h2>3.3.3 Suggestion après une erreur</h2>
+      <p>
+        Si une erreur de saisie est automatiquement détectée et que des
+        suggestions de corrections sont connues, ces suggestions sont alors
+        proposées à l’utilisateur à moins que cela puisse compromettre la
+        sécurité ou la finalité du contenu.
+      </p>
+    </div>
+    <div>
+      <h2>
+        3.3.4 Prévention des erreurs (juridiques, financières, de données)
+      </h2>
+      <p>
+        Pour les pages Web qui entraînent des engagements juridiques ou des
+        transactions financières de la part de l’utilisateur, qui modifient ou
+        effacent des données contrôlables par l’utilisateur dans des systèmes de
+        stockages de données, qui enregistrent les réponses de l’utilisateur à
+        un test ou un examen, au moins l’une des conditions suivantes est vraie
+        : Réversible: les actions d’envoi sont réversibles. Vérifiée: les
+        données saisies par l’utilisateur sont vérifiées au niveau des erreurs
+        de saisie et la possibilité est donnée à l’utilisateur de les corriger.
+        Confirmée: un mécanisme est disponible pour revoir, confirmer et
+        corriger les informations avant leur soumission finale.
+      </p>
+    </div>
+    <div>
+      <h2>3.3.8 Authentification accessible (minimum)</h2>
+      <p>
+        Un test des fonctions cognitives (comme se souvenir d’un mot de passe ou
+        résoudre un puzzle) n’est pas requis pour une étape d’un processus
+        d’authentification, à moins que cette étape ne fournisse au moins l’un
+        des éléments suivants : Alternative Une autre méthode d’authentification
+        qui ne repose pas sur un test des fonctions cognitives. Mécanisme Un
+        mécanisme est disponible pour aider l’utilisateur à compléter le test
+        des fonctions cognitives. Reconnaissance d’objets Le test des fonctions
+        cognitives consiste à reconnaître des objets. Contenu personnel Le test
+        des fonctions cognitives consiste à identifier le contenu non textuel
+        que l’utilisateur a fourni au site web.
+      </p>
+    </div>
+    <div>
+      <h2>4.1.3 Messages d’état</h2>
+      <p>
+        Dans un contenu implémenté via un langage de balisage, les messages
+        d’état peuvent être déterminés par un programme informatique grâce à un
+        rôle ou des propriétés afin qu’ils puissent être présentés à
+        l’utilisateur par des technologies d’assistance sans recevoir le focus.
+      </p>
+    </div>
+  </MainPanel>
+</BaseLayout>
