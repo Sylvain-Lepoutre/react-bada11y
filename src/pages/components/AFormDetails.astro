@@ -1,0 +1,116 @@
+---
+import { MainPanel } from "~/components/UI";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+
+const titlePage = "Détails pour le composant formulaire";
+---
+
+<BaseLayout title={titlePage}>
+  <MainPanel>
+    <div>
+      <h2>1.3.1 Information et relations</h2>
+      <p>
+        L’information, la structure, et les relations véhiculées par la
+        présentation peuvent être déterminées par un programme informatique ou
+        sont disponibles sous forme de texte.
+      </p>
+    </div>
+    <div>
+      <h2>1.3.2 Ordre séquentiel logique</h2>
+      <p>
+        Lorsque l’ordre de présentation du contenu affecte sa signification, un
+        ordre de lecture correct peut être déterminé par un programme
+        informatique.
+      </p>
+    </div>
+    <div>
+      <h2>1.4.1 Utilisation de la couleur</h2>
+      <p>
+        La couleur n’est pas utilisée comme la seule façon de véhiculer de
+        l’information, d’indiquer une action, de solliciter une réponse ou de
+        distinguer un élément visuel.
+      </p>
+    </div>
+    <div>
+      <h2>2.1.1 Clavier</h2>
+      <p>
+        Toutes les fonctionnalités du contenu sont utilisables à l’aide d’une
+        interface clavier sans exiger un rythme de frappe propre à
+        l’utilisateur, sauf lorsque la fonction sous-jacente nécessite une
+        saisie qui dépend du tracé du mouvement effectué par l’utilisateur et
+        pas seulement des points de départ et d’arrivée de ce tracé.
+      </p>
+    </div>
+    <div>
+      <h2>2.1.2 Pas de piège au clavier</h2>
+      <p>
+        Si le focus du clavier peut être positionné sur un élément de la page à
+        l’aide d’une interface clavier, réciproquement, il peut être déplacé
+        hors de ce même composant simplement à l’aide d’une interface clavier
+        et, si ce déplacement exige plus que l’utilisation d’une simple touche
+        flèche ou tabulation ou toute autre méthode standard de sortie,
+        l’utilisateur est informé de la méthode permettant de déplacer le focus
+        hors de ce composant.
+      </p>
+    </div>
+    <div>
+      <h2>2.4.3 Parcours du focus</h2>
+      <p>
+        Si une page Web peut être parcourue de façon séquentielle et que les
+        séquences de navigation affectent la signification ou l’action, les
+        éléments reçoivent le focus dans un ordre qui préserve la signification
+        et l’opérabilité.
+      </p>
+    </div>
+    <div>
+      <h2>2.5.3 Étiquette dans le nom</h2>
+      <p>
+        Pour les composants d’interface utilisateur dont les étiquettes
+        contiennent du texte ou du texte sous forme d’image, le nom contient le
+        texte qui est présenté visuellement.
+      </p>
+    </div>
+    <div>
+      <h2>Au focus</h2>
+      <p>
+        Quand un composant d’interface utilisateur reçoit le focus, il ne doit
+        pas initier de changement de contexte.
+      </p>
+    </div>
+    <div>
+      <h2>3.2.2 À la saisie</h2>
+      <p>
+        Le changement de paramètre d’un composant d’interface utilisateur ne
+        doit pas initier de changement de contexte à moins que l’utilisateur
+        n’ait été avisé de ce comportement avant d’utiliser le composant.
+      </p>
+    </div>
+    <div>
+      <h2>3.3.1 Identification des erreurs</h2>
+      <p>
+        Si une erreur de saisie est détectée automatiquement, l’élément en
+        erreur est identifié et l’erreur est décrite à l’utilisateur sous forme
+        de texte.
+      </p>
+    </div>
+    <div>
+      <h2>3.3.2 Étiquettes ou instructions</h2>
+      <p>
+        Des étiquettes sont présentées ou des instructions sont fournies quand
+        un contenu requiert une saisie utilisateur.
+      </p>
+    </div>
+    <div>
+      <h2>4.1.2 Nom, rôle et valeur</h2>
+      <p>
+        Pour tout composant d’interface utilisateur (comprenant mais n’étant pas
+        limité aux éléments de formulaire, liens et composants générés par des
+        scripts), le nom et le rôle peuvent être déterminés par un programme
+        informatique ; les états, les propriétés et les valeurs qui peuvent être
+        paramétrés par l’utilisateur peuvent être définis par programmation ; et
+        la notification des changements de ces éléments est disponible aux
+        agents utilisateurs, incluant les technologies d’assistance.
+      </p>
+    </div>
+  </MainPanel>
+</BaseLayout>

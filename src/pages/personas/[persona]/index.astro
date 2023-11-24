@@ -8,10 +8,6 @@ import {
   SettingsPanel,
 } from "~/components/UI";
 
-import { StepSection } from "~/components/pages/personaHome/StepSection";
-import { Header } from "../../../components/UI/headers/Header";
-import { Main } from "../../../components/UI/main/Main";
-
 import { personas, type Step } from "../../../data/personas";
 import { SingleLink } from "../../../components/UI/links/SingleLink";
 
@@ -57,7 +53,7 @@ type Props = {
   personaSteps: Step[];
 };
 
-const { personaName, personaIntro, personaSteps } = Astro.props;
+const { personaName, personaIntro } = Astro.props;
 ---
 
 <BaseLayout title={personaName}>
